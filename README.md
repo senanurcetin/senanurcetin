@@ -5,6 +5,7 @@ Industrial AI and operations software engineer building practical tools for fact
 - Based in Istanbul, Turkey
 - Portfolio site: [senanur-cetin.vercel.app](https://senanur-cetin.vercel.app/)
 - Contact: [senanur.cetin.work@gmail.com](mailto:senanur.cetin.work@gmail.com)
+- Demo playlist: [Industrial product walkthroughs](https://www.youtube.com/playlist?list=PLrq0FHTSXQwNzN53_XymhtNHvWP-0z1-H)
 
 ## Focus areas
 
