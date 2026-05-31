@@ -41,13 +41,13 @@ Demo: [YouTube walkthrough](https://www.youtube.com/watch?v=G9jLMHL1fvg)
 
 Support case study. Industrial computer vision quality-control simulator focused on inspection traceability, KPI tracking, and structured reporting.
 
-Demo: [Portfolio project entry](https://senanur-cetin.vercel.app/#projects)
+Demo: [Portfolio project entry](https://senanur-cetin.vercel.app/projects/visual-qc-project)
 
 ### [smart-factory-app](https://github.com/senanurcetin/smart-factory-app)
 
 Support case study. Predictive maintenance and plant analytics dashboard that packages telemetry, Random Forest risk scoring, and maintenance-facing KPIs.
 
-Demo: [Portfolio project entry](https://senanur-cetin.vercel.app/#projects)
+Demo: [Portfolio project entry](https://senanur-cetin.vercel.app/projects/smart-factory-app)
 
 ## Supporting evidence
 
