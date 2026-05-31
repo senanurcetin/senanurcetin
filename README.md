@@ -1,6 +1,6 @@
 # Senanur Cetin
 
-Industrial AI and operations software engineer building practical tools for factory teams, OT workflows, and operator-facing industrial products.
+Industrial AI and applied data science engineer building practical software for factory teams, OT workflows, and operator-facing industrial systems.
 
 - Based in Istanbul, Turkey
 - Portfolio site: [senanur-cetin.vercel.app](https://senanur-cetin.vercel.app/)
@@ -9,42 +9,64 @@ Industrial AI and operations software engineer building practical tools for fact
 ## Focus areas
 
 - Industrial AI copilots and document-grounded troubleshooting
-- OT monitoring, anomaly detection, and cybersecurity dashboards
-- Process visualization, HMI design, and digital twin interfaces
-- Maintenance, asset registry, and plant operations software
+- Manufacturing analytics, risk ranking, and decision-support workflows
+- Computer vision quality-control and operator-facing reporting systems
+- OT monitoring, HMI-oriented UX, and plant operations software
 
-## Selected public work
+## How to review this portfolio
+
+Recommended order for Data + AI roles:
+
+1. [Ops-Copilot](https://github.com/senanurcetin/Ops-Copilot)
+2. [visual-qc-project](https://github.com/senanurcetin/visual-qc-project)
+3. [smart-factory-app](https://github.com/senanurcetin/smart-factory-app)
+
+Why this order:
+
+- `Ops-Copilot` is the flagship case study because it combines industrial workflow framing, applied ML evaluation, and product packaging.
+- `visual-qc-project` supports the portfolio with industrial computer vision, inspection traceability, and reporting design.
+- `smart-factory-app` supports the portfolio with predictive maintenance framing, KPI logic, and plant-facing analytics.
+
+If you want a fourth repo for domain breadth, use [ot-sentinel](https://github.com/senanurcetin/ot-sentinel).
+
+## Lead case studies
 
 ### [Ops-Copilot](https://github.com/senanurcetin/Ops-Copilot)
 
-AI-powered industrial assistant that combines Firebase workflows with document-grounded troubleshooting for factory operators.
+Flagship case study. Industrial AI assistant that combines document-grounded troubleshooting with a public SECOM failure-risk case study.
 
 Demo: [YouTube walkthrough](https://www.youtube.com/watch?v=G9jLMHL1fvg)
 
-### [ot-sentinel](https://github.com/senanurcetin/ot-sentinel)
+### [visual-qc-project](https://github.com/senanurcetin/visual-qc-project)
 
-Industrial cybersecurity dashboard for OT anomaly detection, simulated incident response, and AI-assisted forensic workflows.
-
-Demo: [YouTube walkthrough](https://www.youtube.com/watch?v=KcpTW0QM0FM)
-
-### [Vision2DCS](https://github.com/senanurcetin/Vision2DCS)
-
-Industrial AI concept that parses P&IDs and drafts DCS/HMI-oriented engineering outputs.
-
-Demo: [YouTube walkthrough](https://www.youtube.com/watch?v=x9uHCqvARMg)
-
-### [PlantLog-MERN](https://github.com/senanurcetin/PlantLog-MERN)
-
-Full-stack industrial e-logbook and asset registry for maintenance, operations, and incident tracking.
+Support case study. Industrial computer vision quality-control simulator focused on inspection traceability, KPI tracking, and structured reporting.
 
 Demo: [Portfolio project entry](https://senanur-cetin.vercel.app/#projects)
 
-## Additional public repos
+### [smart-factory-app](https://github.com/senanurcetin/smart-factory-app)
 
-- [ChemView](https://github.com/senanurcetin/ChemView) - industrial HMI and digital twin prototype for chemical process monitoring. Demo: [YouTube walkthrough](https://www.youtube.com/watch?v=GJgmsIAXbrk)
-- [visual-qc-project](https://github.com/senanurcetin/visual-qc-project) - computer vision quality control simulator with reporting workflows. Demo: [Portfolio project entry](https://senanur-cetin.vercel.app/#projects)
-- [smart-factory-app](https://github.com/senanurcetin/smart-factory-app) - predictive maintenance and manufacturing analytics dashboard. Demo: [Portfolio project entry](https://senanur-cetin.vercel.app/#projects)
+Support case study. Predictive maintenance and plant analytics dashboard that packages telemetry, Random Forest risk scoring, and maintenance-facing KPIs.
+
+Demo: [Portfolio project entry](https://senanur-cetin.vercel.app/#projects)
+
+## Supporting evidence
+
+- [ot-sentinel](https://github.com/senanurcetin/ot-sentinel) - archive proof for OT monitoring, anomaly context, and AI-assisted mitigation workflows. Demo: [YouTube walkthrough](https://www.youtube.com/watch?v=KcpTW0QM0FM)
+- [Vision2DCS](https://github.com/senanurcetin/Vision2DCS) - archive proof for multimodal engineering workflow design and HMI-oriented industrial interfaces. Demo: [YouTube walkthrough](https://www.youtube.com/watch?v=x9uHCqvARMg)
+- [ChemView](https://github.com/senanurcetin/ChemView) - archive proof for industrial UX, telemetry visualization, and HMI-style front-end design. Demo: [YouTube walkthrough](https://www.youtube.com/watch?v=GJgmsIAXbrk)
+- [PlantLog-MERN](https://github.com/senanurcetin/PlantLog-MERN) - archive proof for full-stack industrial operations software and asset-log workflow design. Demo: [Portfolio project entry](https://senanur-cetin.vercel.app/#projects)
+
+## Application pack
+
+Reusable application materials live under `docs/` in this repo:
+
+- `cv-project-bullets.md`
+- `linkedin-featured-copy.md`
+- `recruiter-reading-paths.md`
+- `30-second-project-summaries.md`
+- `ops-copilot-note.md`
+- `lead-case-study-comparison.md`
 
 ## Working style
 
-I build documentation-first product prototypes that emphasize operational clarity, strong UX, and realistic industrial workflows. The public repositories here are intended to show product thinking, system design, and implementation quality for Industrial AI software.
+I build documentation-first case studies and product prototypes that emphasize operational clarity, realistic industrial workflows, and recruiter-readable proof. The public repositories here are intended to show product thinking, applied ML framing, and implementation quality for industrial AI software.
