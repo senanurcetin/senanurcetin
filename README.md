@@ -20,6 +20,13 @@ Industrial AI and applied data science engineer building practical software for 
 [![smart-factory-app CI](https://github.com/senanurcetin/smart-factory-app/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/senanurcetin/smart-factory-app/actions/workflows/ci.yml)
 [![Profile Docs Check](https://github.com/senanurcetin/senanurcetin/actions/workflows/docs-check.yml/badge.svg?branch=main)](https://github.com/senanurcetin/senanurcetin/actions/workflows/docs-check.yml)
 
+## Stable snapshots
+
+- [Ops-Copilot release snapshot](https://github.com/senanurcetin/Ops-Copilot/releases/tag/portfolio-snapshot-2026-06)
+- [visual-qc-project release snapshot](https://github.com/senanurcetin/visual-qc-project/releases/tag/portfolio-snapshot-2026-06)
+- [smart-factory-app release snapshot](https://github.com/senanurcetin/smart-factory-app/releases/tag/portfolio-snapshot-2026-06)
+- [profile repo release snapshot](https://github.com/senanurcetin/senanurcetin/releases/tag/portfolio-snapshot-2026-06)
+
 ## How to review this portfolio
 
 Recommended order for Data + AI roles:
@@ -92,6 +99,8 @@ Reusable application materials live under `docs/` in this repo:
 - `cv-headline-about.md`
 - `interview-explanations.md`
 - `outreach-snippets.md`
+- `portfolio-manifest.json`
+- `site-sync-brief.md`
 - `ops-copilot-note.md`
 - `lead-case-study-comparison.md`
 

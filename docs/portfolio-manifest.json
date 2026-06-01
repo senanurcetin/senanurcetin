@@ -1,0 +1,161 @@
+{
+  "updated_at": "2026-06-01",
+  "positioning": {
+    "headline": "Industrial AI and applied data science engineer building practical software for factory teams, OT workflows, and operator-facing industrial systems.",
+    "short_tagline": "Industrial-first applied AI for troubleshooting, quality, and maintenance decision support.",
+    "focus_areas": [
+      "Industrial AI copilots and document-grounded troubleshooting",
+      "Manufacturing analytics, risk ranking, and decision-support workflows",
+      "Computer vision quality-control and operator-facing reporting systems",
+      "OT monitoring, HMI-oriented UX, and plant operations software"
+    ]
+  },
+  "default_reading_path": {
+    "id": "data-ai",
+    "label": "Data + AI Roles",
+    "order": [
+      "Ops-Copilot",
+      "visual-qc-project",
+      "smart-factory-app"
+    ],
+    "why": "This path shows the strongest combined signal for applied ML evaluation, industrial domain grounding, and product-minded engineering."
+  },
+  "lead_projects": [
+    {
+      "repo": "Ops-Copilot",
+      "role": "flagship case study",
+      "repo_url": "https://github.com/senanurcetin/Ops-Copilot",
+      "demo_url": "https://www.youtube.com/watch?v=G9jLMHL1fvg",
+      "release_url": "https://github.com/senanurcetin/Ops-Copilot/releases/tag/portfolio-snapshot-2026-06",
+      "thesis": "Industrial AI troubleshooting assistant paired with a measurable SECOM failure-risk ranking case study.",
+      "metrics": [
+        "ROC-AUC 0.7659",
+        "PR-AUC 0.1745",
+        "2.89x lift at a 10% review budget"
+      ],
+      "what_it_proves": [
+        "Industrial AI product thinking",
+        "Applied ML evaluation under constrained review capacity",
+        "Operator-facing workflow packaging"
+      ]
+    },
+    {
+      "repo": "visual-qc-project",
+      "role": "support case study",
+      "repo_url": "https://github.com/senanurcetin/visual-qc-project",
+      "demo_url": "https://senanur-cetin.vercel.app/projects/visual-qc-project",
+      "release_url": "https://github.com/senanurcetin/visual-qc-project/releases/tag/portfolio-snapshot-2026-06",
+      "thesis": "Industrial computer-vision quality-control case study with measurable defect triage, traceability, and reporting.",
+      "metrics": [
+        "Macro F1 0.8093",
+        "Macro precision 0.8163",
+        "2.22x review-yield lift vs random review"
+      ],
+      "what_it_proves": [
+        "Manufacturing CV plus workflow packaging",
+        "QA traceability and reporting design",
+        "Measured defect-triage reasoning"
+      ]
+    },
+    {
+      "repo": "smart-factory-app",
+      "role": "support case study",
+      "repo_url": "https://github.com/senanurcetin/smart-factory-app",
+      "demo_url": "https://senanur-cetin.vercel.app/projects/smart-factory-app",
+      "release_url": "https://github.com/senanurcetin/smart-factory-app/releases/tag/portfolio-snapshot-2026-06",
+      "thesis": "Predictive-maintenance support case study with ranked maintenance queues, KPI context, and AI4I benchmark evidence.",
+      "metrics": [
+        "PR-AUC 0.8522",
+        "F1 0.8033",
+        "Top 10% queue captures 92.6% of holdout failures"
+      ],
+      "what_it_proves": [
+        "Predictive maintenance framing",
+        "Imbalanced ranking and queue design",
+        "Plant-facing analytics and maintenance decision support"
+      ]
+    }
+  ],
+  "supporting_evidence": [
+    {
+      "repo": "ot-sentinel",
+      "role": "archive proof",
+      "repo_url": "https://github.com/senanurcetin/ot-sentinel",
+      "demo_url": "https://www.youtube.com/watch?v=KcpTW0QM0FM",
+      "proof_area": "OT workflow and anomaly-response breadth"
+    },
+    {
+      "repo": "Vision2DCS",
+      "role": "archive proof",
+      "repo_url": "https://github.com/senanurcetin/Vision2DCS",
+      "demo_url": "https://www.youtube.com/watch?v=x9uHCqvARMg",
+      "proof_area": "Multimodal engineering-tool thinking"
+    },
+    {
+      "repo": "ChemView",
+      "role": "archive proof",
+      "repo_url": "https://github.com/senanurcetin/ChemView",
+      "demo_url": "https://www.youtube.com/watch?v=GJgmsIAXbrk",
+      "proof_area": "Industrial UX and HMI state modeling"
+    },
+    {
+      "repo": "PlantLog-MERN",
+      "role": "archive proof",
+      "repo_url": "https://github.com/senanurcetin/PlantLog-MERN",
+      "demo_url": "https://senanur-cetin.vercel.app/#projects",
+      "proof_area": "Full-stack industrial operations workflow design"
+    }
+  ],
+  "reading_paths": [
+    {
+      "id": "data-ai",
+      "label": "Data + AI Roles",
+      "repos": [
+        "Ops-Copilot",
+        "visual-qc-project",
+        "smart-factory-app"
+      ]
+    },
+    {
+      "id": "industrial-systems",
+      "label": "Industrial Systems Roles",
+      "repos": [
+        "Ops-Copilot",
+        "ot-sentinel",
+        "Vision2DCS",
+        "ChemView"
+      ]
+    },
+    {
+      "id": "product-full-stack",
+      "label": "Product / Full-Stack Roles",
+      "repos": [
+        "Ops-Copilot",
+        "PlantLog-MERN",
+        "ChemView"
+      ]
+    }
+  ],
+  "application_pack": [
+    "docs/cv-project-bullets.md",
+    "docs/linkedin-featured-copy.md",
+    "docs/recruiter-reading-paths.md",
+    "docs/30-second-project-summaries.md",
+    "docs/capability-matrix.md",
+    "docs/cv-headline-about.md",
+    "docs/interview-explanations.md",
+    "docs/outreach-snippets.md",
+    "docs/ops-copilot-note.md",
+    "docs/lead-case-study-comparison.md"
+  ],
+  "site_sync": {
+    "canonical_content_source": "docs/portfolio-manifest.json",
+    "default_homepage_order": [
+      "Ops-Copilot",
+      "visual-qc-project",
+      "smart-factory-app"
+    ],
+    "archive_projects_should_be_secondary": true,
+    "do_not_claim_production_deployment": true
+  }
+}
