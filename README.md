@@ -13,6 +13,13 @@ Industrial AI and applied data science engineer building practical software for 
 - Computer vision quality-control and operator-facing reporting systems
 - OT monitoring, HMI-oriented UX, and plant operations software
 
+## Build signals
+
+[![Ops-Copilot CI](https://github.com/senanurcetin/Ops-Copilot/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/senanurcetin/Ops-Copilot/actions/workflows/ci.yml)
+[![visual-qc-project CI](https://github.com/senanurcetin/visual-qc-project/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/senanurcetin/visual-qc-project/actions/workflows/ci.yml)
+[![smart-factory-app CI](https://github.com/senanurcetin/smart-factory-app/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/senanurcetin/smart-factory-app/actions/workflows/ci.yml)
+[![Profile Docs Check](https://github.com/senanurcetin/senanurcetin/actions/workflows/docs-check.yml/badge.svg?branch=main)](https://github.com/senanurcetin/senanurcetin/actions/workflows/docs-check.yml)
+
 ## How to review this portfolio
 
 Recommended order for Data + AI roles:
@@ -82,7 +89,9 @@ Reusable application materials live under `docs/` in this repo:
 - `recruiter-reading-paths.md`
 - `30-second-project-summaries.md`
 - `capability-matrix.md`
+- `cv-headline-about.md`
 - `interview-explanations.md`
+- `outreach-snippets.md`
 - `ops-copilot-note.md`
 - `lead-case-study-comparison.md`
 

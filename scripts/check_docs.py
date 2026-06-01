@@ -13,7 +13,9 @@ REQUIRED_FILES = [
     ROOT / "docs" / "recruiter-reading-paths.md",
     ROOT / "docs" / "30-second-project-summaries.md",
     ROOT / "docs" / "capability-matrix.md",
+    ROOT / "docs" / "cv-headline-about.md",
     ROOT / "docs" / "interview-explanations.md",
+    ROOT / "docs" / "outreach-snippets.md",
     ROOT / "docs" / "ops-copilot-note.md",
     ROOT / "docs" / "lead-case-study-comparison.md",
 ]
