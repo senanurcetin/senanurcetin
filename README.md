@@ -73,6 +73,7 @@ Reusable application materials live under `docs/` in this repo:
 - `linkedin-featured-copy.md`
 - `recruiter-reading-paths.md`
 - `30-second-project-summaries.md`
+- `capability-matrix.md`
 - `ops-copilot-note.md`
 - `lead-case-study-comparison.md`
 
