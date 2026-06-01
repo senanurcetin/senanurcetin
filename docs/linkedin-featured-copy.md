@@ -6,11 +6,11 @@ Industrial AI assistant for factory operators with document-grounded troubleshoo
 
 ## 2. visual-qc-project
 
-Computer vision quality-control simulator focused on inspection traceability, KPI tracking, and structured QA reporting. Useful proof for industrial CV work that still stays connected to operator workflows.
+Industrial computer-vision quality-control case study with a real NEU-CLS defect benchmark, inspection traceability, KPI tracking, and structured QA reporting. Useful proof for manufacturing CV work that still stays connected to operator workflows.
 
 ## 3. smart-factory-app
 
-Predictive maintenance and plant analytics dashboard that combines synthetic telemetry, Random Forest scoring, OEE, and maintenance-facing KPI logic in one manufacturing surface.
+Predictive-maintenance case study that combines a plant-facing dashboard with the UCI AI4I benchmark, ranked maintenance queue logic, and cost-tradeoff framing in one manufacturing surface.
 
 ## Optional 4th featured repo
 

@@ -12,8 +12,8 @@ What this path proves:
 
 - applied data science with measurable evaluation
 - industrial domain grounding
-- computer vision plus reporting workflow thinking
-- predictive maintenance and KPI packaging
+- computer vision plus measurable defect-triage workflow thinking
+- predictive maintenance, imbalanced ranking, and KPI packaging
 - product-minded engineering execution
 
 Best fit:
@@ -22,6 +22,7 @@ Best fit:
 - Industrial AI Engineer
 - Manufacturing Analytics
 - AI Product Engineer
+- Applied Scientist (industrial / operations / manufacturing)
 
 ## Industrial Systems Roles
 

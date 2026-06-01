@@ -24,10 +24,16 @@ Recommended order for Data + AI roles:
 Why this order:
 
 - `Ops-Copilot` is the flagship case study because it combines industrial workflow framing, applied ML evaluation, and product packaging.
-- `visual-qc-project` supports the portfolio with industrial computer vision, inspection traceability, and reporting design.
-- `smart-factory-app` supports the portfolio with predictive maintenance framing, KPI logic, and plant-facing analytics.
+- `visual-qc-project` supports the portfolio with industrial computer vision, measurable defect triage, inspection traceability, and reporting design.
+- `smart-factory-app` supports the portfolio with predictive maintenance framing, imbalanced failure ranking, maintenance queue design, and plant-facing analytics.
 
 If you want a fourth repo for domain breadth, use [ot-sentinel](https://github.com/senanurcetin/ot-sentinel).
+
+Fast recruiter path:
+
+- Start with `Ops-Copilot` for the strongest combined product plus applied-ML signal.
+- Open `visual-qc-project` if you want industrial CV and manufacturing QA workflow proof.
+- Open `smart-factory-app` if you want predictive maintenance, risk ranking, and KPI decision-support proof.
 
 ## Lead case studies
 
@@ -40,14 +46,14 @@ Repo proof: screenshot and short demo clip included in the README.
 
 ### [visual-qc-project](https://github.com/senanurcetin/visual-qc-project)
 
-Support case study. Industrial computer vision quality-control simulator focused on inspection traceability, KPI tracking, and structured reporting.
+Support case study. Industrial computer vision quality-control system with a real NEU-CLS defect-classification benchmark, inspection traceability, KPI tracking, and structured reporting.
 
 Demo: [Portfolio project entry](https://senanur-cetin.vercel.app/projects/visual-qc-project)
 Repo proof: screenshot and short demo clip included in the README.
 
 ### [smart-factory-app](https://github.com/senanurcetin/smart-factory-app)
 
-Support case study. Predictive maintenance and plant analytics dashboard that packages telemetry, Random Forest risk scoring, and maintenance-facing KPIs.
+Support case study. Predictive-maintenance and plant analytics system that pairs a dashboard surface with a real AI4I maintenance benchmark, ranked review queue, and cost-tradeoff framing.
 
 Demo: [Portfolio project entry](https://senanur-cetin.vercel.app/projects/smart-factory-app)
 Repo proof: screenshot and short demo clip included in the README.

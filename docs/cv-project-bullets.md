@@ -14,21 +14,21 @@ Reusable bullets:
 ## visual-qc-project
 
 Headline:
-Built a computer vision quality-control simulator that ties inspection outcomes to traceable reporting and manufacturing KPIs.
+Built an industrial computer-vision quality-control case study that ties real defect classification to traceable reporting and manufacturing KPIs.
 
 Reusable bullets:
 
 - Designed a Flask and OpenCV inspection workflow that records per-unit OK/NOK events, OEE-related signals, and timestamped production logs in SQLite.
-- Added exportable Excel reporting so computer vision output becomes reviewable QA evidence instead of staying as an isolated image-processing demo.
-- Positioned the project as industrial workflow proof for inspection traceability, operator reporting, and manufacturing quality-system thinking.
+- Added a real NEU-CLS benchmark with classical CV features, model comparison, and a low-confidence review queue so the repo demonstrates measurable defect-triage reasoning rather than only simulation.
+- Positioned the project as industrial workflow proof for inspection traceability, operator reporting, and manufacturing quality-system thinking, backed by measurable defect classification results.
 
 ## smart-factory-app
 
 Headline:
-Built a predictive-maintenance and plant KPI dashboard that packages synthetic telemetry and Random Forest risk scoring into one operator-facing analytics surface.
+Built a predictive-maintenance case study that combines plant KPI packaging with a real UCI failure-risk benchmark and maintenance queue logic.
 
 Reusable bullets:
 
-- Simulated six machine-health signals and combined them with OEE, RUL, shift context, and event logging to create a manufacturing analytics dashboard with maintenance relevance.
-- Used a lightweight Random Forest layer to place failure-risk estimation next to operational KPIs, showing how ML can support plant decisions without overclaiming model maturity.
-- Presented predictive maintenance as a workflow and KPI problem, not only as a notebook exercise, which makes the case study legible to both technical and operational reviewers.
+- Upgraded a synthetic Industry 4.0 dashboard with the UCI AI4I 2020 predictive-maintenance dataset, benchmarking multiple classifiers on an imbalanced failure target.
+- Selected HistGradientBoosting based on PR-AUC and F1, then translated the model into a ranked maintenance queue that captures most holdout failures inside a 10% analyst budget.
+- Added an illustrative cost model so predictive maintenance is framed as maintenance prioritization and business tradeoff design, not only as a notebook exercise.
