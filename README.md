@@ -35,6 +35,14 @@ Fast recruiter path:
 - Open `visual-qc-project` if you want industrial CV and manufacturing QA workflow proof.
 - Open `smart-factory-app` if you want predictive maintenance, risk ranking, and KPI decision-support proof.
 
+## Proof snapshot
+
+| Repo | Role | Key proof | Why it matters |
+| --- | --- | --- | --- |
+| [Ops-Copilot](https://github.com/senanurcetin/Ops-Copilot) | Flagship case study | SECOM chronological holdout, ROC-AUC `0.7659`, PR-AUC `0.1745`, `2.89x` lift at a `10%` review budget | Strongest combined signal for Industrial AI, applied ML evaluation, and product packaging |
+| [visual-qc-project](https://github.com/senanurcetin/visual-qc-project) | Support case study | NEU-CLS benchmark, macro F1 `0.8093`, low-confidence queue `2.22x` better than random review | Strong proof for industrial CV, defect triage, QA traceability, and reporting workflows |
+| [smart-factory-app](https://github.com/senanurcetin/smart-factory-app) | Support case study | AI4I benchmark, PR-AUC `0.8522`, F1 `0.8033`, top `10%` queue captures `92.6%` of failures | Strong proof for predictive maintenance, imbalanced ranking, and maintenance decision support |
+
 ## Lead case studies
 
 ### [Ops-Copilot](https://github.com/senanurcetin/Ops-Copilot)
@@ -74,6 +82,7 @@ Reusable application materials live under `docs/` in this repo:
 - `recruiter-reading-paths.md`
 - `30-second-project-summaries.md`
 - `capability-matrix.md`
+- `interview-explanations.md`
 - `ops-copilot-note.md`
 - `lead-case-study-comparison.md`
 
