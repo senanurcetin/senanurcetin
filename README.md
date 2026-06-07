@@ -1,109 +1,59 @@
 # Senanur Cetin
 
-Industrial AI and applied data science engineer building practical software for factory teams, OT workflows, and operator-facing industrial systems.
+Data Analyst and Applied Data Scientist with 4+ years of industrial automation experience, building tested analytics-engineering, BI, fraud-risk, predictive-maintenance, and computer-vision workflows.
 
 - Based in Istanbul, Turkey
-- Portfolio site: [senanur-cetin.vercel.app](https://senanur-cetin.vercel.app/)
+- Portfolio: [senanur-cetin.vercel.app](https://senanur-cetin.vercel.app/)
+- Project library: [senanur-cetin.vercel.app/projects](https://senanur-cetin.vercel.app/projects)
 - Contact: [senanur.cetin.work@gmail.com](mailto:senanur.cetin.work@gmail.com)
 
-## Focus areas
+## Current direction
 
-- Industrial AI copilots and document-grounded troubleshooting
-- Manufacturing analytics, risk ranking, and decision-support workflows
-- Computer vision quality-control and operator-facing reporting systems
-- OT monitoring, HMI-oriented UX, and plant operations software
+- Data Analyst, Applied Data Scientist, Analytics Engineer, and operational analytics roles
+- Workintech Data Analyst Certificate earned in June 2026
+- Workintech Data Scientist & AI Pro: Data Science and AI phase in progress
+- Industrial automation context across DCS/SCADA, validation, commissioning, and operator-facing systems
 
-## Build signals
+## Recruiter review paths
 
-[![Ops-Copilot CI](https://github.com/senanurcetin/Ops-Copilot/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/senanurcetin/Ops-Copilot/actions/workflows/ci.yml)
-[![visual-qc-project CI](https://github.com/senanurcetin/visual-qc-project/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/senanurcetin/visual-qc-project/actions/workflows/ci.yml)
-[![smart-factory-app CI](https://github.com/senanurcetin/smart-factory-app/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/senanurcetin/smart-factory-app/actions/workflows/ci.yml)
-[![Profile Docs Check](https://github.com/senanurcetin/senanurcetin/actions/workflows/docs-check.yml/badge.svg?branch=main)](https://github.com/senanurcetin/senanurcetin/actions/workflows/docs-check.yml)
+### Data Analyst
 
-## Stable snapshots
+1. [Fraud Risk Intelligence](https://github.com/senanurcetin/ieee-fraud-detection-analytics)
+2. [E-commerce Analytics Portfolio](https://github.com/senanurcetin/E-commerce)
+3. [Smart Factory Operations Analytics](https://github.com/senanurcetin/smart-factory-app)
 
-- [Ops-Copilot release snapshot](https://github.com/senanurcetin/Ops-Copilot/releases/tag/portfolio-snapshot-2026-06)
-- [visual-qc-project release snapshot](https://github.com/senanurcetin/visual-qc-project/releases/tag/portfolio-snapshot-2026-06)
-- [smart-factory-app release snapshot](https://github.com/senanurcetin/smart-factory-app/releases/tag/portfolio-snapshot-2026-06)
-- [profile repo release snapshot](https://github.com/senanurcetin/senanurcetin/releases/tag/portfolio-snapshot-2026-06)
+### Applied Data Scientist
 
-## How to review this portfolio
+1. [Fraud Risk Intelligence](https://github.com/senanurcetin/ieee-fraud-detection-analytics)
+2. [Visual QC Project](https://github.com/senanurcetin/visual-qc-project)
+3. [Smart Factory App](https://github.com/senanurcetin/smart-factory-app)
 
-Recommended order for Data + AI roles:
+## Verified project proof
 
-1. [Ops-Copilot](https://github.com/senanurcetin/Ops-Copilot)
-2. [visual-qc-project](https://github.com/senanurcetin/visual-qc-project)
-3. [smart-factory-app](https://github.com/senanurcetin/smart-factory-app)
+| Project | Verified proof | Review surface |
+| --- | --- | --- |
+| [Fraud Risk Intelligence](https://github.com/senanurcetin/ieee-fraud-detection-analytics) | 590,540 transactions, 36 dbt models, 121 data tests, 18 Python contract tests, ROC-AUC `0.9134`, average precision `0.5354` | [Live dashboard](https://fraud-project-web.vercel.app) · [Case study](https://senanur-cetin.vercel.app/projects/fraud-risk-intelligence) |
+| [E-commerce Analytics Portfolio](https://github.com/senanurcetin/E-commerce) | 4 BI-ready marts, 73 dbt tests, 57 DuckDB CI tests, 50 documented DAX measures, cohort/RFM and statistical testing | [Case study](https://senanur-cetin.vercel.app/projects/e-commerce-marketing-web-performance) |
+| [Visual QC Project](https://github.com/senanurcetin/visual-qc-project) | 1,800 NEU-CLS images, accuracy `0.9389`, macro F1 `0.9392`, top-20% entropy queue captures `81.8%` of errors | [Case study](https://senanur-cetin.vercel.app/projects/visual-qc-project) |
+| [Smart Factory App](https://github.com/senanurcetin/smart-factory-app) | 10,000 AI4I records, ROC-AUC `0.9819`, PR-AUC `0.8855`, F1 `0.8372`, top-10% queue captures `94.1%` of failures at `9.4x` lift | [Case study](https://senanur-cetin.vercel.app/projects/smart-factory-app) |
 
-Why this order:
+## Working stack
 
-- `Ops-Copilot` is the flagship case study because it combines industrial workflow framing, applied ML evaluation, and product packaging.
-- `visual-qc-project` supports the portfolio with industrial computer vision, measurable defect triage, inspection traceability, and reporting design.
-- `smart-factory-app` supports the portfolio with predictive maintenance framing, imbalanced failure ranking, maintenance queue design, and plant-facing analytics.
+- Analytics engineering and BI: SQL, BigQuery, dbt, DuckDB, Power BI, DAX, data modeling
+- Analysis and experimentation: Python, Pandas, NumPy, SciPy, EDA, cohort analysis, RFM, statistical testing
+- Applied data science: scikit-learn, LightGBM, HistGradientBoosting, Random Forest, model evaluation, review queues
+- Delivery and industrial context: FastAPI, Flask, GitHub Actions, DCS/SCADA, Siemens PCS7, ABB 800xA, VMware
 
-If you want a fourth repo for domain breadth, use [ot-sentinel](https://github.com/senanurcetin/ot-sentinel).
+## Supporting and archive proof
 
-Fast recruiter path:
+- [Greenweez Finance & Campaign Analytics](https://github.com/senanurcetin/greenweez-finance-campaign-analytics): dbt and BigQuery finance/campaign reporting
+- [GTM](https://github.com/senanurcetin/GTM): GTM and GA4-ready web analytics instrumentation
+- [Ops-Copilot](https://github.com/senanurcetin/Ops-Copilot): operator-facing applied AI workflow archive
+- [OT-Sentinel](https://github.com/senanurcetin/ot-sentinel): OT monitoring and anomaly-workflow archive
+- [Vision2DCS](https://github.com/senanurcetin/Vision2DCS): multimodal engineering workflow archive
+- [ChemView](https://github.com/senanurcetin/ChemView): industrial HMI and telemetry UX archive
+- [PlantLog-MERN](https://github.com/senanurcetin/PlantLog-MERN): industrial operations-software archive
 
-- Start with `Ops-Copilot` for the strongest combined product plus applied-ML signal.
-- Open `visual-qc-project` if you want industrial CV and manufacturing QA workflow proof.
-- Open `smart-factory-app` if you want predictive maintenance, risk ranking, and KPI decision-support proof.
+## Verification standard
 
-## Proof snapshot
-
-| Repo | Role | Key proof | Why it matters |
-| --- | --- | --- | --- |
-| [Ops-Copilot](https://github.com/senanurcetin/Ops-Copilot) | Flagship case study | SECOM chronological holdout, ROC-AUC `0.7659`, PR-AUC `0.1745`, `2.89x` lift at a `10%` review budget | Strongest combined signal for Industrial AI, applied ML evaluation, and product packaging |
-| [visual-qc-project](https://github.com/senanurcetin/visual-qc-project) | Support case study | NEU-CLS benchmark, macro F1 `0.8093`, low-confidence queue `2.22x` better than random review | Strong proof for industrial CV, defect triage, QA traceability, and reporting workflows |
-| [smart-factory-app](https://github.com/senanurcetin/smart-factory-app) | Support case study | AI4I benchmark, PR-AUC `0.8522`, F1 `0.8033`, top `10%` queue captures `92.6%` of failures | Strong proof for predictive maintenance, imbalanced ranking, and maintenance decision support |
-
-## Lead case studies
-
-### [Ops-Copilot](https://github.com/senanurcetin/Ops-Copilot)
-
-Flagship case study. Industrial AI assistant that combines document-grounded troubleshooting with a public SECOM failure-risk case study.
-
-Demo: [YouTube walkthrough](https://www.youtube.com/watch?v=G9jLMHL1fvg)
-Repo proof: screenshot and short demo clip included in the README.
-
-### [visual-qc-project](https://github.com/senanurcetin/visual-qc-project)
-
-Support case study. Industrial computer vision quality-control system with a real NEU-CLS defect-classification benchmark, inspection traceability, KPI tracking, and structured reporting.
-
-Demo: [Portfolio project entry](https://senanur-cetin.vercel.app/projects/visual-qc-project)
-Repo proof: screenshot and short demo clip included in the README.
-
-### [smart-factory-app](https://github.com/senanurcetin/smart-factory-app)
-
-Support case study. Predictive-maintenance and plant analytics system that pairs a dashboard surface with a real AI4I maintenance benchmark, ranked review queue, and cost-tradeoff framing.
-
-Demo: [Portfolio project entry](https://senanur-cetin.vercel.app/projects/smart-factory-app)
-Repo proof: screenshot and short demo clip included in the README.
-
-## Supporting evidence
-
-- [ot-sentinel](https://github.com/senanurcetin/ot-sentinel) - archive proof for OT monitoring, anomaly context, and AI-assisted mitigation workflows. Demo: [YouTube walkthrough](https://www.youtube.com/watch?v=KcpTW0QM0FM)
-- [Vision2DCS](https://github.com/senanurcetin/Vision2DCS) - archive proof for multimodal engineering workflow design and HMI-oriented industrial interfaces. Demo: [YouTube walkthrough](https://www.youtube.com/watch?v=x9uHCqvARMg)
-- [ChemView](https://github.com/senanurcetin/ChemView) - archive proof for industrial UX, telemetry visualization, and HMI-style front-end design. Demo: [YouTube walkthrough](https://www.youtube.com/watch?v=GJgmsIAXbrk)
-- [PlantLog-MERN](https://github.com/senanurcetin/PlantLog-MERN) - archive proof for full-stack industrial operations software and asset-log workflow design. Demo: [Portfolio project entry](https://senanur-cetin.vercel.app/#projects)
-
-## Application pack
-
-Reusable application materials live under `docs/` in this repo:
-
-- `cv-project-bullets.md`
-- `linkedin-featured-copy.md`
-- `recruiter-reading-paths.md`
-- `30-second-project-summaries.md`
-- `capability-matrix.md`
-- `cv-headline-about.md`
-- `interview-explanations.md`
-- `outreach-snippets.md`
-- `portfolio-manifest.json`
-- `site-sync-brief.md`
-- `ops-copilot-note.md`
-- `lead-case-study-comparison.md`
-
-## Working style
-
-I build documentation-first case studies and product prototypes that emphasize operational clarity, realistic industrial workflows, and recruiter-readable proof. The public repositories here are intended to show product thinking, applied ML framing, and implementation quality for industrial AI software.
+Public claims are tied to repository evidence, documented tests, current case-study pages, and verified industrial experience. Company projects and personal portfolio projects are presented as separate bodies of work.
