@@ -6,7 +6,7 @@ Industrial AI assistant for factory operators with document-grounded troubleshoo
 
 ## 2. visual-qc-project
 
-Industrial computer-vision quality-control case study with a real NEU-CLS defect benchmark, inspection traceability, KPI tracking, and structured QA reporting. Useful proof for manufacturing CV work that still stays connected to operator workflows.
+Industrial computer-vision quality-control case study (live: visual-qc-project-pearl.vercel.app) with a measured embedding-RAG assistant, a 3D digital twin of the line, a real NEU-CLS defect benchmark, inspection traceability, KPI tracking, and structured QA reporting. Useful proof for manufacturing CV work that still stays connected to operator workflows.
 
 ## 3. smart-factory-app
 
