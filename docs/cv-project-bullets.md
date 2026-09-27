@@ -20,6 +20,8 @@ Reusable bullets:
 
 - Designed a Flask and OpenCV inspection workflow that records per-unit OK/NOK events, OEE-related signals, and timestamped production logs in SQLite.
 - Added a real NEU-CLS benchmark with classical CV features, model comparison, and a low-confidence review queue so the repo demonstrates measurable defect-triage reasoning rather than only simulation.
+- Added an embedding-RAG assistant over a steel quality-engineering knowledge base: benchmarked TF-IDF against three embedding models (BGE-base selected, 94.8% hit@4 vs 89.6%), served retrieval from Chroma, and chose a local Qwen2.5 generator and prompt by NLI-measured faithfulness (75.7% of answer sentences supported vs 20.7% without retrieval).
+- Built a live 3D digital twin of the inspection line in Three.js, synced to the Flask simulation API, and deployed the app on Vercel.
 - Positioned the project as industrial workflow proof for inspection traceability, operator reporting, and manufacturing quality-system thinking, backed by measurable defect classification results.
 
 ## smart-factory-app
