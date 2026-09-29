@@ -25,8 +25,10 @@ Data Analyst and Applied Data Scientist with 4+ years of industrial automation e
 ### Applied Data Scientist
 
 1. [Fraud Risk Intelligence](https://github.com/senanurcetin/ieee-fraud-detection-analytics)
-2. [Visual QC Project](https://github.com/senanurcetin/visual-qc-project)
-3. [Smart Factory App](https://github.com/senanurcetin/smart-factory-app)
+2. [APTOS-2019 Diabetic Retinopathy](https://github.com/senanurcetin/APTOS-2019-diabetic-retinopathy)
+3. [Visual QC Project](https://github.com/senanurcetin/visual-qc-project)
+4. [Smart Factory App](https://github.com/senanurcetin/smart-factory-app)
+5. [MS Capital Market Forecasting](https://github.com/senanurcetin/ms-capital-market-forecasting)
 
 ## Verified project proof
 
@@ -35,20 +37,28 @@ Data Analyst and Applied Data Scientist with 4+ years of industrial automation e
 | [Fraud Risk Intelligence](https://github.com/senanurcetin/ieee-fraud-detection-analytics) | 590,540 transactions, 36 dbt models, 121 data tests, 18 Python contract tests, ROC-AUC `0.9134`, average precision `0.5354` | [Live dashboard](https://fraud-project-web.vercel.app) · [Case study](https://senanur-cetin.vercel.app/projects/fraud-risk-intelligence) |
 | [E-commerce Analytics Portfolio](https://github.com/senanurcetin/E-commerce) | 4 BI-ready marts, 73 dbt tests, 57 DuckDB CI tests, 50 documented DAX measures, cohort/RFM and statistical testing | [Case study](https://senanur-cetin.vercel.app/projects/e-commerce-marketing-web-performance) |
 | [Visual QC Project](https://github.com/senanurcetin/visual-qc-project) | 1,800 NEU-CLS images, accuracy `0.9389`, macro F1 `0.9392`, top-20% entropy queue captures `81.8%` of errors; RAG layer: exact source passage in top-4 for `94.8%` (TF-IDF `89.6%`), `75.7%` of answer sentences entailed by sources (no retrieval: `20.7%`) | [Case study](https://senanur-cetin.vercel.app/projects/visual-qc-project) · [Live demo](https://visual-qc-project-pearl.vercel.app) |
-| [Smart Factory App](https://github.com/senanurcetin/smart-factory-app) | 10,000 AI4I records, ROC-AUC `0.9819`, PR-AUC `0.8855`, F1 `0.8372`, top-10% queue captures `94.1%` of failures at `9.4x` lift | [Case study](https://senanur-cetin.vercel.app/projects/smart-factory-app) |
+| [Smart Factory App](https://github.com/senanurcetin/smart-factory-app) | UCI AI4I predictive-maintenance case study plus a NASA C-MAPSS RUL-regression case study, SHAP, drift detection, DuckDB SQL; 10,000 AI4I records, ROC-AUC `0.9819`, PR-AUC `0.8855`, F1 `0.8372`, top-10% queue captures `94.1%` of failures at `9.4x` lift | [Case study](https://senanur-cetin.vercel.app/projects/smart-factory-app) |
 
 ## Working stack
 
 - Analytics engineering and BI: SQL, BigQuery, dbt, DuckDB, Power BI, DAX, data modeling
 - Analysis and experimentation: Python, Pandas, NumPy, SciPy, EDA, cohort analysis, RFM, statistical testing
-- Applied data science: scikit-learn, LightGBM, HistGradientBoosting, Random Forest, model evaluation, review queues
+- Applied data science: scikit-learn, LightGBM, XGBoost, HistGradientBoosting, Random Forest, SHAP, walk-forward validation, model evaluation, review queues
+- Computer vision and ML delivery: ONNX, FastAPI, Streamlit, Render, Vercel
 - Delivery and industrial context: FastAPI, Flask, GitHub Actions, DCS/SCADA, Siemens PCS7, ABB 800xA, VMware
+
+## Other builds
+
+- [nexus-agent](https://github.com/senanurcetin/nexus-agent): local-first personal AI agent with pooled free-tier LLM routing, Notion as database, queue-first automations, and an evaluation harness
+- [VocabMaster](https://github.com/senanurcetin/VocabMaster): English vocabulary platform with adaptive practice, word lists, and subscription billing · [Live](https://vocab-master-olive.vercel.app)
+- [datneta-web](https://github.com/senanurcetin/datneta-web): web project · [Live](https://datneta-web.vercel.app)
+- [nexus-web-v2](https://github.com/senanurcetin/nexus-web-v2): source of the [portfolio site](https://senanur-cetin.vercel.app/)
 
 ## Supporting and archive proof
 
 - [Greenweez Finance & Campaign Analytics](https://github.com/senanurcetin/greenweez-finance-campaign-analytics): dbt and BigQuery finance/campaign reporting
 - [GTM](https://github.com/senanurcetin/GTM): GTM and GA4-ready web analytics instrumentation
-- [Ops-Copilot](https://github.com/senanurcetin/Ops-Copilot): operator-facing applied AI workflow archive
+- [Ops-Copilot](https://github.com/senanurcetin/Ops-Copilot): industrial AI assistant for operator troubleshooting and document-grounded answers (archive)
 - [OT-Sentinel](https://github.com/senanurcetin/ot-sentinel): OT monitoring and anomaly-workflow archive
 - [Vision2DCS](https://github.com/senanurcetin/Vision2DCS): multimodal engineering workflow archive
 - [ChemView](https://github.com/senanurcetin/ChemView): industrial HMI and telemetry UX archive
