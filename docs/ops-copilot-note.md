@@ -1,12 +1,7 @@
-# Note: Why Ops-Copilot Is the Flagship Case Study
+# Note: Where Ops-Copilot Fits
 
-Ops-Copilot is the strongest project in the portfolio because it sits at the intersection of industrial domain framing, applied ML evaluation, and product execution.
+Ops-Copilot was the flagship of the earlier industrial-first portfolio. It is now archive proof: an industrial AI assistant for operator troubleshooting with document-grounded answers.
 
-Why it leads:
+It still matters for AI Engineer conversations, because it shows a shipped LLM application aimed at a real plant workflow. The lead evidence for evaluated ML now lives in the Data Scientist reading path (Fraud Risk Intelligence, MSCapital, Visual QC, Smart Factory, APTOS-2019).
 
-- It solves a plant-facing workflow problem instead of presenting AI as abstraction.
-- It includes measurable evaluation through the SECOM failure-risk case study.
-- It is packaged as usable software, not only as analysis artifacts.
-- It creates a clean narrative for Data + AI roles without losing the industrial differentiator.
-
-In interviews, this is the project to start with when the goal is to explain both technical depth and product judgment quickly.
+Use it as supporting context for industrial domain depth, not as the opening project.

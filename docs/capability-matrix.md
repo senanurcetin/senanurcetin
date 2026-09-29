@@ -1,28 +1,31 @@
 # Capability Matrix
 
-This matrix maps the main portfolio claims to specific public evidence. Use it when a recruiter or hiring manager wants to understand which repository proves which capability.
+This matrix maps the main portfolio claims to specific public evidence. Use it when a recruiter or hiring manager wants to know which repository proves which capability.
 
 | Capability | Strongest evidence | Supporting evidence | Why it matters |
 | --- | --- | --- | --- |
-| Industrial AI product thinking | `Ops-Copilot` | `ot-sentinel`, `Vision2DCS` | Shows operator-facing product framing instead of generic AI demos. |
-| Applied ML evaluation | `Ops-Copilot` | `smart-factory-app`, `visual-qc-project` | Shows that model claims are backed by measurable evaluation, not only UI packaging. |
-| Ranking and decision support | `Ops-Copilot` | `smart-factory-app` | Useful for DS and applied-science roles where prioritization quality matters. |
-| Industrial computer vision | `visual-qc-project` | `Vision2DCS` | Shows manufacturing CV plus workflow packaging, not only image inference. |
-| Predictive maintenance | `smart-factory-app` | `PlantLog-MERN` | Connects failure-risk modeling to maintenance prioritization and operations context. |
-| QA and reporting workflows | `visual-qc-project` | `PlantLog-MERN` | Demonstrates traceability, review flows, and structured outputs for plant stakeholders. |
-| OT and anomaly response context | `ot-sentinel` | `Ops-Copilot` | Adds domain breadth for industrial monitoring, anomaly framing, and operator guidance. |
-| HMI and operator UX | `ChemView` | `Vision2DCS`, `smart-factory-app` | Shows industrial interface thinking rather than generic SaaS UI patterns. |
-| Full-stack industrial systems | `Ops-Copilot` | `PlantLog-MERN` | Demonstrates end-to-end product execution, not only analysis or frontend polish. |
-| Documentation-first portfolio packaging | `senanurcetin` profile repo | all lead case studies | Makes the portfolio easier to review quickly in hiring loops. |
+| Validation design | `ms-capital-market-forecasting` | `APTOS-2019-diabetic-retinopathy`, `ieee-fraud-detection-analytics` | Walk-forward with embargo, pre-registered external validation, and holdout risk-band reporting. |
+| Analytics engineering | `ieee-fraud-detection-analytics` | `E-commerce`, `greenweez-finance-campaign-analytics` | Tested dbt/BigQuery layers under the models. |
+| Ranking and decision support | `ieee-fraud-detection-analytics` | `smart-factory-app`, `visual-qc-project` | Review-budget capture and threshold simulation instead of raw accuracy. |
+| Computer vision | `visual-qc-project` | `APTOS-2019-diabetic-retinopathy` | Defect triage and medical imaging with confound checks. |
+| LLM and RAG engineering | `visual-qc-project` | `Ops-Copilot`, `Vision2DCS` | Retrieval and faithfulness measured against baselines. |
+| Predictive maintenance | `smart-factory-app` | `PlantLog-MERN` | Failure ranking and RUL regression tied to maintenance decisions. |
+| BI delivery | `E-commerce` | `ieee-fraud-detection-analytics` | Power BI, DAX, and statistical testing on governed marts. |
+| Model serving | `APTOS-2019-diabetic-retinopathy` | `ms-capital-market-forecasting` | ONNX/FastAPI on a small host, Docker builds, CI on every push. |
+| Industrial context | `ot-sentinel` | `ChemView`, `Vision2DCS` | Operator-facing and OT workflow breadth from prior automation work. |
 
 ## Lead case study roles
 
-- `Ops-Copilot`: flagship proof for Industrial AI + applied data science + product execution
-- `visual-qc-project`: support proof for industrial CV + QA workflows + measurable defect triage
-- `smart-factory-app`: support proof for predictive maintenance + imbalanced ranking + maintenance decision support
+- `ieee-fraud-detection-analytics`: flagship for tested data plus modeling plus dashboard
+- `ms-capital-market-forecasting`: validation discipline and honest reporting
+- `visual-qc-project`: computer vision plus measured RAG
+- `smart-factory-app`: predictive maintenance and ranked queues
+- `APTOS-2019-diabetic-retinopathy`: external validation and stated limitations
+- `E-commerce`: analytics engineering and BI
 
 ## Archive proof roles
 
+- `Ops-Copilot`: industrial AI assistant
 - `ot-sentinel`: OT workflow and anomaly-response breadth
 - `Vision2DCS`: multimodal engineering-tool thinking
 - `ChemView`: industrial UX and HMI state modeling
