@@ -1,69 +1,66 @@
 # Recruiter Reading Paths
 
-## Data + AI Roles
+## Data Scientist
 
 Order:
 
-1. Ops-Copilot
-2. visual-qc-project
-3. smart-factory-app
+1. Fraud Risk Intelligence (`ieee-fraud-detection-analytics`)
+2. MSCapital Market Forecasting (`ms-capital-market-forecasting`)
+3. Visual QC Project (`visual-qc-project`)
+4. Smart Factory App (`smart-factory-app`)
+5. APTOS-2019 Diabetic Retinopathy (`APTOS-2019-diabetic-retinopathy`)
 
 What this path proves:
 
-- applied data science with measurable evaluation
-- industrial domain grounding
-- computer vision plus measurable defect-triage workflow thinking
-- predictive maintenance, imbalanced ranking, and KPI packaging
-- product-minded engineering execution
+- validation design that holds under scrutiny: holdouts, walk-forward with embargo, external validation
+- ranking and review-queue framing for imbalanced problems
+- tabular, time-ordered, and image modeling
+- honest reporting of results that fell short
 
 Best fit:
 
-- Applied Data Scientist
-- Industrial AI Engineer
-- Manufacturing Analytics
-- AI Product Engineer
-- Applied Scientist (industrial / operations / manufacturing)
+- Data Scientist
+- Applied Machine Learning Engineer
+- Applied Scientist
 
-## Industrial Systems Roles
+## AI Engineer
 
 Order:
 
-1. Ops-Copilot
-2. ot-sentinel
+1. Visual QC Project (measured embedding-RAG assistant)
+2. Ops-Copilot
 3. Vision2DCS
-4. ChemView
+4. OT-Sentinel
 
 What this path proves:
 
-- operator-facing industrial software thinking
-- OT workflow understanding
-- HMI and engineering-interface design
+- LLM applications on Gemini and Genkit
+- retrieval and faithfulness measured against keyword and no-retrieval baselines
+- multimodal prompting for engineering documents
 - domain-specific AI packaging
 
 Best fit:
 
-- Industrial AI
-- OT software
-- Automation product roles
-- HMI / industrial UX
+- AI Engineer
+- LLM application roles
+- Applied AI product engineering
 
-## Product / Full-Stack Roles
+## Analytics Engineering and BI
 
 Order:
 
-1. Ops-Copilot
-2. PlantLog-MERN
-3. ChemView
+1. Fraud Risk Intelligence
+2. E-commerce Analytics Portfolio (`E-commerce`)
+3. Smart Factory App
 
 What this path proves:
 
-- workflow-first product packaging
-- full-stack implementation credibility
-- state-heavy industrial interfaces
-- practical internal-tool design
+- tested dbt/BigQuery layers with data and contract tests
+- BI delivery through Power BI and DAX
+- cohort, RFM, and statistical testing
 
 Best fit:
 
-- Product-minded software roles
-- Internal tools / B2B SaaS
-- Applied AI product engineering
+- Data Analyst
+- Analytics Engineer
+- BI Analyst

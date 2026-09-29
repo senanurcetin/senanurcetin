@@ -1,64 +1,43 @@
-# Comparing the Three Lead Case Studies
+# Comparing the Lead Case Studies
 
-## Ops-Copilot
+## Fraud Risk Intelligence
 
-Primary proof:
+Primary proof: tested warehouse-to-model-to-dashboard delivery and review-queue framing.
 
-- industrial AI product thinking
-- applied ML evaluation
-- ranking and decision-support framing
+Best use: opening project for any Data Scientist or Analytics Engineer conversation.
 
-Best use:
+## MSCapital Market Forecasting
 
-- lead project for Data + AI conversations
+Primary proof: leak-free validation with an embargo and honest reporting when the result disappointed.
 
-Current signal:
+Best use: quantitative and applied-ML conversations about validation discipline.
 
-- strongest combined product plus ML story in the portfolio
-- public case-study packaging with measurable SECOM evaluation
+## Visual QC Project
 
-## visual-qc-project
+Primary proof: computer vision with an entropy review queue, and a RAG assistant chosen by measurement.
 
-Primary proof:
+Best use: AI Engineer and computer-vision conversations.
 
-- computer vision workflow packaging
-- inspection traceability
-- QA reporting design
-- measurable defect-triage evaluation
+## Smart Factory App
 
-Best use:
+Primary proof: imbalanced failure ranking and RUL regression with SHAP and drift detection.
 
-- support project that proves industrial CV and operational reporting logic
+Best use: predictive-maintenance and operations-analytics conversations.
 
-Current signal:
+## APTOS-2019 Diabetic Retinopathy
 
-- NEU-CLS benchmark-backed support case study
-- strongest repo for manufacturing CV plus QA workflow positioning
+Primary proof: confound checks, pre-registered external validation, and a control experiment isolating the failure cause.
 
-## smart-factory-app
-
-Primary proof:
-
-- predictive maintenance framing
-- KPI-heavy manufacturing analytics
-- dashboard-oriented ML packaging
-- imbalanced maintenance ranking
-
-Best use:
-
-- support project that shows maintenance analytics and telemetry translation
-
-Current signal:
-
-- AI4I benchmark-backed maintenance case study
-- strongest repo for risk queue and maintenance-prioritization framing
+Best use: conversations about rigor, evaluation, and stating limitations.
 
 ## Why the combination works
 
-Together, these three projects show different industrial signal types:
+Together the projects cover different signal types:
 
-- text and manuals
-- visual inspection
-- machine telemetry
+- transactions (fraud)
+- time-ordered market data (forecasting)
+- machine telemetry (maintenance)
+- images (steel defects, retinal photographs)
+- text (RAG assistant)
 
-That variety makes the portfolio stronger than repeating the same DS pattern three times.
+Each is validated in the way that data type demands, which is stronger than repeating one pattern five times.

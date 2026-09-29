@@ -1,17 +1,21 @@
 # LinkedIn Featured Copy
 
-## 1. Ops-Copilot
+## 1. Fraud Risk Intelligence
 
-Industrial AI assistant for factory operators with document-grounded troubleshooting and a public manufacturing risk-ranking case study. This is the strongest combined proof of industrial workflow framing, applied ML evaluation, and product packaging in the portfolio.
+End-to-end fraud risk platform: DuckDB, BigQuery, dbt, LightGBM, and FastAPI behind a live executive dashboard. 590,540 transactions, 36 dbt models, 121 data tests, ROC-AUC 0.9134.
 
-## 2. visual-qc-project
+## 2. MSCapital Market Forecasting
 
-Industrial computer-vision quality-control case study (live: visual-qc-project-pearl.vercel.app) with a measured embedding-RAG assistant, a 3D digital twin of the line, a real NEU-CLS defect benchmark, inspection traceability, KPI tracking, and structured QA reporting. Useful proof for manufacturing CV work that still stays connected to operator workflows.
+Walk-forward forecasting over 804.5M rows of market microstructure, plus a documented investigation into why the leaderboard disagreed with the hold-out. Research only, not investment advice.
 
-## 3. smart-factory-app
+## 3. APTOS-2019 Diabetic Retinopathy
 
-Predictive-maintenance case study that combines a plant-facing dashboard with the UCI AI4I benchmark, ranked maintenance queue logic, and cost-tradeoff framing in one manufacturing surface.
+Retinopathy grading with pre-registered external validation, a shortcut baseline, and a live ONNX demo. The results that went against the model are reported with the same weight as the ones that went for it.
 
-## Optional 4th featured repo
+## 4. Visual QC Project
 
-OT-Sentinel: OT monitoring and AI-assisted mitigation workflow prototype for industrial anomaly response and operator-facing security context.
+Steel-defect computer vision with an entropy review queue and a measured embedding-RAG assistant. Live demo on Vercel.
+
+## Optional 5th featured repo
+
+Smart Factory App: predictive-maintenance analytics with a ranked queue, SHAP, and a NASA C-MAPSS RUL case study.

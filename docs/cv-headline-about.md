@@ -1,23 +1,15 @@
 # CV Headline and About
 
-## CV headline options
+## CV headline
 
-### Option 1
+Data Scientist | AI Engineer | Applied Machine Learning
 
-Industrial AI and Applied Data Scientist building operator-facing software for manufacturing, OT workflows, and maintenance decision support.
-
-### Option 2
-
-Industrial AI engineer with applied data science experience across troubleshooting copilots, quality inspection, and predictive maintenance workflows.
-
-### Option 3
-
-Applied Data Scientist for industrial systems, focused on ranking, anomaly analysis, computer vision, and operator-facing decision support.
+Keep this identical to the LinkedIn headline and the portfolio site hero.
 
 ## CV about paragraph
 
-Industrial AI and applied data science engineer focused on building practical software for manufacturing teams. My portfolio centers on three case studies: a document-grounded troubleshooting copilot, a computer-vision quality-control workflow, and a predictive-maintenance prioritization system. Across these projects, I focus on measurable evaluation, realistic industrial workflows, and product packaging that makes model outputs usable for operators and plant stakeholders.
+Data Scientist and AI Engineer building evaluated machine-learning systems across fraud risk, financial forecasting, predictive maintenance, and computer-vision quality review, and shipping LLM applications on Gemini and Genkit. Every model ships on tested dbt/BigQuery data and is published with the validation design, calibration evidence, and stated limitations behind each figure. Trained through the full Workintech Data Pro Program (Data Analyst Certificate June 2026, Data Scientist Certificate September 2026) and supported by 4+ years of industrial automation and engineering project delivery.
 
 ## LinkedIn About draft
 
-I build industrial AI and applied data science projects for factory operations, quality workflows, and maintenance decision support. My strongest public work combines product thinking with measurable evaluation: a troubleshooting copilot with SECOM-based failure ranking, an industrial CV quality-control case study, and a predictive-maintenance system built around ranked review queues and KPI context. I am especially interested in roles where domain grounding, evaluation rigor, and operator-facing software all matter at the same time.
+I build machine-learning systems and check them the hard way: time-based holdouts, walk-forward validation with an embargo, external validation on other populations, and calibration and threshold simulation before any number is quoted. My public work covers fraud risk (590K transactions, dbt/BigQuery/LightGBM), market forecasting (804.5M rows), predictive maintenance, steel-defect computer vision with a measured RAG assistant, and diabetic retinopathy grading with pre-registered external validation. Where a result fell short, the repository says so. Prior industrial automation work (DCS/SCADA, commissioning) gives me the operational context for reliability and decision support.

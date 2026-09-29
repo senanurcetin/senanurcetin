@@ -82,7 +82,7 @@ def validate_manifest() -> list[str]:
         errors.append("Portfolio manifest must contain at least three lead projects.")
     else:
         for index, project in enumerate(lead_projects, start=1):
-            for key in ("repo", "role", "repo_url", "demo_url", "release_url", "thesis", "metrics"):
+            for key in ("repo", "role", "repo_url", "demo_url", "thesis", "metrics"):
                 if key not in project:
                     errors.append(f"Lead project #{index} missing key: {key}")
     return errors

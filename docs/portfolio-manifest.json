@@ -1,82 +1,137 @@
 {
-  "updated_at": "2026-06-01",
+  "updated_at": "2026-09-29",
   "positioning": {
-    "headline": "Industrial AI and applied data science engineer building practical software for factory teams, OT workflows, and operator-facing industrial systems.",
-    "short_tagline": "Industrial-first applied AI for troubleshooting, quality, and maintenance decision support.",
+    "headline": "Data Scientist | AI Engineer | Applied Machine Learning",
+    "short_tagline": "Evaluated machine-learning systems on tested data, published with their validation design and stated limitations.",
     "focus_areas": [
-      "Industrial AI copilots and document-grounded troubleshooting",
-      "Manufacturing analytics, risk ranking, and decision-support workflows",
-      "Computer vision quality-control and operator-facing reporting systems",
-      "OT monitoring, HMI-oriented UX, and plant operations software"
+      "Fraud risk, financial forecasting, predictive maintenance, and computer-vision quality review",
+      "Validation design: time-based holdout, walk-forward with embargo, GroupKFold, calibration, threshold simulation",
+      "Analytics engineering underneath the models: dbt, BigQuery, DuckDB, Power BI",
+      "LLM applications on Gemini and Genkit, with measured retrieval and faithfulness"
     ]
   },
   "default_reading_path": {
-    "id": "data-ai",
-    "label": "Data + AI Roles",
+    "id": "data-scientist",
+    "label": "Data Scientist",
     "order": [
-      "Ops-Copilot",
+      "ieee-fraud-detection-analytics",
+      "ms-capital-market-forecasting",
       "visual-qc-project",
-      "smart-factory-app"
+      "smart-factory-app",
+      "APTOS-2019-diabetic-retinopathy"
     ],
-    "why": "This path shows the strongest combined signal for applied ML evaluation, industrial domain grounding, and product-minded engineering."
+    "why": "These five projects show validated modeling across tabular, time-ordered, and image problems, including results that fell short and are reported as such."
   },
   "lead_projects": [
     {
-      "repo": "Ops-Copilot",
+      "repo": "ieee-fraud-detection-analytics",
       "role": "flagship case study",
-      "repo_url": "https://github.com/senanurcetin/Ops-Copilot",
-      "demo_url": "https://www.youtube.com/watch?v=G9jLMHL1fvg",
-      "release_url": "https://github.com/senanurcetin/Ops-Copilot/releases/tag/portfolio-snapshot-2026-06",
-      "thesis": "Industrial AI troubleshooting assistant paired with a measurable SECOM failure-risk ranking case study.",
+      "repo_url": "https://github.com/senanurcetin/ieee-fraud-detection-analytics",
+      "demo_url": "https://fraud-project-web.vercel.app",
+      "release_url": "https://github.com/senanurcetin/ieee-fraud-detection-analytics",
+      "thesis": "End-to-end fraud risk intelligence: DuckDB, BigQuery, dbt, LightGBM, FastAPI, and a live executive dashboard.",
       "metrics": [
-        "ROC-AUC 0.7659",
-        "PR-AUC 0.1745",
-        "2.89x lift at a 10% review budget"
+        "590,540 transactions",
+        "36 dbt models, 121 data tests, 18 Python contract tests",
+        "ROC-AUC 0.9134, average precision 0.5354"
       ],
       "what_it_proves": [
-        "Industrial AI product thinking",
-        "Applied ML evaluation under constrained review capacity",
-        "Operator-facing workflow packaging"
+        "Tested warehouse-to-model-to-dashboard delivery",
+        "Ranking and review-queue framing for imbalanced fraud data"
+      ]
+    },
+    {
+      "repo": "ms-capital-market-forecasting",
+      "role": "selected case study",
+      "repo_url": "https://github.com/senanurcetin/ms-capital-market-forecasting",
+      "demo_url": "https://ms-capital-market-forecasting-mfy6rngulq4fpaovzrhntf.streamlit.app/",
+      "release_url": "https://github.com/senanurcetin/ms-capital-market-forecasting",
+      "thesis": "Short-horizon return forecasting over 804.5M rows, where the main result is an investigation into why the leaderboard disagreed with the hold-out. Research only, not investment advice.",
+      "metrics": [
+        "292 BigQuery features",
+        "+0.14088 walk-forward cosine, +0.15171 untouched hold-out",
+        "Graded score 0.128, below the field median"
+      ],
+      "what_it_proves": [
+        "Leak-free validation with embargo",
+        "Reporting results that contradict the hope"
       ]
     },
     {
       "repo": "visual-qc-project",
-      "role": "support case study",
+      "role": "selected case study",
       "repo_url": "https://github.com/senanurcetin/visual-qc-project",
-      "demo_url": "https://senanur-cetin.vercel.app/projects/visual-qc-project",
-      "release_url": "https://github.com/senanurcetin/visual-qc-project/releases/tag/portfolio-snapshot-2026-06",
-      "thesis": "Industrial computer-vision quality-control case study with measurable defect triage, traceability, and reporting.",
+      "demo_url": "https://visual-qc-project-pearl.vercel.app",
+      "release_url": "https://github.com/senanurcetin/visual-qc-project",
+      "thesis": "Steel defect classification on NEU-CLS with an entropy-based review queue and an embedding-RAG assistant.",
       "metrics": [
-        "Macro F1 0.8093",
-        "Macro precision 0.8163",
-        "2.22x review-yield lift vs random review"
+        "Accuracy 0.9389, macro F1 0.9392",
+        "Top-20% entropy queue captures 81.8% of errors",
+        "RAG: 94.8% hit@4 (TF-IDF 89.6%), 75.7% of answer sentences entailed (no retrieval 20.7%)"
       ],
       "what_it_proves": [
-        "Manufacturing CV plus workflow packaging",
-        "QA traceability and reporting design",
-        "Measured defect-triage reasoning"
+        "Computer vision plus review-queue design",
+        "Measured RAG faithfulness against baselines"
       ]
     },
     {
       "repo": "smart-factory-app",
-      "role": "support case study",
+      "role": "selected case study",
       "repo_url": "https://github.com/senanurcetin/smart-factory-app",
-      "demo_url": "https://senanur-cetin.vercel.app/projects/smart-factory-app",
-      "release_url": "https://github.com/senanurcetin/smart-factory-app/releases/tag/portfolio-snapshot-2026-06",
-      "thesis": "Predictive-maintenance support case study with ranked maintenance queues, KPI context, and AI4I benchmark evidence.",
+      "demo_url": "https://smart-factory-app.onrender.com",
+      "release_url": "https://github.com/senanurcetin/smart-factory-app",
+      "thesis": "Predictive-maintenance analytics on UCI AI4I plus a NASA C-MAPSS RUL case study, with SHAP, drift detection, and a ranked maintenance queue.",
       "metrics": [
-        "PR-AUC 0.8522",
-        "F1 0.8033",
-        "Top 10% queue captures 92.6% of holdout failures"
+        "ROC-AUC 0.9819, PR-AUC 0.8855, F1 0.8372",
+        "Top-10% queue captures 94.1% of failures at 9.4x lift"
       ],
       "what_it_proves": [
-        "Predictive maintenance framing",
         "Imbalanced ranking and queue design",
-        "Plant-facing analytics and maintenance decision support"
+        "Classification and RUL regression on maintenance data"
+      ]
+    },
+    {
+      "repo": "APTOS-2019-diabetic-retinopathy",
+      "role": "selected case study",
+      "repo_url": "https://github.com/senanurcetin/APTOS-2019-diabetic-retinopathy",
+      "demo_url": "https://aptos-2019-diabetic-retinopathy.onrender.com",
+      "release_url": "https://github.com/senanurcetin/APTOS-2019-diabetic-retinopathy",
+      "thesis": "Retinopathy grading that tests its own claims: shortcut baseline, pre-registered external validation, and a fine-tuning experiment isolating the failure to training labels. Not a medical device.",
+      "metrics": [
+        "5-fold QWK 0.8902; metadata-only baseline 0.652",
+        "IDRiD referable AUC 0.984; Messidor-2 0.819 (below the pre-registered target)",
+        "177 tests, ONNX service served live"
+      ],
+      "what_it_proves": [
+        "Confound checks and external validation",
+        "Stating limitations with the same weight as successes"
+      ]
+    },
+    {
+      "repo": "E-commerce",
+      "role": "analytics engineering case study",
+      "repo_url": "https://github.com/senanurcetin/E-commerce",
+      "demo_url": "https://senanur-cetin.vercel.app/projects/e-commerce-marketing-web-performance",
+      "release_url": "https://github.com/senanurcetin/E-commerce",
+      "thesis": "dbt Cloud, BigQuery, and Power BI pipeline turning raw e-commerce events and orders into BI-ready marts.",
+      "metrics": [
+        "4 BI-ready marts, 73 dbt tests, 57 DuckDB CI tests",
+        "50 documented DAX measures"
+      ],
+      "what_it_proves": [
+        "Governed analytics engineering and BI delivery",
+        "Cohort, RFM, and statistical testing"
       ]
     }
   ],
   "supporting_evidence": [
+    {
+      "repo": "Ops-Copilot",
+      "role": "archive proof",
+      "repo_url": "https://github.com/senanurcetin/Ops-Copilot",
+      "demo_url": "https://senanur-cetin.vercel.app/projects/ops-copilot",
+      "proof_area": "Industrial AI assistant with document-grounded answers"
+    },
     {
       "repo": "ot-sentinel",
       "role": "archive proof",
@@ -108,31 +163,33 @@
   ],
   "reading_paths": [
     {
-      "id": "data-ai",
-      "label": "Data + AI Roles",
+      "id": "data-scientist",
+      "label": "Data Scientist",
       "repos": [
-        "Ops-Copilot",
+        "ieee-fraud-detection-analytics",
+        "ms-capital-market-forecasting",
         "visual-qc-project",
-        "smart-factory-app"
+        "smart-factory-app",
+        "APTOS-2019-diabetic-retinopathy"
       ]
     },
     {
-      "id": "industrial-systems",
-      "label": "Industrial Systems Roles",
+      "id": "ai-engineer",
+      "label": "AI Engineer",
       "repos": [
+        "visual-qc-project",
         "Ops-Copilot",
-        "ot-sentinel",
         "Vision2DCS",
-        "ChemView"
+        "ot-sentinel"
       ]
     },
     {
-      "id": "product-full-stack",
-      "label": "Product / Full-Stack Roles",
+      "id": "analytics-engineering",
+      "label": "Analytics Engineering and BI",
       "repos": [
-        "Ops-Copilot",
-        "PlantLog-MERN",
-        "ChemView"
+        "ieee-fraud-detection-analytics",
+        "E-commerce",
+        "smart-factory-app"
       ]
     }
   ],
@@ -151,9 +208,11 @@
   "site_sync": {
     "canonical_content_source": "docs/portfolio-manifest.json",
     "default_homepage_order": [
-      "Ops-Copilot",
+      "ieee-fraud-detection-analytics",
+      "ms-capital-market-forecasting",
       "visual-qc-project",
-      "smart-factory-app"
+      "smart-factory-app",
+      "APTOS-2019-diabetic-retinopathy"
     ],
     "archive_projects_should_be_secondary": true,
     "do_not_claim_production_deployment": true

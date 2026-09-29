@@ -1,80 +1,40 @@
 # Site Sync Brief
 
-Use this file when the website implementation work starts. The goal is to keep the website fully aligned with the stronger GitHub portfolio surface without inventing new claims.
+Use this file when the website content is updated. The goal is to keep the website aligned with the GitHub portfolio surface without inventing new claims.
 
 ## Canonical content source
 
 - Primary source: `docs/portfolio-manifest.json`
 - Supporting source: `README.md`
-- Deep-dive source: lead repo READMEs and case-study docs
-
-## Homepage order
-
-Default project order:
-
-1. `Ops-Copilot`
-2. `visual-qc-project`
-3. `smart-factory-app`
-
-Archive projects should appear later and visually subordinate.
+- Site source of truth for case studies: `src/data/projects.js` and `src/data/profile.js` in `senanurcetin/nexus-web-v2`
 
 ## Hero positioning
 
-Use this as the canonical headline direction:
+Canonical headline, identical on the site, LinkedIn, and CV:
 
-`Industrial AI and applied data science engineer building practical software for factory teams, OT workflows, and operator-facing industrial systems.`
+`Data Scientist | AI Engineer | Applied Machine Learning`
 
-## What each lead project must show
+## Homepage order
 
-### Ops-Copilot
+1. `ieee-fraud-detection-analytics`
+2. `ms-capital-market-forecasting`
+3. `visual-qc-project`
+4. `smart-factory-app`
+5. `APTOS-2019-diabetic-retinopathy`
 
-- role: flagship case study
-- core angle: document-grounded troubleshooting plus measurable failure-risk ranking
-- required proof:
-  - ROC-AUC `0.7659`
-  - PR-AUC `0.1745`
-  - `2.89x` lift at a `10%` review budget
+Archive projects (`Ops-Copilot`, `ot-sentinel`, `Vision2DCS`, `ChemView`, `PlantLog-MERN`) appear later and visually subordinate.
 
-### visual-qc-project
+## Required proof per lead project
 
-- role: support case study
-- core angle: industrial computer vision plus QA workflow packaging
-- required proof:
-  - macro F1 `0.8093`
-  - macro precision `0.8163`
-  - `2.22x` review-yield lift vs random review
-
-### smart-factory-app
-
-- role: support case study
-- core angle: predictive maintenance plus ranked maintenance queue logic
-- required proof:
-  - PR-AUC `0.8522`
-  - F1 `0.8033`
-  - top `10%` queue captures `92.6%` of holdout failures
-
-## Required website link surfaces
-
-Each lead project page should expose:
-
-- repo link
-- demo link
-- release snapshot link
-- short proof metrics
-- one paragraph on what the repo proves
+See `lead_projects` in the manifest. Metrics must match the site case-study pages and the repository READMEs exactly.
 
 ## Reading path defaults
 
-The default recommended path should remain `Data + AI Roles`.
-
-Other reading paths:
-
-- `Industrial Systems Roles`
-- `Product / Full-Stack Roles`
+The default path is `Data Scientist`. Other paths: `AI Engineer` and `Analytics Engineering and BI`.
 
 ## Tone constraints
 
-- Industrial-first, not generic SaaS
-- Product-minded, but not over-marketed
-- Conservative on claims
-- No production-scale language unless the repo actually proves it
+- Conservative on claims; report results that fell short
+- No production-scale language unless the repo proves it
+- Market forecasting is research only, not investment advice
+- Medical imaging work is not a medical device
