@@ -1,51 +1,62 @@
 # Senanur Cetin
 
-Data Analyst and Applied Data Scientist with 4+ years of industrial automation experience, building tested analytics-engineering, BI, fraud-risk, predictive-maintenance, and computer-vision workflows.
+Data Scientist and AI Engineer building evaluated machine-learning systems across fraud risk, financial forecasting, predictive maintenance, and computer-vision quality review, with LLM applications on Gemini and Genkit. Models ship on tested dbt/BigQuery data and are published with their validation design, calibration evidence, and stated limitations. Backed by 4+ years of industrial automation and engineering project delivery.
 
 - Based in Istanbul, Turkey
 - Portfolio: [senanur-cetin.vercel.app](https://senanur-cetin.vercel.app/)
 - Project library: [senanur-cetin.vercel.app/projects](https://senanur-cetin.vercel.app/projects)
+- Profiles: [LinkedIn](https://www.linkedin.com/in/senanur-cetin/) · [Kaggle](https://www.kaggle.com/senanuretin) · [Hugging Face](https://huggingface.co/senanurcetin) · [YouTube](https://www.youtube.com/@SenanurCetinn)
 - Contact: [senanur.cetin.work@gmail.com](mailto:senanur.cetin.work@gmail.com)
 
 ## Current direction
 
-- Data Analyst, Applied Data Scientist, Analytics Engineer, and operational analytics roles
-- Workintech Data Analyst Certificate earned in June 2026
-- Workintech Data Scientist & AI Pro: Data Science and AI phase in progress
+- Data Scientist, AI Engineer, Applied Machine Learning, Analytics Engineer, and Data Analyst roles
+- Workintech Data Pro Program completed across 24 sprints: Data Analyst Certificate (June 2026) and Data Scientist Certificate (September 2026)
 - Industrial automation context across DCS/SCADA, validation, commissioning, and operator-facing systems
 
 ## Recruiter review paths
 
-### Data Analyst
+### Data Scientist
+
+1. [Fraud Risk Intelligence](https://github.com/senanurcetin/ieee-fraud-detection-analytics)
+2. [MSCapital Market Forecasting](https://github.com/senanurcetin/ms-capital-market-forecasting)
+3. [Visual QC Project](https://github.com/senanurcetin/visual-qc-project)
+4. [Smart Factory App](https://github.com/senanurcetin/smart-factory-app)
+5. [APTOS-2019 Diabetic Retinopathy](https://github.com/senanurcetin/APTOS-2019-diabetic-retinopathy)
+
+### AI Engineer
+
+1. [Visual QC Project](https://github.com/senanurcetin/visual-qc-project): embedding-RAG assistant benchmarked against a keyword baseline and a no-retrieval control
+2. [Ops-Copilot](https://github.com/senanurcetin/Ops-Copilot)
+3. [Vision2DCS](https://github.com/senanurcetin/Vision2DCS)
+4. [OT-Sentinel](https://github.com/senanurcetin/ot-sentinel)
+
+### Analytics Engineering and BI
 
 1. [Fraud Risk Intelligence](https://github.com/senanurcetin/ieee-fraud-detection-analytics)
 2. [E-commerce Analytics Portfolio](https://github.com/senanurcetin/E-commerce)
 3. [Smart Factory Operations Analytics](https://github.com/senanurcetin/smart-factory-app)
-
-### Applied Data Scientist
-
-1. [Fraud Risk Intelligence](https://github.com/senanurcetin/ieee-fraud-detection-analytics)
-2. [APTOS-2019 Diabetic Retinopathy](https://github.com/senanurcetin/APTOS-2019-diabetic-retinopathy)
-3. [Visual QC Project](https://github.com/senanurcetin/visual-qc-project)
-4. [Smart Factory App](https://github.com/senanurcetin/smart-factory-app)
-5. [MS Capital Market Forecasting](https://github.com/senanurcetin/ms-capital-market-forecasting)
 
 ## Verified project proof
 
 | Project | Verified proof | Review surface |
 | --- | --- | --- |
 | [Fraud Risk Intelligence](https://github.com/senanurcetin/ieee-fraud-detection-analytics) | 590,540 transactions, 36 dbt models, 121 data tests, 18 Python contract tests, ROC-AUC `0.9134`, average precision `0.5354` | [Live dashboard](https://fraud-project-web.vercel.app) · [Case study](https://senanur-cetin.vercel.app/projects/fraud-risk-intelligence) |
-| [E-commerce Analytics Portfolio](https://github.com/senanurcetin/E-commerce) | 4 BI-ready marts, 73 dbt tests, 57 DuckDB CI tests, 50 documented DAX measures, cohort/RFM and statistical testing | [Case study](https://senanur-cetin.vercel.app/projects/e-commerce-marketing-web-performance) |
+| [MSCapital Market Forecasting](https://github.com/senanurcetin/ms-capital-market-forecasting) | 804.5M raw rows reduced to 292 BigQuery features; walk-forward validation with embargo: `+0.14088` cosine across 5 folds, `+0.15171` on untouched hold-out; graded leaderboard score `0.128`, below the field median and reported as such; six-hypothesis investigation of the gap; FastAPI + Streamlit, 3 CI jobs. Research only, not investment advice | [Live dashboard](https://ms-capital-market-forecasting-mfy6rngulq4fpaovzrhntf.streamlit.app/) · [Case study](https://senanur-cetin.vercel.app/projects/mscapital-market-forecasting) |
 | [Visual QC Project](https://github.com/senanurcetin/visual-qc-project) | 1,800 NEU-CLS images, accuracy `0.9389`, macro F1 `0.9392`, top-20% entropy queue captures `81.8%` of errors; RAG layer: exact source passage in top-4 for `94.8%` (TF-IDF `89.6%`), `75.7%` of answer sentences entailed by sources (no retrieval: `20.7%`) | [Case study](https://senanur-cetin.vercel.app/projects/visual-qc-project) · [Live demo](https://visual-qc-project-pearl.vercel.app) |
-| [Smart Factory App](https://github.com/senanurcetin/smart-factory-app) | UCI AI4I predictive-maintenance case study plus a NASA C-MAPSS RUL-regression case study, SHAP, drift detection, DuckDB SQL; 10,000 AI4I records, ROC-AUC `0.9819`, PR-AUC `0.8855`, F1 `0.8372`, top-10% queue captures `94.1%` of failures at `9.4x` lift | [Case study](https://senanur-cetin.vercel.app/projects/smart-factory-app) |
+| [Smart Factory App](https://github.com/senanurcetin/smart-factory-app) | UCI AI4I predictive-maintenance case study plus a NASA C-MAPSS RUL-regression case study, SHAP, drift detection, DuckDB SQL; 10,000 AI4I records, ROC-AUC `0.9819`, PR-AUC `0.8855`, F1 `0.8372`, top-10% queue captures `94.1%` of failures at `9.4x` lift | [Case study](https://senanur-cetin.vercel.app/projects/smart-factory-app) · [Live app](https://smart-factory-app.onrender.com) |
+| [APTOS-2019 Diabetic Retinopathy](https://github.com/senanurcetin/APTOS-2019-diabetic-retinopathy) | 3,662 fundus photos, EfficientNet-B0 ordinal grader, 5-fold QWK `0.8902`; metadata-only shortcut baseline QWK `0.652`; pre-registered external validation: IDRiD referable AUC `0.984`, Messidor-2 `0.819` (below the pre-registered target, reported as is); 177 tests; not a medical device | [Live demo](https://aptos-2019-diabetic-retinopathy.onrender.com) · [Case study](https://senanur-cetin.vercel.app/projects/aptos-2019-diabetic-retinopathy) · [Model card](https://huggingface.co/senanurcetin/aptos-retinopathy-grader) |
+| [E-commerce Analytics Portfolio](https://github.com/senanurcetin/E-commerce) | 4 BI-ready marts, 73 dbt tests, 57 DuckDB CI tests, 50 documented DAX measures, cohort/RFM and statistical testing | [Case study](https://senanur-cetin.vercel.app/projects/e-commerce-marketing-web-performance) |
 
 ## Working stack
 
+- Machine learning and modeling: Python, scikit-learn, LightGBM, XGBoost, HistGradientBoosting, Random Forest, SHAP, PyTorch, imbalanced classification, computer vision (OpenCV, scikit-image)
+- LLMs and AI engineering: Gemini API, Genkit, RAG, LangChain, multimodal prompting, TensorFlow/Keras
+- Validation and measurement: time-based holdout, walk-forward with embargo, GroupKFold, calibration, threshold simulation, ROC-AUC, PR-AUC
 - Analytics engineering and BI: SQL, BigQuery, dbt, DuckDB, Power BI, DAX, data modeling
-- Analysis and experimentation: Python, Pandas, NumPy, SciPy, EDA, cohort analysis, RFM, statistical testing
-- Applied data science: scikit-learn, LightGBM, XGBoost, HistGradientBoosting, Random Forest, SHAP, walk-forward validation, model evaluation, review queues
-- Computer vision and ML delivery: ONNX, FastAPI, Streamlit, Render, Vercel
-- Delivery and industrial context: FastAPI, Flask, GitHub Actions, DCS/SCADA, Siemens PCS7, ABB 800xA, VMware
+- Analysis and experimentation: Pandas, NumPy, SciPy, EDA, cohort analysis, RFM, statistical testing
+- Delivery: FastAPI, Flask, Streamlit, ONNX, Docker, MLflow, GitHub Actions, Render, Vercel
+- Industrial context: DCS/SCADA, Siemens PCS7, ABB 800xA, VMware
 
 ## Other builds
 
