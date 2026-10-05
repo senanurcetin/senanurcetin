@@ -1,6 +1,6 @@
 # Senanur Cetin
 
-**Data Analyst / BI · Data Scientist (risk and fraud) · AI / LLM Engineer.** I build evaluated machine-learning and analytics projects, from tested dbt and SQL pipelines to fraud-risk models and RAG applications, and publish every result with its evaluation scope and limitations, including the ones that fell short. Background in industrial automation (DCS/SCADA), followed by applied data projects and training.
+**Data Scientist | AI Engineer | Applied Machine Learning.** I build evaluated machine-learning and analytics projects, from tested dbt and SQL pipelines to fraud-risk models and RAG applications, and publish every result with its evaluation scope and limitations, including the ones that fell short. Background in industrial automation (DCS/SCADA), followed by applied data projects and training.
 
 - Based in Istanbul, Turkey
 - Portfolio: [senanur-cetin.vercel.app](https://senanur-cetin.vercel.app/)
@@ -10,7 +10,7 @@
 
 ## Current direction
 
-- Three target tracks: Data Analyst / BI, Data Scientist (risk and fraud), and AI / LLM Engineer, in Istanbul or remote
+- Focus: Data Scientist and AI Engineer roles in applied machine learning, with analytics engineering and BI as the data layer underneath the models
 - Workintech Data Pro Program completed from 1 March to 1 October 2026 across 24 sprints: Data Analyst Certificate (June 2026) and Data Scientist Certificate (September 2026)
 - Industrial automation context across DCS/SCADA, validation, commissioning, and operator-facing systems
 
@@ -36,6 +36,7 @@
 1. [Fraud Risk Intelligence](https://github.com/senanurcetin/ieee-fraud-detection-analytics)
 2. [E-commerce Analytics Portfolio](https://github.com/senanurcetin/E-commerce)
 3. [Smart Factory Operations Analytics](https://github.com/senanurcetin/smart-factory-app)
+4. [Football Player Performance Analysis](https://github.com/senanurcetin/football-player-performance-analysis)
 
 ## Verified project proof
 
@@ -46,7 +47,8 @@
 | [Visual QC Project](https://github.com/senanurcetin/visual-qc-project) | 1,800 NEU-CLS images, accuracy `0.9389`, macro F1 `0.9392`, top-20% entropy queue captures `81.8%` of errors; RAG layer: exact source passage in top-4 for `94.8%` (TF-IDF `89.6%`), `75.7%` of answer sentences entailed by sources (no retrieval: `20.7%`) | [Case study](https://senanur-cetin.vercel.app/projects/visual-qc-project) · [Live demo](https://visual-qc-project-pearl.vercel.app) |
 | [Smart Factory App](https://github.com/senanurcetin/smart-factory-app) | UCI AI4I predictive-maintenance case study plus a NASA C-MAPSS RUL-regression case study, SHAP, drift detection, DuckDB SQL; 10,000 AI4I records, ROC-AUC `0.9874`, PR-AUC `0.9019`, F1 `0.8293`, top-10% queue captures `94.1%` of failures at `9.4x` lift | [Case study](https://senanur-cetin.vercel.app/projects/smart-factory-app) · [Live app](https://smart-factory-app.onrender.com) |
 | [APTOS-2019 Diabetic Retinopathy](https://github.com/senanurcetin/APTOS-2019-diabetic-retinopathy) | 3,662 fundus photos, EfficientNet-B0 ordinal grader, 5-fold per-model mean QWK `0.8902`, ensemble test QWK `0.9091`; metadata-only shortcut baseline QWK `0.652`; pre-registered external validation: IDRiD referable AUC `0.984`, Messidor-2 `0.819` (below the pre-registered target, reported as is); 177 tests; not a medical device | [Live demo](https://aptos-2019-diabetic-retinopathy.onrender.com) · [Case study](https://senanur-cetin.vercel.app/projects/aptos-2019-diabetic-retinopathy) · [Model card](https://huggingface.co/senanurcetin/aptos-retinopathy-grader) |
-| [E-commerce Analytics Portfolio](https://github.com/senanurcetin/E-commerce) | 4 BI-ready marts, 73 dbt tests, 57 DuckDB CI tests, 31 documented DAX measures, cohort/RFM and statistical testing | [Case study](https://senanur-cetin.vercel.app/projects/e-commerce-marketing-web-performance) |
+| [E-commerce Analytics Portfolio](https://github.com/senanurcetin/E-commerce) | 4 BI-ready marts, 73 dbt tests, 57 DuckDB CI tests, 30 documented DAX measures, cohort/RFM and statistical testing | [Case study](https://senanur-cetin.vercel.app/projects/e-commerce-marketing-web-performance) |
+| [Football Player Performance Analysis](https://github.com/senanurcetin/football-player-performance-analysis) | Fork of an earlier collaborative project: 28 of the 46 dbt models, plus the sources and their tests, come from upstream; the other 16 models, the singular tests, semantic layer, snapshots, CI, the market-value ML pipeline and the Power BI report are my work. 241/241 tests, 12/12 freshness checks; market-value model R2 `0.9756`, WAPE `12.51%`, where the previous-value baseline already reaches R2 `0.9704`, so the gain shows in WAPE and MAE | [Case study](https://senanur-cetin.vercel.app/projects/football-player-performance-analysis) · [Kaggle notebook](https://www.kaggle.com/code/senanuretin/your-market-value-r2-is-mostly-last-year-s-price) |
 
 ## Working stack
 
@@ -67,7 +69,7 @@
 ## Supporting and archive proof
 
 - [Greenweez Finance & Campaign Analytics](https://github.com/senanurcetin/greenweez-finance-campaign-analytics): dbt and BigQuery finance/campaign reporting
-- [GTM](https://github.com/senanurcetin/GTM): GTM and GA4-ready web analytics instrumentation
+- [GTM](https://github.com/senanurcetin/GTM): fork of a Jekyll storefront with a Google Tag Manager container snippet and dataLayer events; no GA4 configuration in the repository
 - [Ops-Copilot](https://github.com/senanurcetin/Ops-Copilot): industrial AI assistant for operator troubleshooting and document-grounded answers (archive)
 - [OT-Sentinel](https://github.com/senanurcetin/ot-sentinel): OT monitoring and anomaly-workflow archive
 - [Vision2DCS](https://github.com/senanurcetin/Vision2DCS): multimodal engineering workflow archive

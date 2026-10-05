@@ -32,7 +32,7 @@
       "thesis": "End-to-end fraud risk intelligence: DuckDB, BigQuery, dbt, LightGBM, FastAPI, and a live executive dashboard.",
       "metrics": [
         "590,540 transactions",
-        "36 dbt models, 121 data tests, 18 Python contract tests",
+        "38 dbt models, 126 data tests, 23 Python contract tests",
         "ROC-AUC 0.9134, average precision 0.5354"
       ],
       "what_it_proves": [
@@ -82,7 +82,7 @@
       "release_url": "https://github.com/senanurcetin/smart-factory-app",
       "thesis": "Predictive-maintenance analytics on UCI AI4I plus a NASA C-MAPSS RUL case study, with SHAP, drift detection, and a ranked maintenance queue.",
       "metrics": [
-        "ROC-AUC 0.9819, PR-AUC 0.8855, F1 0.8372",
+        "ROC-AUC 0.9874, PR-AUC 0.9019, F1 0.8293",
         "Top-10% queue captures 94.1% of failures at 9.4x lift"
       ],
       "what_it_proves": [
@@ -116,7 +116,7 @@
       "thesis": "dbt Cloud, BigQuery, and Power BI pipeline turning raw e-commerce events and orders into BI-ready marts.",
       "metrics": [
         "4 BI-ready marts, 73 dbt tests, 57 DuckDB CI tests",
-        "50 documented DAX measures"
+        "30 documented DAX measures"
       ],
       "what_it_proves": [
         "Governed analytics engineering and BI delivery",
