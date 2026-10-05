@@ -1,6 +1,6 @@
 # Senanur Cetin
 
-Data Scientist and AI Engineer building evaluated machine-learning applications for fraud risk, financial forecasting, predictive maintenance, and computer vision, alongside LLM and RAG applications. I combine Python and model evaluation with SQL, tested data pipelines, APIs, and deployed portfolio demos. Results are published with their evaluation scope and limitations. My background spans four years across industrial automation work and applied data projects and training.
+**Data Analyst / BI · Data Scientist (risk and fraud) · AI / LLM Engineer.** I build evaluated machine-learning and analytics projects, from tested dbt and SQL pipelines to fraud-risk models and RAG applications, and publish every result with its evaluation scope and limitations, including the ones that fell short. Background in industrial automation (DCS/SCADA), followed by applied data projects and training.
 
 - Based in Istanbul, Turkey
 - Portfolio: [senanur-cetin.vercel.app](https://senanur-cetin.vercel.app/)
@@ -10,7 +10,7 @@ Data Scientist and AI Engineer building evaluated machine-learning applications 
 
 ## Current direction
 
-- Data Scientist, AI Engineer, Applied Machine Learning, Analytics Engineer, and Data Analyst roles
+- Three target tracks: Data Analyst / BI, Data Scientist (risk and fraud), and AI / LLM Engineer, in Istanbul or remote
 - Workintech Data Pro Program completed from 1 March to 1 October 2026 across 24 sprints: Data Analyst Certificate (June 2026) and Data Scientist Certificate (September 2026)
 - Industrial automation context across DCS/SCADA, validation, commissioning, and operator-facing systems
 
@@ -61,8 +61,7 @@ Data Scientist and AI Engineer building evaluated machine-learning applications 
 ## Other builds
 
 - [nexus-agent](https://github.com/senanurcetin/nexus-agent): local-first personal AI agent with pooled free-tier LLM routing, Notion as database, queue-first automations, and an evaluation harness
-- [VocabMaster](https://github.com/senanurcetin/VocabMaster): English vocabulary platform with adaptive practice, word lists, and subscription billing · [Live](https://vocab-master-olive.vercel.app)
-- [datneta-web](https://github.com/senanurcetin/datneta-web): web project · [Live](https://datneta-web.vercel.app)
+- [VocabMaster](https://github.com/senanurcetin/VocabMaster): English vocabulary app with adaptive practice and word lists (beta) · [Live](https://vocab-master-olive.vercel.app)
 - [nexus-web-v2](https://github.com/senanurcetin/nexus-web-v2): source of the [portfolio site](https://senanur-cetin.vercel.app/)
 
 ## Supporting and archive proof
