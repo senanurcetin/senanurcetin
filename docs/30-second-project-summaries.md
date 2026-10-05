@@ -14,7 +14,7 @@ Steel-defect classification (macro F1 0.9392) with an entropy review queue that 
 
 ## Smart Factory App
 
-Predictive-maintenance analytics on UCI AI4I (PR-AUC 0.8855, top-10% queue captures 94.1% of failures) plus a NASA C-MAPSS RUL case study with SHAP and drift detection, deployed live.
+Predictive-maintenance analytics on UCI AI4I (PR-AUC 0.9019, top-10% queue captures 94.1% of failures) plus a NASA C-MAPSS RUL case study with SHAP and drift detection, deployed live.
 
 ## APTOS-2019 Diabetic Retinopathy
 
@@ -22,4 +22,4 @@ A retinopathy grader that tests itself: shortcut baseline, pre-registered extern
 
 ## E-commerce Analytics Portfolio
 
-dbt Cloud, BigQuery, and Power BI turning raw events into 4 BI-ready marts, with 73 dbt tests, 50 DAX measures, and cohort/RFM analysis.
+dbt Cloud, BigQuery, and Power BI turning raw events into 4 BI-ready marts, with 73 dbt tests, 30 DAX measures, and cohort/RFM analysis.

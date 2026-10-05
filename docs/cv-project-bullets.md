@@ -5,7 +5,7 @@
 Headline:
 Built an end-to-end fraud risk platform from raw transactions to a live executive dashboard.
 
-- Modeled 590,540 transactions through a DuckDB, BigQuery, and dbt pipeline with 36 dbt models, 121 data tests, and 18 Python contract tests.
+- Modeled 590,540 transactions through a DuckDB, BigQuery, and dbt pipeline with 38 dbt models, 126 data tests, and 23 Python contract tests.
 - Trained a LightGBM ranker (ROC-AUC 0.9134, average precision 0.5354) and reported risk-band quality on the holdout rather than only on the fitted split.
 - Framed the model as a review queue with threshold simulation: the top 5% score band captures 58.32% of fraud labels at 40.13% precision.
 
@@ -32,7 +32,7 @@ Built a steel-defect computer-vision case study with an entropy review queue and
 Headline:
 Built predictive-maintenance analytics with ranked queues, SHAP, and drift monitoring.
 
-- Benchmarked classifiers on UCI AI4I (ROC-AUC 0.9819, PR-AUC 0.8855, F1 0.8372); the top-10% queue captures 94.1% of failures at 9.4x lift.
+- Benchmarked classifiers on UCI AI4I (ROC-AUC 0.9874, PR-AUC 0.9019, F1 0.8293); the top-10% queue captures 94.1% of failures at 9.4x lift.
 - Added a NASA C-MAPSS remaining-useful-life regression case study with SHAP explanations and drift detection, and deployed a live risk-ranked maintenance queue.
 
 ## APTOS-2019 Diabetic Retinopathy
@@ -49,5 +49,5 @@ Built a retinopathy grader that tests its own claims and reports where it fails.
 Headline:
 Built a dbt, BigQuery, and Power BI pipeline that turns raw e-commerce events into BI-ready marts.
 
-- Delivered 4 BI-ready marts with 73 dbt tests and 57 DuckDB CI tests, plus 50 documented DAX measures.
+- Delivered 4 BI-ready marts with 73 dbt tests and 57 DuckDB CI tests, plus 30 documented DAX measures.
 - Added cohort, RFM, and statistical-testing analyses for channel conversion.

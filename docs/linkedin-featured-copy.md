@@ -2,7 +2,7 @@
 
 ## 1. Fraud Risk Intelligence
 
-End-to-end fraud risk platform: DuckDB, BigQuery, dbt, LightGBM, and FastAPI behind a live executive dashboard. 590,540 transactions, 36 dbt models, 121 data tests, ROC-AUC 0.9134.
+End-to-end fraud risk platform: DuckDB, BigQuery, dbt, LightGBM, and FastAPI behind a live executive dashboard. 590,540 transactions, 38 dbt models, 126 data tests, ROC-AUC 0.9134.
 
 ## 2. MSCapital Market Forecasting
 
