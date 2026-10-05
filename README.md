@@ -1,6 +1,6 @@
 # Senanur Cetin
 
-**Data Analyst / BI · Data Scientist (risk and fraud) · AI / LLM Engineer.** I build evaluated machine-learning and analytics projects, from tested dbt and SQL pipelines to fraud-risk models and RAG applications, and publish every result with its evaluation scope and limitations, including the ones that fell short. Four years across industrial automation (DCS/SCADA) and applied data projects and training.
+**Data Analyst / BI · Data Scientist (risk and fraud) · AI / LLM Engineer.** I build evaluated machine-learning and analytics projects, from tested dbt and SQL pipelines to fraud-risk models and RAG applications, and publish every result with its evaluation scope and limitations, including the ones that fell short. Background in industrial automation (DCS/SCADA), followed by applied data projects and training.
 
 - Based in Istanbul, Turkey
 - Portfolio: [senanur-cetin.vercel.app](https://senanur-cetin.vercel.app/)
