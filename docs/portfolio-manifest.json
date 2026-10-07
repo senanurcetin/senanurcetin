@@ -130,13 +130,13 @@
       "repo": "ot-sentinel",
       "role": "selected case study",
       "repo_url": "https://github.com/senanurcetin/ot-sentinel",
-      "demo_url": "https://www.youtube.com/watch?v=KcpTW0QM0FM",
+      "demo_url": "https://senanur-cetin.vercel.app/projects/ot-sentinel",
       "release_url": "https://github.com/senanurcetin/ot-sentinel/blob/main/CHANGELOG.md",
       "thesis": "Explainable anomaly triage for OT telemetry: a statistical detector decides, an LLM only explains, and a labelled rule-based fallback answers when the model does not; the detection method is evaluated offline on the public BATADAL benchmark with a modest result reported as such.",
       "metrics": [
-        "BATADAL: 43 signals, 14 attacks, one false-alarm budget for four detectors",
-        "Max z-score PR-AUC 0.427 against 0.195 by chance on the 2017 test file",
-        "Release v0.2.0"
+        "BATADAL: 43 signals, 14 attacks, one false-alarm budget for seven detectors",
+        "Max z-score PR-AUC 0.427 against 0.195 by chance on the 2017 test file; no temporal detector beats it under a rule fixed in advance",
+        "Release v0.3.0"
       ],
       "what_it_proves": [
         "LLM guard rails inside an operational workflow",
@@ -172,14 +172,14 @@
       "repo": "Vision2DCS",
       "role": "archive proof",
       "repo_url": "https://github.com/senanurcetin/Vision2DCS",
-      "demo_url": "https://www.youtube.com/watch?v=x9uHCqvARMg",
+      "demo_url": "https://senanur-cetin.vercel.app/projects/vision2dcs",
       "proof_area": "Multimodal engineering-tool thinking"
     },
     {
       "repo": "ChemView",
       "role": "archive proof",
       "repo_url": "https://github.com/senanurcetin/ChemView",
-      "demo_url": "https://www.youtube.com/watch?v=GJgmsIAXbrk",
+      "demo_url": "https://senanur-cetin.vercel.app/projects/chemview",
       "proof_area": "Industrial UX and HMI state modeling"
     },
     {
