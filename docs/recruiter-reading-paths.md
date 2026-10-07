@@ -6,9 +6,10 @@ Order:
 
 1. Fraud Risk Intelligence (`ieee-fraud-detection-analytics`)
 2. MSCapital Market Forecasting (`ms-capital-market-forecasting`)
-3. Visual QC Project (`visual-qc-project`)
-4. Smart Factory App (`smart-factory-app`)
-5. APTOS-2019 Diabetic Retinopathy (`APTOS-2019-diabetic-retinopathy`)
+3. GS Quant Risk Analytics (`gs-quant`, fork)
+4. Visual QC Project (`visual-qc-project`)
+5. Smart Factory App (`smart-factory-app`)
+6. APTOS-2019 Diabetic Retinopathy (`APTOS-2019-diabetic-retinopathy`)
 
 What this path proves:
 
@@ -30,7 +31,7 @@ Order:
 1. Visual QC Project (measured embedding-RAG assistant)
 2. Ops-Copilot
 3. Vision2DCS
-4. OT-Sentinel
+4. OT-Sentinel (detector evaluated on the BATADAL attack benchmark)
 
 What this path proves:
 

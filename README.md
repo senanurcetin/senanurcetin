@@ -20,16 +20,17 @@
 
 1. [Fraud Risk Intelligence](https://github.com/senanurcetin/ieee-fraud-detection-analytics)
 2. [MSCapital Market Forecasting](https://github.com/senanurcetin/ms-capital-market-forecasting)
-3. [Visual QC Project](https://github.com/senanurcetin/visual-qc-project)
-4. [Smart Factory App](https://github.com/senanurcetin/smart-factory-app)
-5. [APTOS-2019 Diabetic Retinopathy](https://github.com/senanurcetin/APTOS-2019-diabetic-retinopathy)
+3. [GS Quant Risk Analytics](https://github.com/senanurcetin/gs-quant): VaR and expected-shortfall model validation, built on a fork of Goldman Sachs' gs-quant
+4. [Visual QC Project](https://github.com/senanurcetin/visual-qc-project)
+5. [Smart Factory App](https://github.com/senanurcetin/smart-factory-app)
+6. [APTOS-2019 Diabetic Retinopathy](https://github.com/senanurcetin/APTOS-2019-diabetic-retinopathy)
 
 ### AI Engineer
 
 1. [Visual QC Project](https://github.com/senanurcetin/visual-qc-project): embedding-RAG assistant benchmarked against a keyword baseline and a no-retrieval control
 2. [Ops-Copilot](https://github.com/senanurcetin/Ops-Copilot)
 3. [Vision2DCS](https://github.com/senanurcetin/Vision2DCS)
-4. [OT-Sentinel](https://github.com/senanurcetin/ot-sentinel)
+4. [OT-Sentinel](https://github.com/senanurcetin/ot-sentinel): explainable OT anomaly triage; the detector is evaluated on the public BATADAL attack benchmark and the LLM only explains
 
 ### Analytics Engineering and BI
 
@@ -44,9 +45,11 @@
 | --- | --- | --- |
 | [Fraud Risk Intelligence](https://github.com/senanurcetin/ieee-fraud-detection-analytics) | 590,540 transactions, 38 dbt models, 126 data tests, 23 Python contract tests, 5 ML pipeline smoke tests, ROC-AUC `0.9134`, average precision `0.5354` | [Live dashboard](https://fraud-project-web.vercel.app) · [Case study](https://senanur-cetin.vercel.app/projects/fraud-risk-intelligence) |
 | [MSCapital Market Forecasting](https://github.com/senanurcetin/ms-capital-market-forecasting) | 804.5M raw rows reduced to 292 BigQuery features; walk-forward validation with embargo: `+0.14088` cosine across 5 folds, `+0.15171` on untouched hold-out; shipped ensemble leaderboard score `0.129`, below the field median and reported as such; six-hypothesis investigation of the gap, then four pre-registered follow-up experiments (feature pruning, a learned sequence model, regime features, four extra ensemble members), none of which improved on the shipped ensemble (every interval includes zero); FastAPI + Streamlit, 4 CI jobs, release v1.1.0. Research only, not investment advice | [Live dashboard](https://ms-capital-market-forecasting-mfy6rngulq4fpaovzrhntf.streamlit.app/) · [Case study](https://senanur-cetin.vercel.app/projects/mscapital-market-forecasting) · [Release v1.1.0](https://github.com/senanurcetin/ms-capital-market-forecasting/releases/tag/v1.1.0) · [Hugging Face](https://huggingface.co/senanurcetin/ms-capital-market-forecasting) · [Kaggle notebook](https://www.kaggle.com/code/senanuretin/ms-capital-four-experiments-that-did-not-help) |
+| [GS Quant Risk Analytics](https://github.com/senanurcetin/gs-quant) | Fork of Goldman Sachs' gs-quant; the risk_metrics module, the risk application and the MCP analytics tools are this fork's own work. Every VaR forecast is backtested on the return that followed it (Kupiec, Christoffersen, Basel traffic light); on a simulated regime shift the 250-period rolling 95% VaR is breached 63 times against 37.5 expected (EWMA 41), and the square-root-of-time rule fails its own non-overlapping check (8 breaches in 75 stretches against 3.75); releases 0.1.0 and 0.1.1 with ghcr.io images | [Live demo](https://huggingface.co/spaces/senanurcetin/gs-quant-risk) · [Case study](https://senanur-cetin.vercel.app/projects/gs-quant-risk-analytics) · [Release 0.1.1](https://github.com/senanurcetin/gs-quant/releases/tag/release-0.1.1) |
 | [Visual QC Project](https://github.com/senanurcetin/visual-qc-project) | 1,800 NEU-CLS images, accuracy `0.9389`, macro F1 `0.9392`, top-20% entropy queue captures `81.8%` of errors; RAG layer: exact source passage in top-4 for `94.8%` (TF-IDF `89.6%`), `75.7%` of answer sentences entailed by sources (no retrieval: `20.7%`) | [Case study](https://senanur-cetin.vercel.app/projects/visual-qc-project) · [Live demo](https://visual-qc-project-pearl.vercel.app) |
 | [Smart Factory App](https://github.com/senanurcetin/smart-factory-app) | UCI AI4I predictive-maintenance case study plus a NASA C-MAPSS RUL-regression case study, SHAP, drift detection, DuckDB SQL; 10,000 AI4I records, ROC-AUC `0.9874`, PR-AUC `0.9019`, F1 `0.8293`, top-10% queue captures `94.1%` of failures at `9.4x` lift | [Case study](https://senanur-cetin.vercel.app/projects/smart-factory-app) · [Live app](https://smart-factory-app.onrender.com) |
 | [APTOS-2019 Diabetic Retinopathy](https://github.com/senanurcetin/APTOS-2019-diabetic-retinopathy) | 3,662 fundus photos, EfficientNet-B0 ordinal grader, 5-fold per-model mean QWK `0.8902`, ensemble test QWK `0.9091`; metadata-only shortcut baseline QWK `0.652`; pre-registered external validation: IDRiD referable AUC `0.984`, Messidor-2 `0.819` (below the pre-registered target, reported as is); 177 tests; not a medical device | [Live demo](https://aptos-2019-diabetic-retinopathy.onrender.com) · [Case study](https://senanur-cetin.vercel.app/projects/aptos-2019-diabetic-retinopathy) · [Model card](https://huggingface.co/senanurcetin/aptos-retinopathy-grader) |
+| [OT-Sentinel](https://github.com/senanurcetin/ot-sentinel) | Statistical z-score detector decides, Gemini only explains, labelled rule-based fallback; offline BATADAL evaluation of seven detectors under one false-alarm budget: max z-score PR-AUC `0.427` against `0.195` by chance on the 2017 test file, every detector catches 7 of 7 attacks (which false alarms alone would nearly do), and under a rule fixed in advance no temporal detector (EWMA, CUSUM, rolling residual) beats the z-score; a metric flaw found in the first run is corrected and documented; release v0.3.0; synthetic live telemetry, no authentication | [Case study](https://senanur-cetin.vercel.app/projects/ot-sentinel) · [BATADAL write-up](https://github.com/senanurcetin/ot-sentinel/blob/main/docs/case-study.md) |
 | [E-commerce Analytics Portfolio](https://github.com/senanurcetin/E-commerce) | 4 BI-ready marts, 73 dbt tests, 57 DuckDB CI tests, 30 documented DAX measures, cohort/RFM and statistical testing | [Case study](https://senanur-cetin.vercel.app/projects/e-commerce-marketing-web-performance) |
 | [Football Player Performance Analysis](https://github.com/senanurcetin/football-player-performance-analysis) | Fork of an earlier collaborative project: 28 of the 46 dbt models, plus the sources and their tests, come from upstream; the other 16 models, the singular tests, semantic layer, snapshots, CI, the market-value ML pipeline and the Power BI report are my work. 241/241 tests, 12/12 freshness checks; market-value model R2 `0.9756`, WAPE `12.51%`, where the previous-value baseline already reaches R2 `0.9704`, so the gain shows in WAPE and MAE | [Case study](https://senanur-cetin.vercel.app/projects/football-player-performance-analysis) · [Kaggle notebook](https://www.kaggle.com/code/senanuretin/your-market-value-r2-is-mostly-last-year-s-price) |
 
@@ -62,16 +65,15 @@
 
 ## Other builds
 
-- [nexus-agent](https://github.com/senanurcetin/nexus-agent): local-first personal AI agent with pooled free-tier LLM routing, Notion as database, queue-first automations, and an evaluation harness
-- [VocabMaster](https://github.com/senanurcetin/VocabMaster): English vocabulary app with adaptive practice and word lists (beta) · [Live](https://vocab-master-olive.vercel.app)
-- [nexus-web-v2](https://github.com/senanurcetin/nexus-web-v2): source of the [portfolio site](https://senanur-cetin.vercel.app/)
+- nexus-agent (private repository): local-first personal AI agent with pooled free-tier LLM routing, Notion as database, queue-first automations, and an evaluation harness
+- VocabMaster (private repository): English vocabulary app with adaptive practice and word lists (beta) · [Live](https://vocab-master-olive.vercel.app)
+- nexus-web-v2 (private repository): source of the [portfolio site](https://senanur-cetin.vercel.app/)
 
 ## Supporting and archive proof
 
 - [Greenweez Finance & Campaign Analytics](https://github.com/senanurcetin/greenweez-finance-campaign-analytics): dbt and BigQuery finance/campaign reporting
-- [GTM](https://github.com/senanurcetin/GTM): fork of a Jekyll storefront with a Google Tag Manager container snippet and dataLayer events; no GA4 configuration in the repository
+- [GTM](https://github.com/senanurcetin/GTM): fork of a Jekyll storefront with a Google Tag Manager container snippet, dataLayer events and a unit-tested GA4 e-commerce event layer (add_to_cart, remove_from_cart, begin_checkout); the GA4 property itself lives in the GTM container, not the repository
 - [Ops-Copilot](https://github.com/senanurcetin/Ops-Copilot): industrial AI assistant for operator troubleshooting and document-grounded answers (archive)
-- [OT-Sentinel](https://github.com/senanurcetin/ot-sentinel): OT monitoring and anomaly-workflow archive
 - [Vision2DCS](https://github.com/senanurcetin/Vision2DCS): multimodal engineering workflow archive
 - [ChemView](https://github.com/senanurcetin/ChemView): industrial HMI and telemetry UX archive
 - [PlantLog-MERN](https://github.com/senanurcetin/PlantLog-MERN): industrial operations-software archive

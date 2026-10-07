@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-29",
+  "updated_at": "2026-10-07",
   "positioning": {
     "headline": "Data Scientist | AI Engineer | Applied Machine Learning",
     "short_tagline": "Evaluated machine-learning systems on tested data, published with their validation design and stated limitations.",
@@ -16,11 +16,12 @@
     "order": [
       "ieee-fraud-detection-analytics",
       "ms-capital-market-forecasting",
+      "gs-quant",
       "visual-qc-project",
       "smart-factory-app",
       "APTOS-2019-diabetic-retinopathy"
     ],
-    "why": "These five projects show validated modeling across tabular, time-ordered, and image problems, including results that fell short and are reported as such."
+    "why": "These six projects show validated modeling across tabular, time-ordered, and image problems, including results that fell short and are reported as such."
   },
   "lead_projects": [
     {
@@ -55,6 +56,24 @@
       "what_it_proves": [
         "Leak-free validation with embargo",
         "Reporting results that contradict the hope"
+      ]
+    },
+    {
+      "repo": "gs-quant",
+      "role": "selected case study",
+      "repo_url": "https://github.com/senanurcetin/gs-quant",
+      "demo_url": "https://huggingface.co/spaces/senanurcetin/gs-quant-risk",
+      "release_url": "https://github.com/senanurcetin/gs-quant/releases/tag/release-0.1.1",
+      "thesis": "A VaR and expected-shortfall application on a fork of Goldman Sachs' gs-quant that backtests every risk forecast on the return that followed it. The upstream library is Goldman Sachs' work; the risk_metrics module, the application and the MCP analytics tools are this fork's own.",
+      "metrics": [
+        "Kupiec, Christoffersen and Basel traffic-light backtests",
+        "Simulated regime shift: rolling 95% VaR breached 63 times against 37.5 expected; EWMA 41",
+        "Square-root-of-time rule rejected: 8 breaches in 75 stretches against 3.75",
+        "Releases 0.1.0 and 0.1.1"
+      ],
+      "what_it_proves": [
+        "Out-of-sample validation applied to market risk",
+        "An installable, tested application with releases and a live demo"
       ]
     },
     {
@@ -108,6 +127,23 @@
       ]
     },
     {
+      "repo": "ot-sentinel",
+      "role": "selected case study",
+      "repo_url": "https://github.com/senanurcetin/ot-sentinel",
+      "demo_url": "https://senanur-cetin.vercel.app/projects/ot-sentinel",
+      "release_url": "https://github.com/senanurcetin/ot-sentinel/blob/main/CHANGELOG.md",
+      "thesis": "Explainable anomaly triage for OT telemetry: a statistical detector decides, an LLM only explains, and a labelled rule-based fallback answers when the model does not; the detection method is evaluated offline on the public BATADAL benchmark with a modest result reported as such.",
+      "metrics": [
+        "BATADAL: 43 signals, 14 attacks, one false-alarm budget for seven detectors",
+        "Max z-score PR-AUC 0.427 against 0.195 by chance on the 2017 test file; no temporal detector beats it under a rule fixed in advance",
+        "Release v0.3.0"
+      ],
+      "what_it_proves": [
+        "LLM guard rails inside an operational workflow",
+        "Evaluation design for imbalanced, time-ordered security data"
+      ]
+    },
+    {
       "repo": "E-commerce",
       "role": "analytics engineering case study",
       "repo_url": "https://github.com/senanurcetin/E-commerce",
@@ -133,24 +169,17 @@
       "proof_area": "Industrial AI assistant with document-grounded answers"
     },
     {
-      "repo": "ot-sentinel",
-      "role": "archive proof",
-      "repo_url": "https://github.com/senanurcetin/ot-sentinel",
-      "demo_url": "https://www.youtube.com/watch?v=KcpTW0QM0FM",
-      "proof_area": "OT workflow and anomaly-response breadth"
-    },
-    {
       "repo": "Vision2DCS",
       "role": "archive proof",
       "repo_url": "https://github.com/senanurcetin/Vision2DCS",
-      "demo_url": "https://www.youtube.com/watch?v=x9uHCqvARMg",
+      "demo_url": "https://senanur-cetin.vercel.app/projects/vision2dcs",
       "proof_area": "Multimodal engineering-tool thinking"
     },
     {
       "repo": "ChemView",
       "role": "archive proof",
       "repo_url": "https://github.com/senanurcetin/ChemView",
-      "demo_url": "https://www.youtube.com/watch?v=GJgmsIAXbrk",
+      "demo_url": "https://senanur-cetin.vercel.app/projects/chemview",
       "proof_area": "Industrial UX and HMI state modeling"
     },
     {
@@ -168,6 +197,7 @@
       "repos": [
         "ieee-fraud-detection-analytics",
         "ms-capital-market-forecasting",
+        "gs-quant",
         "visual-qc-project",
         "smart-factory-app",
         "APTOS-2019-diabetic-retinopathy"
@@ -210,9 +240,13 @@
     "default_homepage_order": [
       "ieee-fraud-detection-analytics",
       "ms-capital-market-forecasting",
-      "visual-qc-project",
+      "gs-quant",
       "smart-factory-app",
-      "APTOS-2019-diabetic-retinopathy"
+      "visual-qc-project",
+      "APTOS-2019-diabetic-retinopathy",
+      "ot-sentinel",
+      "football-player-performance-analysis",
+      "E-commerce"
     ],
     "archive_projects_should_be_secondary": true,
     "do_not_claim_production_deployment": true

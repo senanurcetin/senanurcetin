@@ -18,11 +18,15 @@ Canonical headline, identical on the site, LinkedIn, and CV:
 
 1. `ieee-fraud-detection-analytics`
 2. `ms-capital-market-forecasting`
-3. `visual-qc-project`
+3. `gs-quant`
 4. `smart-factory-app`
-5. `APTOS-2019-diabetic-retinopathy`
+5. `visual-qc-project`
+6. `APTOS-2019-diabetic-retinopathy`
+7. `ot-sentinel`
+8. `football-player-performance-analysis`
+9. `E-commerce`
 
-Archive projects (`Ops-Copilot`, `ot-sentinel`, `Vision2DCS`, `ChemView`, `PlantLog-MERN`) appear later and visually subordinate.
+Archive projects (`Ops-Copilot`, `Vision2DCS`, `ChemView`, `PlantLog-MERN`) appear later and visually subordinate.
 
 ## Required proof per lead project
 
