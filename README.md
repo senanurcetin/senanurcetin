@@ -53,6 +53,15 @@
 | [E-commerce Analytics Portfolio](https://github.com/senanurcetin/E-commerce) | 4 BI-ready marts, 73 dbt tests, 57 DuckDB CI tests, 30 documented DAX measures, cohort/RFM and statistical testing | [Case study](https://senanur-cetin.vercel.app/projects/e-commerce-marketing-web-performance) |
 | [Football Player Performance Analysis](https://github.com/senanurcetin/football-player-performance-analysis) | Fork of an earlier collaborative project: 28 of the 46 dbt models, plus the sources and their tests, come from upstream; the other 16 models, the singular tests, semantic layer, snapshots, CI, the market-value ML pipeline and the Power BI report are my work. 241/241 tests, 12/12 freshness checks; market-value model R2 `0.9756`, WAPE `12.51%`, where the previous-value baseline already reaches R2 `0.9704`, so the gain shows in WAPE and MAE | [Case study](https://senanur-cetin.vercel.app/projects/football-player-performance-analysis) · [Kaggle notebook](https://www.kaggle.com/code/senanuretin/your-market-value-r2-is-mostly-last-year-s-price) |
 
+## Kaggle competitions
+
+Standings are public-leaderboard positions on 2026-10-08; final ranks come from the private leaderboard when each competition closes. Competition code stays private until the deadline, as the rules require for sharing outside Kaggle.
+
+| Competition | Result so far | What is mine | Public notebooks |
+| --- | --- | --- | --- |
+| [Enveda CASMI 2026](https://www.kaggle.com/competitions/enveda-CASMI26-molecule-id-mass-spectra) (featured, structure identification from MS/MS spectra, closes 2026-12-14) | Public LB `0.422`, rank 353 of 2,797 | Own pipeline first (spectral retrieval, analog propagation, fragment explanation, biotransformation candidates, LightGBM LambdaRank): `0.309`. Current entry fuses the community's public spectrum-simulation pipeline (`0.420`) with that ranker as an extra rank list | [Ranker learns how you built the pool](https://www.kaggle.com/code/senanuretin/casmi26-your-ranker-learns-how-you-built-the-pool) · [A bigger candidate pool lowered my score](https://www.kaggle.com/code/senanuretin/casmi26-a-bigger-candidate-pool-lowered-my-score) |
+| [Playground S6E10](https://www.kaggle.com/competitions/playground-series-s6e10) (airline satisfaction, ROC-AUC, closes 2026-10-31) | Public LB `0.96177`, rank 34 of 1,126; nested stack CV `0.96211` | 29 own models (route-ID and original-data features, auxiliary-task features, 10-fold members, CatBoost crosses) stacked with credited public foundation-model and OOF predictions; final pair chosen on CV only, not on the public LB | [Will your CV transfer?](https://www.kaggle.com/code/senanuretin/s6e10-will-your-cv-transfer-check-this-first) · [Why your OOF blend gain vanishes on test](https://www.kaggle.com/code/senanuretin/s6e10-why-your-oof-blend-gain-vanishes-on-test) |
+
 ## Working stack
 
 - Machine learning and modeling: Python, scikit-learn, LightGBM, XGBoost, HistGradientBoosting, Random Forest, SHAP, PyTorch, imbalanced classification, computer vision (OpenCV, scikit-image)
