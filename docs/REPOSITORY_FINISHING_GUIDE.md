@@ -4,7 +4,7 @@ This is a **checked, public-project maintenance guide** for the GitHub account. 
 
 ## 1. Metadata: apply only missing fields first
 
-The [metadata manifest](../config/repository-metadata.json) lists 16 featured repositories, suggested Topics for gaps, and authentic screenshot sources where available. The [synchronization script](../scripts/sync_repository_metadata.py) reads the current GitHub state, compares it to the manifest, and **defaults to dry-run**.
+The [metadata manifest](../config/repository-metadata.json) now tracks 16 selected portfolio repositories plus the GitHub profile (17 entries), suggested Topics for gaps, and authentic screenshot candidates where available. The [synchronization script](../scripts/sync_repository_metadata.py) reads the current GitHub state, compares it to the manifest, and **defaults to dry-run**.
 
 ```bash
 # From a local checkout of this profile repository:
@@ -22,6 +22,8 @@ The first `--apply` run is designed to fill Topics that are currently empty, **n
 The four initially empty-topic priorities—MS Capital, Excel/CSV Reporting, Football Player Performance (fork), and Olist Database Analysis (fork)—were checked on GitHub after the authenticated CLI run: all four now have Topics. Their present counts are 8, 7, 7, and 5 respectively. Existing nonempty Topics remain intact. Some About descriptions/homepage fields still need a separate human review; the default synchronization does not overwrite them.
 
 ## Current sequencing — Social Preview on hold
+
+The [12 October README/cover audit](README_COVER_AUDIT_2026-10-12.md) verifies ten existing screenshot candidate paths, documents outstanding artwork and metadata gaps, and adds the previously omitted GTM fork (default branch `master`) to the manifest. Both preview URL builders now honor a manifest `default_branch` override; otherwise they use `main`. No Social Preview setting was updated.
 
 **As of 2026-10-12, the repository README artwork is being redesigned. Do not regenerate or upload new GitHub Social Previews yet.** The existing screenshot paths in the metadata manifest are only historical source candidates, not an approved current design. When the final README images are ready, update and verify the manifest, review every image source and caption, and only then generate/approve matching Social Preview cards. CI and repository README artwork are handled separately.
 
