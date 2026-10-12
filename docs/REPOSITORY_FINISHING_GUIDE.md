@@ -29,6 +29,16 @@ GitHub Social Preview is a **repository setting**, not a README image. The avail
 python scripts/sync_repository_metadata.py --previews
 ```
 
+To generate consistent **1280 × 640 PNG cards** using only the verified screenshots in the manifest, run locally:
+
+```bash
+python -m pip install Pillow
+python scripts/generate_social_previews.py          # inspect sources, no downloads
+python scripts/generate_social_previews.py --write  # save candidates to social-previews/
+```
+
+The generator never fabricates screenshots; it leaves projects without verified images untouched. Verify each card visually, especially labels and cropped text, before using it publicly.
+
 Upload the referenced **authentic PNG screenshot** through each repository's **Settings → General → Social preview** area. Use a centered visual and preview the resulting crop in GitHub before saving. A 1280 × 640 (2:1) canvas is a useful production target, but do not distort the screenshot or manufacture a dashboard or unverified score.
 
 | Repository | Verified existing image path |
