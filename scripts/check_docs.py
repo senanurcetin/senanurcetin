@@ -3,6 +3,7 @@ from __future__ import annotations
 import json
 import re
 import sys
+import unittest
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -147,12 +148,46 @@ def validate_repository_metadata() -> list[str]:
     return errors
 
 
+def validate_circleci_inventory() -> list[str]:
+    """Run offline CI status classifier tests within the existing docs job."""
+    errors = []
+    path = ROOT / "config" / "circleci-projects.json"
+    try:
+        projects = json.loads(path.read_text(encoding="utf-8"))["projects"]
+    except (OSError, ValueError, KeyError, TypeError) as exc:
+        return [f"CircleCI inventory cannot be read: {exc}"]
+    if not isinstance(projects, list) or len(projects) < 12:
+        errors.append("CircleCI inventory must include the 12 established projects.")
+        return errors
+    seen = set()
+    for project in projects:
+        repo = project.get("repo", "")
+        contexts = project.get("contexts", [])
+        if not re.fullmatch(r"senanurcetin/[A-Za-z0-9_.-]+", repo):
+            errors.append(f"Invalid CircleCI repository: {repo}")
+        if repo in seen:
+            errors.append(f"Duplicate CircleCI repository: {repo}")
+        seen.add(repo)
+        if not contexts or not isinstance(contexts, list) or (
+            any(not isinstance(x, str) or not x.startswith("ci/circleci: ") for x in contexts)
+            or len(contexts) != len(set(contexts))
+        ):
+            errors.append(f"Invalid CircleCI status contexts for {repo}")
+    suite = unittest.defaultTestLoader.discover(
+        start_dir=str(ROOT / "tests"), pattern="test_circleci_health.py"
+    )
+    if not unittest.TextTestRunner(verbosity=0).run(suite).wasSuccessful():
+        errors.append("CircleCI classifier unit tests failed.")
+    return errors
+
+
 def main() -> int:
     errors = []
     errors.extend(validate_required_files())
     errors.extend(validate_markdown_links())
     errors.extend(validate_manifest())
     errors.extend(validate_repository_metadata())
+    errors.extend(validate_circleci_inventory())
     if errors:
         for error in errors:
             print(error)
