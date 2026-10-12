@@ -19,7 +19,11 @@ python scripts/sync_repository_metadata.py --repo greenweez-finance-campaign-ana
 
 The first `--apply` run is designed to fill Topics that are currently empty, **not** replace already-present labels or descriptions. `--overwrite` is intentionally explicit and should only be used after examining the proposed changes. Avoid renaming, changing visibility, or setting fictional live demo links. The script makes no CI, Git tag or release changes.
 
-The verified empty-topic priorities are MS Capital, Excel/CSV Reporting, Football Player Performance (fork), and Olist Database Analysis (fork). Existing complete metadata should stay intact unless clearly outdated.
+The four initially empty-topic priorities—MS Capital, Excel/CSV Reporting, Football Player Performance (fork), and Olist Database Analysis (fork)—were checked on GitHub after the authenticated CLI run: all four now have Topics. Their present counts are 8, 7, 7, and 5 respectively. Existing nonempty Topics remain intact. Some About descriptions/homepage fields still need a separate human review; the default synchronization does not overwrite them.
+
+## Current sequencing — Social Preview on hold
+
+**As of 2026-10-12, the repository README artwork is being redesigned. Do not regenerate or upload new GitHub Social Previews yet.** The existing screenshot paths in the metadata manifest are only historical source candidates, not an approved current design. When the final README images are ready, update and verify the manifest, review every image source and caption, and only then generate/approve matching Social Preview cards. CI and repository README artwork are handled separately.
 
 ## 2. Social Preview: use real application evidence
 
