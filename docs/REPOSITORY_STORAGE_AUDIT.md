@@ -4,7 +4,7 @@ This inventory comes from GitHub's recursive Git tree metadata for the named rep
 
 | Repository | Oversized tracked item(s) | Approximate file size | Handling decision |
 | --- | --- | ---: | --- |
-| [nexus-web-v2](https://github.com/senanurcetin/nexus-web-v2) (private) | `public/nexus-logo.png` | **5.91 MB** | Review transparent image size and lossless PNG/WebP optimization; keep the original until all usage paths work with a replacement |
+| [nexus-web-v2](https://github.com/senanurcetin/nexus-web-v2) (private) | Former `public/nexus-logo.png` (no longer tracked on `main`) | **5.91 MB historical; 92 KB current brand asset** | Current asset `public/nexus-logo-canva.png` is tracked at 92,304 bytes. The large original is absent from the current tree; this does **not** imply Git history was rewritten. |
 | [E-commerce](https://github.com/senanurcetin/E-commerce) | `notebooks/olist-ecommerce-analysis.ipynb` | **18.57 MB** | Inspect code-cell outputs and embedded images, preserving code, markdown and experiment evidence; use the new notebook-audit helper before stripping anything |
 | [olist_database_analysis](https://github.com/senanurcetin/olist_database_analysis) (fork) | `olist_geolocation_dataset.csv`, `olist.zip`, orders/items/reviews CSVs | **61.27 MB, 44.72 MB, 17.65 MB, 15.44 MB, 14.45 MB** respectively | Review licensing, provenance and the duplication between ZIP and extracted files before changing an educational/upstream fork |
 | [football-player-performance-analysis](https://github.com/senanurcetin/football-player-performance-analysis) (fork) | Duplicate Power BI registered PNG resources under report and workspace folders | **4.72 MB** and **4.05 MB** per instance | Keep until Power BI Desktop/workspace integrity is checked; do not deduplicate files by name alone |
@@ -21,9 +21,9 @@ This inventory comes from GitHub's recursive Git tree metadata for the named rep
 
 ## Review priorities
 
-- High-impact, comparatively low-risk: optimize **Nexus logo** as an alternate asset, switch references only after preview/testing.
+- **Completed in current tree:** Nexus's former 5.91 MB `public/nexus-logo.png` is no longer present on `main`; the current `public/nexus-logo-canva.png` is 92,304 bytes. Check usage and visual quality when updating assets, but no further logo removal is required.
 - High-impact, moderate risk: strip **transient notebook outputs** in E-commerce, preserving all code and meaningful figures.
 - High-impact, high-risk: dataset duplication in Olist and Power BI registered resources; require upstream/provenance and workspace verification first.
 - Do **not** strip binary machine-learning model checkpoints without a documented reproducible replacement.
 
-**Status:** The measured inventory and remediation guidance are recorded. Large tracked binaries are not deleted or rewritten by this document.
+**Status:** The updated inventory distinguishes the already-removed large Nexus logo from unresolved notebook/data/Power BI storage candidates. This document does not delete files or rewrite Git history.
