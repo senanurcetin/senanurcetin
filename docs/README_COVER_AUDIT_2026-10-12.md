@@ -16,6 +16,18 @@
 
 No GitHub Social Preview assets, repository About/Homepage settings, Power BI report binaries, numerical model results or production datasets were changed in this pass. Hosted CI was intentionally skipped while Actions minutes are exhausted.
 
+## CI-independent implementation update — 13 October 2026
+
+| Repository | Confirmed merged work | What the evidence proves | Not yet released/verified |
+| --- | --- | --- | --- |
+| [Visual QC](https://github.com/senanurcetin/visual-qc-project) | [#39](https://github.com/senanurcetin/visual-qc-project/pull/39) HMI styles/provenance and [#41](https://github.com/senanurcetin/visual-qc-project/pull/41) actual XLSX report | Workbook generator now produces a **formula-linked KPI Dashboard, Production Log and six-class Defect Analysis** sheet with two actual Excel charts; the HMI labels simulated production metrics | No new genuine deployed browser screenshot; Vercel READY production revision was behind repository main on inspection |
+| [Smart Factory](https://github.com/senanurcetin/smart-factory-app) | [#8](https://github.com/senanurcetin/smart-factory-app/pull/8) real model-risk/OEE panels and [#11](https://github.com/senanurcetin/smart-factory-app/pull/11) reporting provenance | CSV response and README now explicitly describe the **shared worker-local simulation buffer** (last 240 readings), not a private visitor session or plant data | [#10](https://github.com/senanurcetin/smart-factory-app/pull/10) genuine browser capture and CircleCI workflow remains a separate unmerged proposal; public Render revision not independently verified |
+| [Football](https://github.com/senanurcetin/football-player-performance-analysis) | [#22](https://github.com/senanurcetin/football-player-performance-analysis/pull/22) native 365-day PBIR visualization source changes | Four genuine data-bound chart definitions changed in both workspace and offline demo, without replacing reports with generated artwork | Full 11-page Power BI Desktop open/refresh, DAX check and re-capture not yet verified |
+
+**Offline review performed in this update:** original XlsxWriter chart behavior was reproduced locally: hidden series columns need `show_hidden_data()` to avoid suppressing the pie-series data. The fix, source-linked formula tests and rejection-class validation are committed in Visual QC #41. Full project suites, CI and public deployment were **not** run or declared green for this offline review.
+
+**Publication rule:** README screenshots and GitHub Social Previews must come from the **running, verified application/report** at a known code version, not generated concept panels. Do not substitute an Excel programmatic report for a Power BI Desktop screenshot.
+
 ## Baseline findings
 
 - **17 tracked entries after this change:** the original manifest omitted `GTM` although the project catalog and reviewer index included it. GTM is a **fork** and its default branch is **`master`**, not `main`.
