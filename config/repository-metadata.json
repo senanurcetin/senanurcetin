@@ -42,7 +42,9 @@
         "sports-analytics"
       ],
       "social_preview": "docs/assets/screenshots/01_player_performance.png",
-      "fork": true
+      "fork": true,
+      "description": "Transfermarkt football analytics with BigQuery, dbt, Power BI and time-split market-value modeling; fork-based contributions documented in README.",
+      "homepage": "https://senanur-cetin.vercel.app/projects/football-player-performance-analysis"
     },
     {
       "name": "olist_database_analysis",
@@ -108,7 +110,8 @@
     },
     {
       "name": "PlantLog-MERN",
-      "social_preview": "docs/dashboard.png"
+      "social_preview": "docs/dashboard.png",
+      "homepage": "https://senanur-cetin.vercel.app/projects/plantlog-mern"
     },
     {
       "name": "ChemView",
@@ -117,6 +120,20 @@
     {
       "name": "Vision2DCS",
       "social_preview": null
+    },
+    {
+      "name": "GTM",
+      "topics": [
+        "archive-proof",
+        "ga4",
+        "google-tag-manager",
+        "jekyll",
+        "static-site",
+        "web-analytics"
+      ],
+      "social_preview": null,
+      "default_branch": "master",
+      "fork": true
     },
     {
       "name": "senanurcetin",
