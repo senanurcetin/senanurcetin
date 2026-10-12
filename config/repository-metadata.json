@@ -1,0 +1,126 @@
+{
+  "schema_version": 1,
+  "owner": "senanurcetin",
+  "purpose": "Curated GitHub repository settings; settings writes are opt-in and never occur in CI.",
+  "repositories": [
+    {
+      "name": "ms-capital-market-forecasting",
+      "topics": [
+        "quantitative-finance",
+        "financial-forecasting",
+        "bigquery",
+        "lightgbm",
+        "time-series",
+        "walk-forward-validation",
+        "mlops",
+        "streamlit"
+      ],
+      "social_preview": "docs/assets/mscapital-research-dashboard.png"
+    },
+    {
+      "name": "excel-csv-reporting-automation",
+      "topics": [
+        "reporting-automation",
+        "data-quality",
+        "excel",
+        "csv",
+        "pandas",
+        "business-intelligence",
+        "python"
+      ],
+      "social_preview": null
+    },
+    {
+      "name": "football-player-performance-analysis",
+      "topics": [
+        "football-analytics",
+        "power-bi",
+        "dbt",
+        "bigquery",
+        "machine-learning",
+        "transfermarkt",
+        "sports-analytics"
+      ],
+      "social_preview": "docs/assets/screenshots/01_player_performance.png",
+      "fork": true
+    },
+    {
+      "name": "olist_database_analysis",
+      "description": "Olist e-commerce analysis with PostgreSQL, reproducible SQL queries, and Python notebooks; fork-based learning and analysis.",
+      "topics": [
+        "postgresql",
+        "sql",
+        "ecommerce-analytics",
+        "data-analysis",
+        "olist"
+      ],
+      "social_preview": null,
+      "fork": true
+    },
+    {
+      "name": "greenweez-finance-campaign-analytics",
+      "description": "Finance and marketing analytics with dbt, BigQuery, and reproducible DuckDB demos using synthetic data.",
+      "topics": [
+        "analytics-engineering",
+        "finance-analytics",
+        "marketing-analytics",
+        "dbt",
+        "bigquery",
+        "duckdb"
+      ],
+      "social_preview": null
+    },
+    {
+      "name": "ot-sentinel",
+      "topics": [
+        "ot-security",
+        "industrial-cybersecurity",
+        "anomaly-detection",
+        "nextjs",
+        "genkit",
+        "security-analytics"
+      ],
+      "social_preview": "docs/assets/dashboard-normal.png"
+    },
+    {
+      "name": "ieee-fraud-detection-analytics",
+      "social_preview": "docs/assets/web_dashboard_executive_overview.png"
+    },
+    {
+      "name": "smart-factory-app",
+      "social_preview": "docs/assets/smart-factory-dashboard.png"
+    },
+    {
+      "name": "visual-qc-project",
+      "social_preview": "docs/assets/visual-qc-dashboard.png"
+    },
+    {
+      "name": "APTOS-2019-diabetic-retinopathy",
+      "social_preview": null
+    },
+    {
+      "name": "E-commerce",
+      "social_preview": "docs/assets/powerbi-channel-performance.png"
+    },
+    {
+      "name": "Ops-Copilot",
+      "social_preview": "docs/assets/ops-copilot-case-study.png"
+    },
+    {
+      "name": "PlantLog-MERN",
+      "social_preview": "docs/dashboard.png"
+    },
+    {
+      "name": "ChemView",
+      "social_preview": "docs/assets/chemview-dashboard.png"
+    },
+    {
+      "name": "Vision2DCS",
+      "social_preview": null
+    },
+    {
+      "name": "senanurcetin",
+      "social_preview": null
+    }
+  ]
+}
