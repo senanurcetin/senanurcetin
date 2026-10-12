@@ -20,29 +20,35 @@ This document distinguishes **upstream pull requests submitted for review** from
 
 ### Additional work in a fork
 
-- [xarray issue #3458 — keep a selected dimension](https://github.com/senanurcetin/xarray/compare/main...docs/indexing-preserve-selected-dimension): documentation commit on a fork branch; not an upstream PR or merge. 
+- [xarray issue #3458 — keep a selected dimension](https://github.com/senanurcetin/xarray/compare/main...docs/indexing-preserve-selected-dimension): documentation commit on a fork branch; not an upstream PR or merge.
+- [xarray issue #9333 — document `keepdims`](https://github.com/senanurcetin/xarray/compare/main...docs/explain-reduction-keepdims-9333): documentation commit, not an upstream PR or merge.
+- [xarray issue #9869 — safe indexing assignment](https://github.com/senanurcetin/xarray/compare/main...docs/clarify-indexer-assignment-9869): method-specific documentation warnings, not an upstream PR or merge.
+- [xarray issue #8071 — MultiIndex coordinates](https://github.com/senanurcetin/xarray/compare/main...docs/multiindex-coordinates-8071): current coordinates behavior documented, not an upstream PR or merge.
+- [Football analytics — model checksum check](https://github.com/senanurcetin/football-player-performance-analysis/compare/main...fix/verify-ml-checksum-before-deserialization): security-oriented fix in a fork, not an upstream PR or merge. 
 - Research branches for [issue #4637](https://github.com/pydata/xarray/issues/4637) and [issue #7333](https://github.com/pydata/xarray/issues/7333) were **not** submitted upstream because existing third-party PRs already addressed the same issues.
 
 ## Verified merged maintenance in owned repositories
 
-The following six PRs were reported by the GitHub API as merged on **2026-10-12 UTC**.
+The following **five PRs in publicly accessible repositories** were reported by the GitHub API as merged on **2026-10-12 UTC**.
 
 | Maintained project | Merged contribution | GitHub evidence |
 | --- | --- | --- |
 | [ot-sentinel](https://github.com/senanurcetin/ot-sentinel) | Seven fixed-window rate-limiter boundary and recovery tests | [PR #38](https://github.com/senanurcetin/ot-sentinel/pull/38) |
-| [nexus-agent](https://github.com/senanurcetin/nexus-agent) | Offline mock HTTP and credential-secret handling tests | [PR #1](https://github.com/senanurcetin/nexus-agent/pull/1) |
 | [Ops-Copilot](https://github.com/senanurcetin/Ops-Copilot) | Deterministic document-ranking regression tests | [PR #5](https://github.com/senanurcetin/Ops-Copilot/pull/5) |
 | [smart-factory-app](https://github.com/senanurcetin/smart-factory-app) | Read-only AI4I CSV quality gate, tests, and issue templates | [PR #2](https://github.com/senanurcetin/smart-factory-app/pull/2) |
 | smart-factory-app | PSI drift threshold and sensor-distribution edge-case tests | [PR #1](https://github.com/senanurcetin/smart-factory-app/pull/1) |
 | [Vision2DCS](https://github.com/senanurcetin/Vision2DCS) | Engineering-tag, model-output, and export-format regression tests | [PR #16](https://github.com/senanurcetin/Vision2DCS/pull/16) |
 
-**Verified above: six merged owned-repository PRs across five distinct repositories.** This is evidence of repository maintenance, **not** an external merged-PR count.
+**Verified above: five merged PRs across four public repositories owned by this account.** This is evidence of public repository maintenance, **not** an external merged-PR count.
+
+Another merged maintenance PR in `nexus-agent` is intentionally excluded: that repository is **private** at the time of this audit and cannot substantiate a public OSS eligibility claim. The repository's visibility has not been changed.
 
 ### Testing and review limitations
 
 - Some new test cases were exercised against locally reproduced or source-equivalent logic; that is **not** equivalent to passing each repository's full test suite.
 - GitHub Actions capacity or external CI availability may have prevented full hosted validation. Check each PR's actual checks; never infer green CI from a successful merge.
 - Several contributions were prepared with ChatGPT assistance. Follow each upstream project's AI disclosure requirements, personally review changes, and retain responsibility for proposed code and documentation.
+- As of this audit, the checked public repositories (ot-sentinel, Vision2DCS, Ops-Copilot, smart-factory-app) show only 0–1 GitHub stars each. Star counts do not capture all usage, but these repositories do **not yet have verified evidence** of broad third-party adoption or the dependency/download thresholds advertised by the Claude for Open Source program.
 - No deployment, third-party adoption, package downloads, security certification, or acceptance into an open-source funding program is asserted by this document.
 
 ## How to use this record
