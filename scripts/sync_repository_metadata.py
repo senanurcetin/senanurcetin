@@ -62,7 +62,7 @@ def main() -> int:
         settings = f"https://github.com/{full}/settings"
         if args.previews and spec.get("social_preview"):
             path = spec["social_preview"]
-            print(f"PREVIEW {full}: https://raw.githubusercontent.com/{full}/main/{path}")
+            print(f"PREVIEW {full}: https://raw.githubusercontent.com/{full}/{spec.get('default_branch', 'main')}/{path}")
             print(f"  Upload via {settings} (Social Preview); this tool does not upload media.")
         elif args.previews:
             print(f"PREVIEW {full}: no verified authentic PNG/JPG candidate")
