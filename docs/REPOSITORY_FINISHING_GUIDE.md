@@ -33,9 +33,13 @@ To generate consistent **1280 × 640 PNG cards** using only the verified screens
 
 ```bash
 python -m pip install Pillow
-python scripts/generate_social_previews.py          # inspect sources, no downloads
-python scripts/generate_social_previews.py --write  # save candidates to social-previews/
+python scripts/generate_social_previews.py                       # dry-run
+python scripts/generate_social_previews.py --write --replace --contact-sheet
+# Optional dark variant, still in the website's navy/blue palette:
+python scripts/generate_social_previews.py --variant dark --write --replace --contact-sheet
 ```
+
+The redesigned generator uses the actual website palette (paper `#f7f8fa`, ink `#091625`, navy `#061524`, blue `#0572a8`), readable project-specific titles, and a **large uncropped source screenshot**. The earlier tiny screenshot + generic laptop placeholder style has been retired. It uses a light editorial design by default, and `--variant dark` offers a matching dark treatment. Neither style invents charts, metrics, or app interfaces. `--replace` is required to regenerate existing local images, and `--contact-sheet` writes a review grid for all previews.
 
 The generator never fabricates screenshots; it leaves projects without verified images untouched. Verify each card visually, especially labels and cropped text, before using it publicly.
 
