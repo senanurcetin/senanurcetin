@@ -8,6 +8,9 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 MARKDOWN_FILES = [ROOT / "README.md", *sorted((ROOT / "docs").glob("*.md"))]
 PORTFOLIO_MANIFEST = ROOT / "docs" / "portfolio-manifest.json"
+REPOSITORY_METADATA_MANIFEST = ROOT / "config" / "repository-metadata.json"
+REPO_NAME_PATTERN = re.compile(r"^[A-Za-z0-9_.-]+$")
+TOPIC_PATTERN = re.compile(r"^[a-z0-9][a-z0-9-]{0,49}$")
 REQUIRED_FILES = [
     ROOT / "README.md",
     ROOT / "docs" / "cv-project-bullets.md",
@@ -88,11 +91,68 @@ def validate_manifest() -> list[str]:
     return errors
 
 
+
+def validate_repository_metadata() -> list[str]:
+    """Check the presentation manifest offline, without API calls or runner minutes."""
+    errors = []
+    try:
+        manifest = json.loads(REPOSITORY_METADATA_MANIFEST.read_text(encoding="utf-8"))
+    except (OSError, ValueError) as exc:
+        return [f"Invalid repository metadata manifest: {exc}"]
+
+    if manifest.get("owner") != "senanurcetin":
+        errors.append("Repository metadata manifest has an unexpected owner.")
+    entries = manifest.get("repositories")
+    if not isinstance(entries, list) or not entries:
+        return errors + ["Repository metadata manifest must have a nonempty repositories list."]
+
+    names = set()
+    for index, entry in enumerate(entries, start=1):
+        if not isinstance(entry, dict):
+            errors.append(f"Repository entry #{index} is not an object.")
+            continue
+        name = entry.get("name")
+        if not isinstance(name, str) or not REPO_NAME_PATTERN.fullmatch(name):
+            errors.append(f"Repository entry #{index} has an invalid name.")
+            continue
+        if name in names:
+            errors.append(f"Duplicate repository metadata entry: {name}")
+        names.add(name)
+
+        topics = entry.get("topics")
+        if topics is not None:
+            if not isinstance(topics, list) or len(topics) > 20 or any(
+                not isinstance(t, str) or not TOPIC_PATTERN.fullmatch(t) for t in topics
+            ) or len(set(topics)) != len(topics):
+                errors.append(f"Invalid or duplicate Topics for {name}")
+
+        branch = entry.get("default_branch", "main")
+        if not isinstance(branch, str) or not branch or not re.fullmatch(
+            r"[A-Za-z0-9._/-]+", branch
+        ) or branch.startswith(("/", "-")) or ".." in branch:
+            errors.append(f"Invalid default_branch for {name}")
+
+        preview = entry.get("social_preview")
+        if preview is not None:
+            if not isinstance(preview, str) or preview.startswith("/") or (
+                ".." in Path(preview).parts
+            ) or Path(preview).suffix.lower() not in {".png", ".jpg", ".jpeg"}:
+                errors.append(f"Unsafe or unsupported social_preview path for {name}")
+
+        homepage = entry.get("homepage")
+        if homepage is not None and (
+            not isinstance(homepage, str) or not homepage.startswith("https://")
+        ):
+            errors.append(f"Invalid homepage URL for {name}")
+    return errors
+
+
 def main() -> int:
     errors = []
     errors.extend(validate_required_files())
     errors.extend(validate_markdown_links())
     errors.extend(validate_manifest())
+    errors.extend(validate_repository_metadata())
     if errors:
         for error in errors:
             print(error)

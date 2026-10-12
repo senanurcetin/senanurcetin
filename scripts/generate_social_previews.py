@@ -259,7 +259,7 @@ def main():
             continue
         if not re.fullmatch(r"[A-Za-z0-9_.-]+", name):
             parser.error(f"Unsafe repo name: {name}")
-        url = (f"https://raw.githubusercontent.com/{owner}/{name}/main/"
+        url = (f"https://raw.githubusercontent.com/{owner}/{name}/{entry.get('default_branch', 'main')}/"
                f"{quote(source, safe='/')}")
         images = [(v, args.output / f"{name}{'-dark' if v == 'dark' else ''}.png")
                   for v in variants]
