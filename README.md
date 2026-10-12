@@ -5,6 +5,7 @@
 - Based in Istanbul, Turkey
 - Portfolio: [senanur-cetin.vercel.app](https://senanur-cetin.vercel.app/)
 - Project library: [senanur-cetin.vercel.app/projects](https://senanur-cetin.vercel.app/projects)
+- Curated GitHub catalog: [Project provenance, technical review paths and evidence standards](docs/PROJECT_CATALOG.md)
 - Profiles: [LinkedIn](https://www.linkedin.com/in/senanur-cetin/) · [Kaggle](https://www.kaggle.com/senanuretin) · [Hugging Face](https://huggingface.co/senanurcetin) · [YouTube](https://www.youtube.com/@SenanurCetinn)
 - Contact: [senanur.cetin.work@gmail.com](mailto:senanur.cetin.work@gmail.com)
 
