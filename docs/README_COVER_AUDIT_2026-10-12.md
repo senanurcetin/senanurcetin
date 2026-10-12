@@ -4,6 +4,18 @@
 >
 > **Evidence:** current GitHub REST repository metadata, the first 80–110 README lines, and directory listings for the ten listed PNG screenshot candidates. This is a reproducible *presentation inventory*, not an assessment of model performance or deployed UI quality.
 
+## Implementation log — README and evidence fixes merged
+
+| Project | Merged PR | Completed source changes | Still requires hands-on verification |
+| --- | --- | --- | --- |
+| [Football Player Performance](https://github.com/senanurcetin/football-player-performance-analysis) | [#19](https://github.com/senanurcetin/football-player-performance-analysis/pull/19) | Historical six-image gallery labelled; 11-page PBIR / BigQuery-vs-synthetic scope clarified; overpay and underpricing interpretations qualified | Open/refresh 11 pages in Power BI Desktop; reconcile DAX and production SQL; take new genuine captures |
+| [E-commerce Analytics](https://github.com/senanurcetin/E-commerce) | [#9](https://github.com/senanurcetin/E-commerce/pull/9) | Importable navy-blue Power BI JSON theme; three-page visual and semantic QA checklist; canonical case-study link | Obtain original PBIX/PBIP, import/inspect theme, reconcile current metrics, recapture historical screenshots; original violet editorial cover remains |
+| [MSCapital Market Forecasting](https://github.com/senanurcetin/ms-capital-market-forecasting) | [#43](https://github.com/senanurcetin/ms-capital-market-forecasting/pull/43) | Source-rendered Streamlit screenshot provenance; v3 served versus v4 leaderboard model boundary; release/maintenance wording corrected | Review all seven live Streamlit pages, deployed commit and inference paths before refreshing screenshot or Social Preview |
+
+**Interpretation:** these three PRs complete a first *README/source-presentation pass*, **not** full visual acceptance or all P0 backlog. The Football PBIR screenshot gate and Commerce Power BI Desktop gate remain on hold. MSCapital's screenshot remains a documented source-rendered historical capture, not verified live-server proof.
+
+No GitHub Social Preview assets, repository About/Homepage settings, Power BI report binaries, numerical model results or production datasets were changed in this pass. Hosted CI was intentionally skipped while Actions minutes are exhausted.
+
 ## Baseline findings
 
 - **17 tracked entries after this change:** the original manifest omitted `GTM` although the project catalog and reviewer index included it. GTM is a **fork** and its default branch is **`master`**, not `main`.
