@@ -28,6 +28,17 @@ No GitHub Social Preview assets, repository About/Homepage settings, Power BI re
 
 **Publication rule:** README screenshots and GitHub Social Previews must come from the **running, verified application/report** at a known code version, not generated concept panels. Do not substitute an Excel programmatic report for a Power BI Desktop screenshot.
 
+## Second implementation pass — CI-free, 13 October 2026
+
+| Repository | Merged implementation | Verification performed without CI | Remaining acceptance |
+| --- | --- | --- | --- |
+| [NEXUS web](https://github.com/senanurcetin/nexus-web-v2) | [#70](https://github.com/senanurcetin/nexus-web-v2/pull/70): previously scheduled or push-triggered hosted link-check/screenshot flows restricted to explicitly gated manual dispatch | Inspected all three affected GitHub workflow triggers and job gates | Live Vercel production SHA remained behind GitHub `main` during inspection; automated screenshot refresh is paused |
+| [Smart Factory](https://github.com/senanurcetin/smart-factory-app) | [#14](https://github.com/senanurcetin/smart-factory-app/pull/14): real simulated, model-scored API readings now expose full ISO 8601 UTC timestamps in dashboard and CSV | Extracted embedded JavaScript and parsed it successfully; reviewed data/CSV tests and endpoint schema | Flask/Chromium runtime not re-executed; current Render release and genuine new screenshots unverified |
+| [Visual QC](https://github.com/senanurcetin/visual-qc-project) | [#43](https://github.com/senanurcetin/visual-qc-project/pull/43): readable Availability/Performance/Quality chart labels and current API response/failure state in real HMI | Embedded HMI JavaScript parsed in V8, three-source-file diff and real source bindings inspected | Vercel production commit not refreshed; screenshot/interaction acceptance pending |
+| [Football PBIR](https://github.com/senanurcetin/football-player-performance-analysis) | [#28](https://github.com/senanurcetin/football-player-performance-analysis/pull/28): eight more native Player Segmentation and Club/League chart source edits in both workspace and offline-demo | Verified all eight data-bound visual JSON documents and exact parity with production counterparts; Category/Y roles, chart type, typography and panel radius retained | Open, refresh and examine real Power BI Desktop report; no replacement screenshot available yet |
+
+**Evidence boundary:** the changes above are real working application/report source files, **not** newly captured running dashboards. This pass did **not** invoke GitHub Actions or CircleCI. A parser/static inspection is not a replacement for live release, Power BI Desktop or end-to-end acceptance. Preserve existing historical screenshots until a verified capture from the intended deployed/source revision exists.
+
 ## Baseline findings
 
 - **17 tracked entries after this change:** the original manifest omitted `GTM` although the project catalog and reviewer index included it. GTM is a **fork** and its default branch is **`master`**, not `main`.
