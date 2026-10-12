@@ -10,6 +10,14 @@
 - Profiles: [LinkedIn](https://www.linkedin.com/in/senanur-cetin/) · [Kaggle](https://www.kaggle.com/senanuretin) · [Hugging Face](https://huggingface.co/senanurcetin) · [YouTube](https://www.youtube.com/@SenanurCetinn)
 - Contact: [senanur.cetin.work@gmail.com](mailto:senanur.cetin.work@gmail.com)
 
+## GitHub API integration — developer tooling
+
+[**Ops-Copilot GitHub Actions Auditor**](https://github.com/senanurcetin/Ops-Copilot#github-actions-rest-api-integration) is a **read-only GitHub REST API integration in active development**. The standalone Node.js CLI queries workflow runs and job timings, supports date filtering and Markdown/JSON reporting, and distinguishes measured job time from GitHub billing. It has automated tests and requires no GitHub-hosted runner for local use.
+
+**Review:** [source code](https://github.com/senanurcetin/Ops-Copilot/blob/main/scripts/github-actions-audit.mjs) · [verified public API demo](https://github.com/senanurcetin/Ops-Copilot/blob/main/docs/github-api-live-demo.md) · [integration guide](https://github.com/senanurcetin/Ops-Copilot/blob/main/docs/github-actions-integration.md) · [developer program application evidence](https://github.com/senanurcetin/Ops-Copilot/blob/main/docs/github-developer-program-application.md).
+
+**Developer support:** [senanur.cetin.work@gmail.com](mailto:senanur.cetin.work@gmail.com). GitHub Developer Program membership is **not claimed**; it is subject to GitHub's registration and review.
+
 ## Selected project visuals
 
 The first two visuals are genuine application screenshots; the APTOS panel is a published preprocessing figure from the public research repository, **not a live interface capture**. Demos and research examples may use synthetic or public benchmark data; linked repositories disclose their evaluation limits.
