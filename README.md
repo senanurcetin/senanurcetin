@@ -11,12 +11,12 @@
 
 ## Selected project visuals
 
-The previews below are actual application screenshots, not generated performance charts. Demo and research examples may use synthetic or benchmark datasets; each linked repository documents its evidence and limitations.
+The first two visuals are genuine application screenshots; the APTOS panel is a published preprocessing figure from the public research repository, **not a live interface capture**. Demos and research examples may use synthetic or public benchmark data; linked repositories disclose their evaluation limits.
 
 | Fraud Risk Intelligence | Smart Factory Operations | APTOS Retinopathy Grader |
 | :---: | :---: | :---: |
-| [![Fraud risk dashboard interface](https://raw.githubusercontent.com/senanurcetin/ieee-fraud-detection-analytics/main/docs/assets/web_dashboard_executive_overview.png)](https://github.com/senanurcetin/ieee-fraud-detection-analytics) | [![Predictive maintenance dashboard interface](https://raw.githubusercontent.com/senanurcetin/smart-factory-app/main/docs/assets/smart-factory-dashboard.png)](https://github.com/senanurcetin/smart-factory-app) | [![APTOS grader application captured from live interface](https://raw.githubusercontent.com/senanurcetin/nexus-web-v2/main/public/project-previews/aptos-2019-diabetic-retinopathy.png)](https://github.com/senanurcetin/APTOS-2019-diabetic-retinopathy) |
-| Fraud modeling + governed BI | Failure-risk analytics + production telemetry simulation | Diabetic-retinopathy research + interface demo |
+| [![Fraud risk dashboard interface](https://raw.githubusercontent.com/senanurcetin/ieee-fraud-detection-analytics/main/docs/assets/web_dashboard_executive_overview.png)](https://github.com/senanurcetin/ieee-fraud-detection-analytics) | [![Predictive maintenance dashboard interface](https://raw.githubusercontent.com/senanurcetin/smart-factory-app/main/docs/assets/smart-factory-dashboard.png)](https://github.com/senanurcetin/smart-factory-app) | [![APTOS retinal image preprocessing research figure](https://raw.githubusercontent.com/senanurcetin/APTOS-2019-diabetic-retinopathy/main/reports/figures/05_pipeline_stages.png)](https://github.com/senanurcetin/APTOS-2019-diabetic-retinopathy) |
+| Fraud modeling + governed BI | Failure-risk analytics + production telemetry simulation | Retinal preprocessing research figure (not a clinical demo) |
 
 ## Current direction
 
