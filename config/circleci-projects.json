@@ -1,0 +1,80 @@
+{
+  "projects": [
+    {
+      "repo": "senanurcetin/VocabMaster",
+      "contexts": [
+        "ci/circleci: verify"
+      ]
+    },
+    {
+      "repo": "senanurcetin/nexus-web-v2",
+      "contexts": [
+        "ci/circleci: full-portfolio-check"
+      ]
+    },
+    {
+      "repo": "senanurcetin/football-player-performance-analysis",
+      "contexts": [
+        "ci/circleci: dbt-source-preflight",
+        "ci/circleci: ml-contract-smoke"
+      ]
+    },
+    {
+      "repo": "senanurcetin/Vision2DCS",
+      "contexts": [
+        "ci/circleci: node-quality"
+      ]
+    },
+    {
+      "repo": "senanurcetin/smart-factory-app",
+      "contexts": [
+        "ci/circleci: python-quality"
+      ]
+    },
+    {
+      "repo": "senanurcetin/ot-sentinel",
+      "contexts": [
+        "ci/circleci: web-quality",
+        "ci/circleci: analysis-quality"
+      ]
+    },
+    {
+      "repo": "senanurcetin/Ops-Copilot",
+      "contexts": [
+        "ci/circleci: node-quality"
+      ]
+    },
+    {
+      "repo": "senanurcetin/ChemView",
+      "contexts": [
+        "ci/circleci: node-quality"
+      ]
+    },
+    {
+      "repo": "senanurcetin/PlantLog-MERN",
+      "contexts": [
+        "ci/circleci: frontend-build",
+        "ci/circleci: backend-build"
+      ]
+    },
+    {
+      "repo": "senanurcetin/greenweez-finance-campaign-analytics",
+      "contexts": [
+        "ci/circleci: dbt-duckdb-quality"
+      ]
+    },
+    {
+      "repo": "senanurcetin/visual-qc-project",
+      "contexts": [
+        "ci/circleci: python-postgres-quality"
+      ]
+    },
+    {
+      "repo": "senanurcetin/ms-capital-market-forecasting",
+      "contexts": [
+        "ci/circleci: python-quality",
+        "ci/circleci: dashboard-runtime"
+      ]
+    }
+  ]
+}
