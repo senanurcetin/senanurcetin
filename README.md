@@ -8,6 +8,15 @@
 - Profiles: [LinkedIn](https://www.linkedin.com/in/senanur-cetin/) · [Kaggle](https://www.kaggle.com/senanuretin) · [Hugging Face](https://huggingface.co/senanurcetin) · [YouTube](https://www.youtube.com/@SenanurCetinn)
 - Contact: [senanur.cetin.work@gmail.com](mailto:senanur.cetin.work@gmail.com)
 
+## Selected project visuals
+
+The previews below are actual application screenshots, not generated performance charts. Demo and research examples may use synthetic or benchmark datasets; each linked repository documents its evidence and limitations.
+
+| Fraud Risk Intelligence | Smart Factory Operations | APTOS Retinopathy Grader |
+| :---: | :---: | :---: |
+| [![Fraud risk dashboard interface](https://raw.githubusercontent.com/senanurcetin/ieee-fraud-detection-analytics/main/docs/assets/web_dashboard_executive_overview.png)](https://github.com/senanurcetin/ieee-fraud-detection-analytics) | [![Predictive maintenance dashboard interface](https://raw.githubusercontent.com/senanurcetin/smart-factory-app/main/docs/assets/smart-factory-dashboard.png)](https://github.com/senanurcetin/smart-factory-app) | [![APTOS grader application captured from live interface](https://raw.githubusercontent.com/senanurcetin/nexus-web-v2/main/public/project-previews/aptos-2019-diabetic-retinopathy.png)](https://github.com/senanurcetin/APTOS-2019-diabetic-retinopathy) |
+| Fraud modeling + governed BI | Failure-risk analytics + production telemetry simulation | Diabetic-retinopathy research + interface demo |
+
 ## Current direction
 
 - Focus: Data Scientist and AI Engineer roles in applied machine learning, with analytics engineering and BI as the data layer underneath the models
