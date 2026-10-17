@@ -19,7 +19,7 @@ For evaluation details, follow each repository's README and linked reviewer brie
 | Industrial visualization | [Vision2DCS](https://github.com/senanurcetin/Vision2DCS) | Independent | Visualization architecture and explicit non-production control boundaries |
 | Industrial logbook | [PlantLog-MERN](https://github.com/senanurcetin/PlantLog-MERN) | Independent | API + React/MongoDB stack, development-only security assumptions |
 | Industrial simulation | [ChemView](https://github.com/senanurcetin/ChemView) | Independent | Interlock simulation, HMI behaviors, no PLC/safety-rated deployment |
-| Football analytics | [Football Player Performance](https://github.com/senanurcetin/football-player-performance-analysis) | Fork-based work | Identify own analysis versus upstream contribution; temporal model validation |
+| Football analytics | [Football Player Performance](https://github.com/senanurcetin/football-player-performance-analysis) | Workintech training-team project; documented fork | Identify own analysis versus upstream contribution; temporal model validation |
 | Web instrumentation | [GTM](https://github.com/senanurcetin/GTM) | Fork-based work | GA4 dataLayer test coverage and Jekyll storefront structure |
 | SQL analysis | [Olist Database Analysis](https://github.com/senanurcetin/olist_database_analysis) | Fork-based work | PostgreSQL analysis, import portability and upstream attribution |
 

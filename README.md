@@ -28,6 +28,12 @@ The first two visuals are genuine application screenshots; the APTOS panel is a 
 | [![Fraud risk dashboard interface](https://raw.githubusercontent.com/senanurcetin/ieee-fraud-detection-analytics/main/docs/assets/web_dashboard_executive_overview.png)](https://github.com/senanurcetin/ieee-fraud-detection-analytics) | [![Predictive maintenance dashboard interface](https://raw.githubusercontent.com/senanurcetin/smart-factory-app/main/docs/assets/smart-factory-dashboard.png)](https://github.com/senanurcetin/smart-factory-app) | [![APTOS retinal image preprocessing research figure](https://raw.githubusercontent.com/senanurcetin/APTOS-2019-diabetic-retinopathy/main/reports/figures/05_pipeline_stages.png)](https://github.com/senanurcetin/APTOS-2019-diabetic-retinopathy) |
 | Fraud modeling + governed BI | Failure-risk analytics + production telemetry simulation | Retinal preprocessing research figure (not a clinical demo) |
 
+## Featured team project — NEXUS Football Intelligence
+
+[![Nine genuine Power BI report views from the Football Intelligence team project](https://raw.githubusercontent.com/senanurcetin/football-player-performance-analysis/main/docs/assets/screenshots/NEXUS_Football_Page_Gallery.png)](https://github.com/senanurcetin/football-player-performance-analysis/tree/main/docs/assets/screenshots)
+
+**Workintech training-team project.** Developed collaboratively during the educational program; the published repository also contains later extensions to the earlier shared dbt foundation. BigQuery, dbt, 13 Power BI pages and documented valuation modeling are shown with explicit upstream attribution. The captured report reflects historical imported data, not live match coverage; final drillthrough and refresh acceptance remain open. [Full case study](https://senanur-cetin.vercel.app/projects/football-player-performance-analysis) · [Contributions and provenance](https://github.com/senanurcetin/football-player-performance-analysis/blob/main/docs/hiring-summary.md).
+
 ## Current direction
 
 - Focus: Data Scientist and AI Engineer roles in applied machine learning, with analytics engineering and BI as the data layer underneath the models
@@ -57,9 +63,9 @@ The first two visuals are genuine application screenshots; the APTOS panel is a 
 ### Analytics Engineering and BI
 
 1. [Fraud Risk Intelligence](https://github.com/senanurcetin/ieee-fraud-detection-analytics)
-2. [E-commerce Analytics Portfolio](https://github.com/senanurcetin/E-commerce)
-3. [Smart Factory Operations Analytics](https://github.com/senanurcetin/smart-factory-app)
-4. [Football Player Performance Analysis](https://github.com/senanurcetin/football-player-performance-analysis)
+2. [Football Player Performance Analysis](https://github.com/senanurcetin/football-player-performance-analysis) — Workintech training-team project (BigQuery, dbt, Power BI, ML)
+3. [E-commerce Analytics Portfolio](https://github.com/senanurcetin/E-commerce)
+4. [Smart Factory Operations Analytics](https://github.com/senanurcetin/smart-factory-app)
 
 ## Verified project proof
 
@@ -73,7 +79,7 @@ The first two visuals are genuine application screenshots; the APTOS panel is a 
 | [APTOS-2019 Diabetic Retinopathy](https://github.com/senanurcetin/APTOS-2019-diabetic-retinopathy) | 3,662 fundus photos, EfficientNet-B0 ordinal grader, 5-fold per-model mean QWK `0.8902`, best ensemble test QWK `0.9098` (baseline ensemble `0.9091`); metadata-only shortcut baseline QWK `0.652`; pre-registered external validation: IDRiD referable AUC `0.984`, Messidor-2 `0.819` (below the pre-registered target, reported as is); 177 tests; not a medical device | [Live demo](https://aptos-2019-diabetic-retinopathy.onrender.com) · [Case study](https://senanur-cetin.vercel.app/projects/aptos-2019-diabetic-retinopathy) · [Model card](https://huggingface.co/senanurcetin/aptos-retinopathy-grader) |
 | [OT-Sentinel](https://github.com/senanurcetin/ot-sentinel) | Statistical z-score detector decides, Gemini only explains, labelled rule-based fallback; offline BATADAL evaluation of seven detectors under one false-alarm budget: max z-score PR-AUC `0.427` against `0.195` by chance on the 2017 test file, every detector catches 7 of 7 attacks (which false alarms alone would nearly do), and under a rule fixed in advance no temporal detector (EWMA, CUSUM, rolling residual) beats the z-score; a metric flaw found in the first run is corrected and documented; release v0.3.0; synthetic live telemetry, no authentication | [Case study](https://senanur-cetin.vercel.app/projects/ot-sentinel) · [BATADAL write-up](https://github.com/senanurcetin/ot-sentinel/blob/main/docs/case-study.md) |
 | [E-commerce Analytics Portfolio](https://github.com/senanurcetin/E-commerce) | 4 BI-ready marts, 73 dbt tests, 57 DuckDB CI tests, 30 documented DAX measures, cohort/RFM and statistical testing | [Case study](https://senanur-cetin.vercel.app/projects/e-commerce-marketing-web-performance) |
-| [Football Player Performance Analysis](https://github.com/senanurcetin/football-player-performance-analysis) | Fork of an earlier collaborative project: 28 of the 46 dbt models, plus the sources and their tests, come from upstream; the other 16 models, the singular tests, semantic layer, snapshots, CI, the market-value ML pipeline and the Power BI report are my work. 241/241 tests, 12/12 freshness checks; market-value model R2 `0.9756`, WAPE `12.51%`, where the previous-value baseline already reaches R2 `0.9704`, so the gain shows in WAPE and MAE | [Case study](https://senanur-cetin.vercel.app/projects/football-player-performance-analysis) · [Kaggle notebook](https://www.kaggle.com/code/senanuretin/your-market-value-r2-is-mostly-last-year-s-price) |
+| [Football Player Performance Analysis](https://github.com/senanurcetin/football-player-performance-analysis) | Workintech education-team project based on prior collaborative dbt work, later extended in a documented fork. The upstream foundation contributes 28 of the 46 dbt models (plus sources/tests); the fork contains additional dbt models, semantic layer, snapshots, CI, player-valuation ML and a 13-page Power BI report. This is credited as collaborative work, not sole authorship. 241/241 tests, 12/12 freshness checks; market-value model R2 `0.9756`, WAPE `12.51%`, where the previous-value baseline already reaches R2 `0.9704`, so the gain shows in WAPE and MAE | [Power BI screenshots](https://github.com/senanurcetin/football-player-performance-analysis/tree/main/docs/assets/screenshots) · [Team attribution](https://github.com/senanurcetin/football-player-performance-analysis/blob/main/docs/hiring-summary.md) · [Case study](https://senanur-cetin.vercel.app/projects/football-player-performance-analysis) · [Kaggle notebook](https://www.kaggle.com/code/senanuretin/your-market-value-r2-is-mostly-last-year-s-price) |
 
 ## Kaggle competitions
 
