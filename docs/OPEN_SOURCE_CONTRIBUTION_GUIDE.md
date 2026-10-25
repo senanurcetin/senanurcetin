@@ -60,4 +60,4 @@
 
 ## 7. Active queue
 
-See [Sprint 2 recovery decisions (2026-10-18)](OPEN_SOURCE_SPRINT2_2026-10-18.md) for the 20 historically tracked PRs (19 OPEN + 1 MERGED), exact heads, CI/review gates and single-action ownership. [Notebook 2 handoff](NOTEBOOK2_SPRINT2_HANDOFF_2026-10-18.md) is prepared but not proof of execution. The [original audit](OPEN_SOURCE_PR_AUDIT_2026-10-18.md) remains as the baseline; revalidate before any merge or status statement.
+See [Sprint 2 recovery decisions (2026-10-18)](OPEN_SOURCE_SPRINT2_2026-10-18.md) for the 20 historically tracked PRs (19 OPEN + 1 MERGED), exact heads, CI/review gates and single-action ownership. Handoff work notes are not maintained as live instructions; re-check the linked upstream PRs and their current CI before acting. The [original audit](OPEN_SOURCE_PR_AUDIT_2026-10-18.md) remains as the baseline; revalidate before any merge or status statement.
