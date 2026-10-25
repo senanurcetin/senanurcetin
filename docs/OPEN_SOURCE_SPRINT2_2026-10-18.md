@@ -75,6 +75,6 @@ All 19 open heads report `mergeable=true` in the GitHub metadata response. This 
 
 ## Notebook 2
 
-See [Notebook 2 technical handoff](NOTEBOOK2_SPRINT2_HANDOFF_2026-10-18.md). **Two bounded investigation/quality packages only**; there is no confirmed third code-fix need. This file is a handoff artifact, not evidence that another ChatGPT notebook has received or executed it.
+The original 18 October triage scoped two bounded investigation/quality packages (xarray CI provenance and GS Quant integration/DCO). Those are historical proposals, not authorization or proof of execution. Use the live upstream PR checks for current decisions; a temporary assistant/notebook handoff is not part of this repository's canonical documentation.
 
 **Activity boundary:** audit/read and documentation update only. No upstream PR opened, reviewer contacted, PR closed, CI approved/re-run, or outside code pushed.
