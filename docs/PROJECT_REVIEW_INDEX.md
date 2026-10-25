@@ -17,8 +17,8 @@ An evidence-first map of selected **public** repositories. Start with the primar
 
 | Project | Fast review | Core evidence / necessary caveat |
 |---|---|---|
-| [E-commerce Analytics](https://github.com/senanurcetin/E-commerce) | [Unified commerce evidence](https://github.com/senanurcetin/nexus-commerce-intelligence) | dbt marts and Power BI evidence; acquisition and session sources must not be conflated |
-| [Greenweez Finance / Campaign](https://github.com/senanurcetin/greenweez-finance-campaign-analytics) | [Integrated finance methodology](https://github.com/senanurcetin/nexus-commerce-intelligence/blob/main/integrations/greenweez/README.md) | dbt margin / advertising logic; portable DuckDB demo uses synthetic data |
+| [E-commerce Analytics](https://github.com/senanurcetin/nexus-commerce-intelligence) | [Unified commerce evidence](https://github.com/senanurcetin/nexus-commerce-intelligence) | dbt marts and Power BI evidence; acquisition and session sources must not be conflated |
+| [Greenweez Finance / Campaign](https://github.com/senanurcetin/nexus-commerce-intelligence/tree/main/integrations/greenweez) | [Integrated finance methodology](https://github.com/senanurcetin/nexus-commerce-intelligence/blob/main/integrations/greenweez/README.md) | dbt margin / advertising logic; portable DuckDB demo uses synthetic data |
 | [Excel / CSV Reporting Pilot](https://github.com/senanurcetin/excel-csv-reporting-automation) | [Engineering sources](https://github.com/senanurcetin/excel-csv-reporting-automation) | Auditable issue quarantine, revenue reconciliation and static KPI pack; sample data is synthetic |
 | [Olist Database Analysis](https://github.com/senanurcetin/olist_database_analysis) | [Engineering sources](https://github.com/senanurcetin/olist_database_analysis) | PostgreSQL schema and exploratory notebooks; not live company reporting |
 | [GTM ToyStore](https://github.com/senanurcetin/GTM) | [Engineering sources](https://github.com/senanurcetin/GTM) | GA4-compatible event payload tests on an attributed Jekyll fork, not verified conversion uplift |
