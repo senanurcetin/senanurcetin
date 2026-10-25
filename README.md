@@ -6,10 +6,7 @@
 - Portfolio: [senanur-cetin.vercel.app](https://senanur-cetin.vercel.app/)
 - Project library: [senanur-cetin.vercel.app/projects](https://senanur-cetin.vercel.app/projects)
 - Curated GitHub catalog: [Project provenance, technical review paths and evidence standards](docs/PROJECT_CATALOG.md)
-- Open-source contributions: [review, CI, issue links and AI policy audit](docs/OPEN_SOURCE_PR_AUDIT_2026-10-18.md) · [contribution guide](docs/OPEN_SOURCE_CONTRIBUTION_GUIDE.md)
-- Sprint 2 upstream PR recovery: [20-PR decision matrix](docs/OPEN_SOURCE_SPRINT2_2026-10-18.md) · [Notebook 2 technical handoff](docs/NOTEBOOK2_SPRINT2_HANDOFF_2026-10-18.md)
-- Repository presentation: [Topics, authentic social previews, releases and storage audit](docs/REPOSITORY_FINISHING_GUIDE.md)
-- README and cover audit: [Verified image sources, presentation gaps and staged fixes (12 October 2026)](docs/README_COVER_AUDIT_2026-10-12.md)
+- Open-source contributions: [upstream PR and review evidence](docs/OPEN_SOURCE_PR_AUDIT_2026-10-18.md) · [contribution standards](docs/OPEN_SOURCE_CONTRIBUTION_GUIDE.md)
 - Profiles: [LinkedIn](https://www.linkedin.com/in/senanur-cetin/) · [Kaggle](https://www.kaggle.com/senanuretin) · [Hugging Face](https://huggingface.co/senanurcetin) · [YouTube](https://www.youtube.com/@SenanurCetinn)
 - Contact: [senanur.cetin.work@gmail.com](mailto:senanur.cetin.work@gmail.com)
 
