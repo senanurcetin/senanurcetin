@@ -14,18 +14,9 @@ REPO_NAME_PATTERN = re.compile(r"^[A-Za-z0-9_.-]+$")
 TOPIC_PATTERN = re.compile(r"^[a-z0-9][a-z0-9-]{0,49}$")
 REQUIRED_FILES = [
     ROOT / "README.md",
-    ROOT / "docs" / "cv-project-bullets.md",
-    ROOT / "docs" / "linkedin-featured-copy.md",
-    ROOT / "docs" / "recruiter-reading-paths.md",
-    ROOT / "docs" / "30-second-project-summaries.md",
     ROOT / "docs" / "capability-matrix.md",
-    ROOT / "docs" / "cv-headline-about.md",
-    ROOT / "docs" / "interview-explanations.md",
-    ROOT / "docs" / "outreach-snippets.md",
     ROOT / "docs" / "site-sync-brief.md",
     ROOT / "docs" / "portfolio-manifest.json",
-    ROOT / "docs" / "ops-copilot-note.md",
-    ROOT / "docs" / "lead-case-study-comparison.md",
 ]
 LINK_PATTERN = re.compile(r"\[[^\]]+\]\(([^)]+)\)")
 
@@ -74,7 +65,7 @@ def validate_manifest() -> list[str]:
         "lead_projects",
         "supporting_evidence",
         "reading_paths",
-        "application_pack",
+        "technical_evidence",
         "site_sync",
     }
     missing = sorted(required_top_level_keys - set(manifest.keys()))
