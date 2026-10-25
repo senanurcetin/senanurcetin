@@ -10,7 +10,7 @@ Use this file when the website content is updated. The goal is to keep the websi
 
 ## Hero positioning
 
-Canonical headline, identical on the site, LinkedIn, and CV:
+Canonical public site headline:
 
 `Data Scientist | AI Engineer | Applied Machine Learning`
 
@@ -24,7 +24,7 @@ Canonical headline, identical on the site, LinkedIn, and CV:
 6. `APTOS-2019-diabetic-retinopathy`
 7. `ot-sentinel`
 8. `football-player-performance-analysis`
-9. `E-commerce`
+9. `nexus-commerce-intelligence`
 
 Archive projects (`Ops-Copilot`, `Vision2DCS`, `ChemView`, `PlantLog-MERN`) appear later and visually subordinate.
 
