@@ -2,7 +2,7 @@
 
 This catalog distinguishes **independent portfolio repositories** from **fork-based applied exercises**. It is a reading guide, not a claim that all projects are production deployments or that forked upstream code was authored here.
 
-For evaluation details, follow each repository's README and linked reviewer brief. Where a demo uses synthetic or public benchmark data, the corresponding case study should disclose that scope.
+For evaluation details, follow each repository's README and linked methodology, validation or engineering evidence. Where a demo uses synthetic or public benchmark data, the corresponding case study should disclose that scope.
 
 | Area | Repository | Provenance | Suggested review focus |
 | --- | --- | --- | --- |
@@ -12,7 +12,7 @@ For evaluation details, follow each repository's README and linked reviewer brie
 | Computer vision / RAG | [Visual QC](https://github.com/senanurcetin/visual-qc-project) | Independent | Image classification evidence, review queue, RAG retrieval benchmarking |
 | OT security | [OT-Sentinel](https://github.com/senanurcetin/ot-sentinel) | Independent | Rule/detector evidence, threat model, synthetic/demo vs benchmark conditions |
 | Medical imaging ML | [APTOS-2019](https://github.com/senanurcetin/APTOS-2019-diabetic-retinopathy) | Independent | Ordinal metrics, metadata-only baseline, external validation, non-clinical use |
-| Web / marketing BI | [E-commerce](https://github.com/senanurcetin/E-commerce) | Independent | dbt/DuckDB reproducibility, Power BI screenshots, session vs signup attribution |
+| Web / marketing BI | [E-commerce](https://github.com/senanurcetin/nexus-commerce-intelligence) | Independent | dbt/DuckDB reproducibility, Power BI screenshots, session vs signup attribution |
 | Finance and campaign BI | [Greenweez Analytics](https://github.com/senanurcetin/greenweez-finance-campaign-analytics) | Independent | Finance margins, synthetic-seed controls, no unsupported campaign attribution |
 | Analytics as a service | [Excel/CSV Reporting Automation](https://github.com/senanurcetin/excel-csv-reporting-automation) | Independent | Data-quality exceptions, reproducible synthetic pilot, [handoff criteria](https://github.com/senanurcetin/excel-csv-reporting-automation/blob/main/docs/PILOT_HANDOFF.md) |
 | Industrial copilots | [Ops-Copilot](https://github.com/senanurcetin/Ops-Copilot) | Independent | RAG/operator information support vs certified safety decisions |

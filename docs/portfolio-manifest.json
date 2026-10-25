@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-07",
+  "updated_at": "2026-10-26",
   "positioning": {
     "headline": "Data Scientist | AI Engineer | Applied Machine Learning",
     "short_tagline": "Evaluated machine-learning systems on tested data, published with their validation design and stated limitations.",
@@ -144,11 +144,11 @@
       ]
     },
     {
-      "repo": "E-commerce",
+      "repo": "nexus-commerce-intelligence",
       "role": "analytics engineering case study",
-      "repo_url": "https://github.com/senanurcetin/E-commerce",
+      "repo_url": "https://github.com/senanurcetin/nexus-commerce-intelligence",
       "demo_url": "https://senanur-cetin.vercel.app/projects/e-commerce-marketing-web-performance",
-      "release_url": "https://github.com/senanurcetin/E-commerce",
+      "release_url": "https://github.com/senanurcetin/nexus-commerce-intelligence",
       "thesis": "dbt Cloud, BigQuery, and Power BI pipeline turning raw e-commerce events and orders into BI-ready marts.",
       "metrics": [
         "4 BI-ready marts, 73 dbt tests, 57 DuckDB CI tests",
@@ -218,22 +218,10 @@
       "label": "Analytics Engineering and BI",
       "repos": [
         "ieee-fraud-detection-analytics",
-        "E-commerce",
+        "nexus-commerce-intelligence",
         "smart-factory-app"
       ]
     }
-  ],
-  "application_pack": [
-    "docs/cv-project-bullets.md",
-    "docs/linkedin-featured-copy.md",
-    "docs/recruiter-reading-paths.md",
-    "docs/30-second-project-summaries.md",
-    "docs/capability-matrix.md",
-    "docs/cv-headline-about.md",
-    "docs/interview-explanations.md",
-    "docs/outreach-snippets.md",
-    "docs/ops-copilot-note.md",
-    "docs/lead-case-study-comparison.md"
   ],
   "site_sync": {
     "canonical_content_source": "docs/portfolio-manifest.json",
@@ -246,9 +234,16 @@
       "APTOS-2019-diabetic-retinopathy",
       "ot-sentinel",
       "football-player-performance-analysis",
-      "E-commerce"
+      "nexus-commerce-intelligence"
     ],
     "archive_projects_should_be_secondary": true,
     "do_not_claim_production_deployment": true
-  }
+  },
+  "technical_evidence": [
+    "README.md",
+    "docs/PROJECT_CATALOG.md",
+    "docs/PROJECT_REVIEW_INDEX.md",
+    "docs/capability-matrix.md",
+    "docs/REPOSITORY_FINISHING_GUIDE.md"
+  ]
 }
