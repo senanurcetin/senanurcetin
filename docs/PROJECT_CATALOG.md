@@ -13,7 +13,7 @@ For evaluation details, follow each repository's README and linked methodology, 
 | OT security | [OT-Sentinel](https://github.com/senanurcetin/ot-sentinel) | Independent | Rule/detector evidence, threat model, synthetic/demo vs benchmark conditions |
 | Medical imaging ML | [APTOS-2019](https://github.com/senanurcetin/APTOS-2019-diabetic-retinopathy) | Independent | Ordinal metrics, metadata-only baseline, external validation, non-clinical use |
 | Web / marketing BI | [E-commerce](https://github.com/senanurcetin/nexus-commerce-intelligence) | Independent | dbt/DuckDB reproducibility, Power BI screenshots, session vs signup attribution |
-| Finance and campaign BI | [Greenweez Analytics](https://github.com/senanurcetin/greenweez-finance-campaign-analytics) | Independent | Finance margins, synthetic-seed controls, no unsupported campaign attribution |
+| Finance and campaign BI | [Greenweez Analytics](https://github.com/senanurcetin/nexus-commerce-intelligence/tree/main/integrations/greenweez) | Independent | Finance margins, synthetic-seed controls, no unsupported campaign attribution |
 | Analytics as a service | [Excel/CSV Reporting Automation](https://github.com/senanurcetin/excel-csv-reporting-automation) | Independent | Data-quality exceptions, reproducible synthetic pilot, [handoff criteria](https://github.com/senanurcetin/excel-csv-reporting-automation/blob/main/docs/PILOT_HANDOFF.md) |
 | Industrial copilots | [Ops-Copilot](https://github.com/senanurcetin/Ops-Copilot) | Independent | RAG/operator information support vs certified safety decisions |
 | Industrial visualization | [Vision2DCS](https://github.com/senanurcetin/Vision2DCS) | Independent | Visualization architecture and explicit non-production control boundaries |
