@@ -1,6 +1,6 @@
 # Technical portfolio — reviewer index
 
-An evidence-first map of selected **public** repositories. Start with a one-minute brief, then inspect the raw results, model/data contracts and source. This is a curated selection, **not** a claim that every repository is a standalone original project. Scores belong to the dated experiment and split stated in each repository.
+An evidence-first map of selected **public** repositories. Start with the primary repository, then inspect datasets, model/data contracts, test evidence and limitations. This is a curated selection, **not** a claim that every repository is a standalone original project. Scores belong to the dated experiment and split stated in each repository.
 
 ## Data Science and model evaluation
 
