@@ -6,10 +6,10 @@
 
 ## Reproducible inventory
 
-GitHub's pull-request search returned **50 third-party PRs**: **12 merged**, **30 open**, and **8 closed without merge** at the time checked. Repository ownership, not the fork's remote origin or an author's own fork, determines whether a PR is external. PRs in `senanurcetin/*` are excluded.
+GitHub's pull-request search returned **51 third-party PRs**: **13 merged**, **30 open**, and **8 closed without merge** at the time checked. Repository ownership, not the fork's remote origin or an author's own fork, determines whether a PR is external. PRs in `senanurcetin/*` are excluded.
 
-- [All 50 third-party PRs — live GitHub query](https://github.com/search?q=author%3Asenanurcetin+is%3Apr+-user%3Asenanurcetin&type=pullrequests)
-- [12 merged third-party PRs — live query](https://github.com/search?q=author%3Asenanurcetin+is%3Apr+is%3Amerged+-user%3Asenanurcetin&type=pullrequests)
+- [All 51 third-party PRs — live GitHub query](https://github.com/search?q=author%3Asenanurcetin+is%3Apr+-user%3Asenanurcetin&type=pullrequests)
+- [13 merged third-party PRs — live query](https://github.com/search?q=author%3Asenanurcetin+is%3Apr+is%3Amerged+-user%3Asenanurcetin&type=pullrequests)
 - [30 open third-party PRs — live query](https://github.com/search?q=author%3Asenanurcetin+is%3Apr+is%3Aopen+-user%3Asenanurcetin&type=pullrequests)
 - [Last-12-month merged-PR filter](https://github.com/search?q=author%3Asenanurcetin+is%3Apr+is%3Amerged+merged%3A%3E%3D2025-10-26+-user%3Asenanurcetin&type=pullrequests)
 
@@ -24,13 +24,14 @@ node --test tests/audit-external-prs.test.mjs
 node scripts/audit-external-prs.mjs --since 2025-10-26
 ```
 
-**26 October 2026 verification:** Windows / Node.js v24.13.0: **6/6 auditor tests passed**. A single live read-only GitHub search produced **50 external PRs: 12 merged, 30 open, 8 closed without merge**; all 12 merges were within the requested date window. No GitHub Actions jobs were triggered and no GitHub access token was needed. The script produces a runtime snapshot and does not verify GitHub program membership, downloads, external adoption or review approvals.
+**26 October 2026 refreshed verification:** Windows / Node.js v24.13.0: **6/6 auditor tests passed**. A single live read-only GitHub search produced **51 external PRs: 13 merged, 30 open, 8 closed without merge**; all 13 merges were within the requested date window. No GitHub Actions jobs were triggered and no GitHub access token was needed. The script produces a runtime snapshot and does not verify GitHub program membership, downloads, external adoption or review approvals.
 
 ## Verified third-party merged pull requests
 
 | Upstream | Merged PR | Contribution |
 | --- | --- | --- |
 | pyjanitor | [#1786](https://github.com/pyjanitor-devs/pyjanitor/pull/1786) | Include missingness in constant-column handling |
+| pyjanitor | [#1820](https://github.com/pyjanitor-devs/pyjanitor/pull/1820) | Prevent `pivot_longer` output from mutating the source via shared buffers |
 | SciPy | [#26391](https://github.com/scipy/scipy/pull/26391) | Illustrate smoothing and scaling for `make_splrep` |
 | Altair | [#4178](https://github.com/vega/altair/pull/4178) | Self-contained interactive HTML documentation |
 | Altair | [#4180](https://github.com/vega/altair/pull/4180) | Inline dictionary and URL source documentation |
@@ -43,7 +44,7 @@ node scripts/audit-external-prs.mjs --since 2025-10-26
 | Altair | [#4179](https://github.com/vega/altair/pull/4179) | `Chart.show()` documentation |
 | Xarray | [#11714](https://github.com/pydata/xarray/pull/11714) | Expected all-NaN warning behavior |
 
-All 12 are in the 12-month window **2025-10-26 through 2026-10-26**, as returned by GitHub's filtered search. This is **not** 100 merged third-party PRs.
+All 13 are in the 12-month window **2025-10-26 through 2026-10-26**, as returned by GitHub's filtered search. This is **not** 100 merged third-party PRs.
 
 ## Active upstream queue
 
@@ -54,6 +55,7 @@ All 12 are in the 12-month window **2025-10-26 through 2026-10-26**, as returned
 - [Vega Altair #4189](https://github.com/vega/altair/pull/4189): layering charts without local data.
 - [Vega-Lite #9956](https://github.com/vega/vega-lite/pull/9956): CLI parsing/spec locale preservation.
 - [Skrub #2347](https://github.com/skrub-data/skrub/pull/2347): missingness-indicator HOWTO.
+- [Pyjanitor #1822](https://github.com/pyjanitor-devs/pyjanitor/pull/1822): homogeneous NumPy `.value` fast path; 5 upstream test/documentation jobs passed at `e3b2eb3`, awaiting maintainer review.
 
 An open PR is a proposed change, not an accepted or deployed upstream contribution. The [18 October upstream issue/review/CI audit](OPEN_SOURCE_PR_AUDIT_2026-10-18.md) remains a **historical** diagnostic, not the current PR inventory. Respect each upstream project's contribution and AI-assistance policy; do not automate maintainer conversation where it is prohibited.
 
