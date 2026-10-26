@@ -1,60 +1,63 @@
 # Open-source contribution and maintainer activity
 
 **Account:** [@senanurcetin](https://github.com/senanurcetin)  
-**Evidence checked:** 2026-10-12 (UTC)  
-**Purpose:** A factual reference for contributors, maintainers, technical reviewers, and open-source support program applications.
+**GitHub search snapshot:** 2026-10-26 (UTC)  
+**Scope:** GitHub pull requests authored by this account in repositories **not owned by** `senanurcetin`. Counts are dated evidence, not live program eligibility or current CI results.
 
-This document distinguishes **upstream pull requests submitted for review** from **merged pull requests in repositories maintained by this account**. An open PR is not an accepted contribution. Merging one's own repository PRs does not make them third-party merged PRs.
+## Reproducible inventory
 
-## Contributions proposed to third-party repositories
+GitHub's pull-request search returned **50 third-party PRs**: **12 merged**, **30 open**, and **8 closed without merge** at the time checked. Repository ownership, not the fork's remote origin or an author's own fork, determines whether a PR is external. PRs in `senanurcetin/*` are excluded.
 
-| Upstream project | Contribution | GitHub evidence | Status at last check |
-| --- | --- | --- | --- |
-| [pydata/xarray](https://github.com/pydata/xarray) | Executable examples for `Dataset.drop_duplicates` and its `keep` options | [PR #11713](https://github.com/pydata/xarray/pull/11713) | Open; not merged |
-| pydata/xarray | Avoid the expected all-NaN `nanquantile` warning and add targeted tests | [PR #11714](https://github.com/pydata/xarray/pull/11714) | Open; not merged |
-| pydata/xarray | Document closing open NetCDF datasets before overwriting files | [PR #11715](https://github.com/pydata/xarray/pull/11715) | Open; not merged |
-| [goldmansachs/gs-quant](https://github.com/goldmansachs/gs-quant) | Contributor certificate/NOTICE prerequisite | [PR #399](https://github.com/goldmansachs/gs-quant/pull/399) | Open; not merged |
-| goldmansachs/gs-quant | Tested bug fixes and max-drawdown optimization | [PR #400](https://github.com/goldmansachs/gs-quant/pull/400) | Open; not merged; currently not mergeable |
+- [All 50 third-party PRs — live GitHub query](https://github.com/search?q=author%3Asenanurcetin+is%3Apr+-user%3Asenanurcetin&type=pullrequests)
+- [12 merged third-party PRs — live query](https://github.com/search?q=author%3Asenanurcetin+is%3Apr+is%3Amerged+-user%3Asenanurcetin&type=pullrequests)
+- [30 open third-party PRs — live query](https://github.com/search?q=author%3Asenanurcetin+is%3Apr+is%3Aopen+-user%3Asenanurcetin&type=pullrequests)
+- [Last-12-month merged-PR filter](https://github.com/search?q=author%3Asenanurcetin+is%3Apr+is%3Amerged+merged%3A%3E%3D2025-10-26+-user%3Asenanurcetin&type=pullrequests)
 
-**Current third-party merged PR total from the five entries above: 0.** These are review submissions, not proof of upstream acceptance. Follow the links to check live status and review decisions.
+GitHub search counts can change after this snapshot. Any support/funding application must check individual merges and rerun the live queries on the submission date; this document is **not** an eligibility certificate.
 
-### Additional work in a fork
+## Verified third-party merged pull requests
 
-- [xarray issue #3458 — keep a selected dimension](https://github.com/senanurcetin/xarray/compare/main...docs/indexing-preserve-selected-dimension): documentation commit on a fork branch; not an upstream PR or merge.
-- [xarray issue #9333 — document `keepdims`](https://github.com/senanurcetin/xarray/compare/main...docs/explain-reduction-keepdims-9333): documentation commit, not an upstream PR or merge.
-- [xarray issue #9869 — safe indexing assignment](https://github.com/senanurcetin/xarray/compare/main...docs/clarify-indexer-assignment-9869): method-specific documentation warnings, not an upstream PR or merge.
-- [xarray issue #8071 — MultiIndex coordinates](https://github.com/senanurcetin/xarray/compare/main...docs/multiindex-coordinates-8071): current coordinates behavior documented, not an upstream PR or merge.
-- [Football analytics — model checksum check](https://github.com/senanurcetin/football-player-performance-analysis/compare/main...fix/verify-ml-checksum-before-deserialization): security-oriented fix in a fork, not an upstream PR or merge. 
-- Research branches for [issue #4637](https://github.com/pydata/xarray/issues/4637) and [issue #7333](https://github.com/pydata/xarray/issues/7333) were **not** submitted upstream because existing third-party PRs already addressed the same issues.
-
-## Verified merged maintenance in owned repositories
-
-The following **five PRs in publicly accessible repositories** were reported by the GitHub API as merged on **2026-10-12 UTC**.
-
-| Maintained project | Merged contribution | GitHub evidence |
+| Upstream | Merged PR | Contribution |
 | --- | --- | --- |
-| [ot-sentinel](https://github.com/senanurcetin/ot-sentinel) | Seven fixed-window rate-limiter boundary and recovery tests | [PR #38](https://github.com/senanurcetin/ot-sentinel/pull/38) |
-| [Ops-Copilot](https://github.com/senanurcetin/Ops-Copilot) | Deterministic document-ranking regression tests | [PR #5](https://github.com/senanurcetin/Ops-Copilot/pull/5) |
-| [smart-factory-app](https://github.com/senanurcetin/smart-factory-app) | Read-only AI4I CSV quality gate, tests, and issue templates | [PR #2](https://github.com/senanurcetin/smart-factory-app/pull/2) |
-| smart-factory-app | PSI drift threshold and sensor-distribution edge-case tests | [PR #1](https://github.com/senanurcetin/smart-factory-app/pull/1) |
-| [Vision2DCS](https://github.com/senanurcetin/Vision2DCS) | Engineering-tag, model-output, and export-format regression tests | [PR #16](https://github.com/senanurcetin/Vision2DCS/pull/16) |
+| pyjanitor | [#1786](https://github.com/pyjanitor-devs/pyjanitor/pull/1786) | Include missingness in constant-column handling |
+| SciPy | [#26391](https://github.com/scipy/scipy/pull/26391) | Illustrate smoothing and scaling for `make_splrep` |
+| Altair | [#4178](https://github.com/vega/altair/pull/4178) | Self-contained interactive HTML documentation |
+| Altair | [#4180](https://github.com/vega/altair/pull/4180) | Inline dictionary and URL source documentation |
+| Plotly.py | [#5823](https://github.com/plotly/plotly.py/pull/5823) | Figure-factory return-type documentation |
+| Xarray | [#11713](https://github.com/pydata/xarray/pull/11713) | `Dataset.drop_duplicates` examples |
+| DuckDB documentation | [#7494](https://github.com/duckdb/duckdb-web/pull/7494) | NULL list values in `FILTER` documentation |
+| DuckDB documentation | [#7495](https://github.com/duckdb/duckdb-web/pull/7495) | Window/aggregate clause-placement documentation |
+| DuckDB documentation | [#7496](https://github.com/duckdb/duckdb-web/pull/7496) | Deprecated PRAGMA assignments |
+| Xarray | [#11715](https://github.com/pydata/xarray/pull/11715) | Closing netCDF datasets before overwrite |
+| Altair | [#4179](https://github.com/vega/altair/pull/4179) | `Chart.show()` documentation |
+| Xarray | [#11714](https://github.com/pydata/xarray/pull/11714) | Expected all-NaN warning behavior |
 
-**Verified above: five merged PRs across four public repositories owned by this account.** This is evidence of public repository maintenance, **not** an external merged-PR count.
+All 12 are in the 12-month window **2025-10-26 through 2026-10-26**, as returned by GitHub's filtered search. This is **not** 100 merged third-party PRs.
 
-Another merged maintenance PR in `nexus-agent` is intentionally excluded: that repository is **private** at the time of this audit and cannot substantiate a public OSS eligibility claim. The repository's visibility has not been changed.
+## Active upstream queue
 
-### Testing and review limitations
+**30 open third-party PRs** at snapshot time. Examples under independent upstream review include:
 
-- Some new test cases were exercised against locally reproduced or source-equivalent logic; that is **not** equivalent to passing each repository's full test suite.
-- GitHub Actions capacity or external CI availability may have prevented full hosted validation. Check each PR's actual checks; never infer green CI from a successful merge.
-- Several contributions were prepared with ChatGPT assistance. Follow each upstream project's AI disclosure requirements, personally review changes, and retain responsibility for proposed code and documentation.
-- As of this audit, the checked public repositories (ot-sentinel, Vision2DCS, Ops-Copilot, smart-factory-app) show only 0–1 GitHub stars each. Star counts do not capture all usage, but these repositories do **not yet have verified evidence** of broad third-party adoption or the dependency/download thresholds advertised by the Claude for Open Source program.
-- No deployment, third-party adoption, package downloads, security certification, or acceptance into an open-source funding program is asserted by this document.
+- [Anthropic Claude Agent SDK Python #1421](https://github.com/anthropics/claude-agent-sdk-python/pull/1421): transcript timestamp handling.
+- [OpenAI Knowledge Retrieval #9](https://github.com/openai/openai-knowledge-retrieval/pull/9): citation-limit enforcement.
+- [Vega Altair #4189](https://github.com/vega/altair/pull/4189): layering charts without local data.
+- [Vega-Lite #9956](https://github.com/vega/vega-lite/pull/9956): CLI parsing/spec locale preservation.
+- [Skrub #2347](https://github.com/skrub-data/skrub/pull/2347): missingness-indicator HOWTO.
 
-## How to use this record
+An open PR is a proposed change, not an accepted or deployed upstream contribution. The [18 October upstream issue/review/CI audit](OPEN_SOURCE_PR_AUDIT_2026-10-18.md) remains a **historical** diagnostic, not the current PR inventory. Respect each upstream project's contribution and AI-assistance policy; do not automate maintainer conversation where it is prohibited.
 
-For an open-source program application, cite the exact upstream PR and maintained-repository links relevant to the eligibility question. Include only statuses verified at the time of submitting the application. Distinguish submitted vs. merged and maintainer-owned vs. other people's repositories.
+## Owned-project maintenance (separate evidence)
 
-For general portfolio evidence, see [project catalog](PROJECT_CATALOG.md) and [project review index](PROJECT_REVIEW_INDEX.md).
+Maintained public repositories include [Ops-Copilot](https://github.com/senanurcetin/Ops-Copilot), [NEXUS DevOps Intelligence](https://github.com/senanurcetin/nexus-devops-intelligence), [Vision2DCS](https://github.com/senanurcetin/Vision2DCS), [PlantLog-MERN](https://github.com/senanurcetin/PlantLog-MERN), and [Fraud Risk Intelligence](https://github.com/senanurcetin/ieee-fraud-detection-analytics).
 
-**Maintenance:** This is a dated snapshot, not a live counter. Update it when GitHub reports a changed PR status; do not silently count draft work or duplicate issues as accepted contributions.
+Their own pull requests, tests, releases, documentation and maintenance show work on **owned** repositories, but do **not** increase the external merged-PR count. Third-party usage, package downloads, downstream dependency reach and independent maintainers must be demonstrated separately. Do not interpret a green CI badge, star count, owner-authored PR, or a pre-production demo as proof of real-world ecosystem adoption.
+
+## Verification limits and next checks
+
+- The exact GitHub account **creation timestamp** has **not** been read from GitHub's `GET /users/senanurcetin` `created_at` field. It must be verified before any eligibility claim based on account age.
+- Verify any program's **current official requirements**, geography, application form and terms immediately before applying.
+- Evaluate adoption with actual traffic/install/dependent-package evidence. No externally verified installation count, package registry downloads or commercial customers are claimed here.
+- Confirm author, upstream merge, license, and review status directly from the linked GitHub PR before quoting them.
+- Never inflate counts by merging own PRs, generating artificial engagement, or treating `action_required` CI as a pass.
+
+For practices and policy checks, see [the open-source contribution guide](OPEN_SOURCE_CONTRIBUTION_GUIDE.md). For separate project demonstrations and their limitations, see [the project catalog](PROJECT_CATALOG.md).
