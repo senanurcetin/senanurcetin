@@ -26,8 +26,6 @@ node scripts/audit-external-prs.mjs --since 2025-10-26
 
 **26 October 2026 verification:** Windows / Node.js v24.13.0: **6/6 auditor tests passed**. A single live read-only GitHub search produced **50 external PRs: 12 merged, 30 open, 8 closed without merge**; all 12 merges were within the requested date window. No GitHub Actions jobs were triggered and no GitHub access token was needed. The script produces a runtime snapshot and does not verify GitHub program membership, downloads, external adoption or review approvals.
 
-
-
 ## Verified third-party merged pull requests
 
 | Upstream | Merged PR | Contribution |
