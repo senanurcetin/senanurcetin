@@ -15,6 +15,19 @@ GitHub's pull-request search returned **50 third-party PRs**: **12 merged**, **3
 
 GitHub search counts can change after this snapshot. Any support/funding application must check individual merges and rerun the live queries on the submission date; this document is **not** an eligibility certificate.
 
+### Reproducible local verification (no tokens)
+
+The repository includes a dependency-free [Node.js auditor](../scripts/audit-external-prs.mjs) with [offline regression tests](../tests/audit-external-prs.test.mjs). It reads **GitHub's public search API only**, excludes PRs to repositories owned by this account, uses a strict UTC merge-date cutoff, checks the search result count and refuses incomplete/duplicate/untrusted records. GitHub anonymous API rate limits apply. Run locally from the profile repository root:
+
+```sh
+node --test tests/audit-external-prs.test.mjs
+node scripts/audit-external-prs.mjs --since 2025-10-26
+```
+
+**26 October 2026 verification:** Windows / Node.js v24.13.0: **6/6 auditor tests passed**. A single live read-only GitHub search produced **50 external PRs: 12 merged, 30 open, 8 closed without merge**; all 12 merges were within the requested date window. No GitHub Actions jobs were triggered and no GitHub access token was needed. The script produces a runtime snapshot and does not verify GitHub program membership, downloads, external adoption or review approvals.
+
+
+
 ## Verified third-party merged pull requests
 
 | Upstream | Merged PR | Contribution |
@@ -54,7 +67,7 @@ Their own pull requests, tests, releases, documentation and maintenance show wor
 
 ## Verification limits and next checks
 
-- The exact GitHub account **creation timestamp** has **not** been read from GitHub's `GET /users/senanurcetin` `created_at` field. It must be verified before any eligibility claim based on account age.
+- GitHub account `created_at` was independently read from GitHub's public user API on 26 October 2026: **2026-01-07T22:01:29Z**. The account reaches two years on **7 January 2028**. That date alone does **not** determine acceptance into any developer program.
 - Verify any program's **current official requirements**, geography, application form and terms immediately before applying.
 - Evaluate adoption with actual traffic/install/dependent-package evidence. No externally verified installation count, package registry downloads or commercial customers are claimed here.
 - Confirm author, upstream merge, license, and review status directly from the linked GitHub PR before quoting them.
