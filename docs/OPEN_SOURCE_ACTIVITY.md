@@ -6,11 +6,11 @@
 
 ## Reproducible inventory
 
-GitHub's pull-request search returned **51 third-party PRs**: **14 merged**, **29 open**, and **8 closed without merge** at the time checked. Repository ownership, not the fork's remote origin or an author's own fork, determines whether a PR is external. PRs in `senanurcetin/*` are excluded.
+GitHub's pull-request search returned **52 third-party PRs**: **14 merged**, **30 open**, and **8 closed without merge** at the time checked. Repository ownership, not the fork's remote origin or an author's own fork, determines whether a PR is external. PRs in `senanurcetin/*` are excluded.
 
-- [All 51 third-party PRs — live GitHub query](https://github.com/search?q=author%3Asenanurcetin+is%3Apr+-user%3Asenanurcetin&type=pullrequests)
+- [All 52 third-party PRs — live GitHub query](https://github.com/search?q=author%3Asenanurcetin+is%3Apr+-user%3Asenanurcetin&type=pullrequests)
 - [14 merged third-party PRs — live query](https://github.com/search?q=author%3Asenanurcetin+is%3Apr+is%3Amerged+-user%3Asenanurcetin&type=pullrequests)
-- [29 open third-party PRs — live query](https://github.com/search?q=author%3Asenanurcetin+is%3Apr+is%3Aopen+-user%3Asenanurcetin&type=pullrequests)
+- [30 open third-party PRs — live query](https://github.com/search?q=author%3Asenanurcetin+is%3Apr+is%3Aopen+-user%3Asenanurcetin&type=pullrequests)
 - [Last-12-month merged-PR filter](https://github.com/search?q=author%3Asenanurcetin+is%3Apr+is%3Amerged+merged%3A%3E%3D2025-10-27+-user%3Asenanurcetin&type=pullrequests)
 
 GitHub search counts can change after this snapshot. Any support/funding application must check individual merges and rerun the live queries on the submission date; this document is **not** an eligibility certificate.
@@ -26,7 +26,7 @@ node scripts/audit-external-prs.mjs --since 2025-10-26
 
 **26 October 2026 refreshed verification:** Windows / Node.js v24.13.0: **6/6 auditor tests passed**. A single live read-only GitHub search produced **51 external PRs: 13 merged, 30 open, 8 closed without merge**; all 13 merges were within the requested date window. No GitHub Actions jobs were triggered and no GitHub access token was needed. The script produces a runtime snapshot and does not verify GitHub program membership, downloads, external adoption or review approvals.
 
-**27 October 2026 refreshed inventory:** GitHub's live public search returned **51 external PRs: 14 merged, 29 open, 8 closed without merge**. [Xarray #11806](https://github.com/pydata/xarray/pull/11806) was independently confirmed merged at **2026-10-27 09:54:42 UTC**, merge commit [`5923b17`](https://github.com/pydata/xarray/commit/5923b1794c2e2b781bcd3d91c9f21aa121c6a65a). Earlier 26 October counts above remain historical evidence, not the current snapshot. A [prepared hvPlot fork branch](https://github.com/senanurcetin/hvplot/tree/fix/1759-categorical-color-line-step-area) is **not** counted as an upstream PR.
+**27 October 2026 refreshed inventory:** GitHub's live public search returned **52 external PRs: 14 merged, 30 open, 8 closed without merge**. [Xarray #11806](https://github.com/pydata/xarray/pull/11806) was independently confirmed merged at **2026-10-27 09:54:42 UTC**, merge commit [`5923b17`](https://github.com/pydata/xarray/commit/5923b1794c2e2b781bcd3d91c9f21aa121c6a65a). Earlier 26 October counts above remain historical evidence, not the current snapshot. [hvPlot #1767](https://github.com/holoviz/hvplot/pull/1767) is now an **open external PR**; it does not change the 14 merged count.
 
 ## Verified third-party merged pull requests
 
@@ -51,8 +51,9 @@ All 14 are in the 12-month window **2025-10-27 through 2026-10-27**, as returned
 
 ## Active upstream queue
 
-**29 open third-party PRs** at snapshot time. Examples under independent upstream review include:
+**30 open third-party PRs** at snapshot time. Examples under independent upstream review include:
 
+- [hvPlot #1767](https://github.com/holoviz/hvplot/pull/1767): categorical color grouping in line/step/area, with named index, boolean categories and default `hvplot(...)` line calls. **Open; external CI `action_required`.**
 - [Anthropic Claude Agent SDK Python #1421](https://github.com/anthropics/claude-agent-sdk-python/pull/1421): transcript timestamp handling.
 - [OpenAI Knowledge Retrieval #9](https://github.com/openai/openai-knowledge-retrieval/pull/9): citation-limit enforcement.
 - [Vega Altair #4189](https://github.com/vega/altair/pull/4189): layering charts without local data.
@@ -85,14 +86,14 @@ No integration commit was pushed to the upstream repositories, no individual PR 
 
 An open PR is a proposed change, not an accepted or deployed upstream contribution. The [18 October upstream issue/review/CI audit](OPEN_SOURCE_PR_AUDIT_2026-10-18.md) remains a **historical** diagnostic, not the current PR inventory. Respect each upstream project's contribution and AI-assistance policy; do not automate maintainer conversation where it is prohibited.
 
-## hvPlot #1759 — verified fork work, upstream PR not yet created (27 October 2026)
+## hvPlot #1759 / PR #1767 — verified open upstream contribution (27 October 2026)
 
-[holoviz/hvplot issue #1759](https://github.com/holoviz/hvplot/issues/1759) reproduces a categorical `color="cat"` rendering error on line-like plots. The **[fork branch](https://github.com/senanurcetin/hvplot/tree/fix/1759-categorical-color-line-step-area)** is ready, latest [commit `c8da30f`](https://github.com/senanurcetin/hvplot/commit/c8da30fb1a12c18dbb209720f7703e777b714214).
+[Issue #1759](https://github.com/holoviz/hvplot/issues/1759) reported categorical `color="cat"` failing to render in line-like plots. The fix is now submitted as **[holoviz/hvplot PR #1767](https://github.com/holoviz/hvplot/pull/1767)**, with latest fork head **[`421ec70`](https://github.com/senanurcetin/hvplot/commit/421ec70dcf2be4a8cf7d4d53ddd984fbdefa09cd)**.
 
-- Fix maps categorical columns, named indexes and boolean color fields to separate groups for `line`, `step` and `area`, matching `by=`. Literal colors and numerical color fields retain their prior handling.
-- The committed regression module contains **33 passing cases**, including Pandas, Polars eager/LazyFrame, index/MultiIndex and boolean groups. **9 baseline categorical cases failed** on unmodified upstream commit `3fc8075`.
-- Fresh checkout of the **exact latest fork commit**: `hvplot/tests/testplotting.py` plus the new regression module: **127 passed, 2 skipped**. The Bokeh-only options selection: **73 passed** with 149 unrelated tests deselected. Ruff lint, format and Git diff checks passed. This is **not** a full multi-backend test suite.
-- A real upstream PR creation request returned **GitHub 403 `Resource not accessible by integration`**. No upstream PR exists for this account as of the last search, and the fork branch **does not** increase the **51 external PR / 14 merged PR** snapshot. To submit, use the [GitHub comparison page](https://github.com/holoviz/hvplot/compare/main...senanurcetin:hvplot:fix/1759-categorical-color-line-step-area?expand=1) with an authorized GitHub session.
+- Handles categorical dataframe columns, categorical named indexes and MultiIndex levels, boolean color fields, and **implicit default line plots** (`df.hvplot(x=..., y=..., color="cat")`) for Pandas/Polars eager and lazy tables. Preserves explicit `by`, literal color strings and existing numeric-field behavior.
+- A Bokeh-rendering regression module contains **36 successful parametrized cases**. The original nine categorical frontend × plot-type cases fail on unmodified upstream main `3fc8075`, verifying that the tests detect the original error.
+- Fresh checkout of the **exact GitHub fork commit `421ec70`**: `testplotting.py` and new regressions: **130 passed, 2 skipped**; Bokeh-only options: **73 passed** (149 tests deselected). Ruff lint, format and Git diff checks passed. The full optional multi-backend test matrix has **not** been verified.
+- The upstream `tests` and `zizmor` workflows report **`action_required`**, **not green CI**. PR is open, mergeable and awaiting maintainer review; no upstream acceptance or merge claimed.
 
 ## Owned-project maintenance (separate evidence)
 
