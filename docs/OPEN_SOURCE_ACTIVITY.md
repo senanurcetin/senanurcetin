@@ -82,6 +82,15 @@ No integration commit was pushed to the upstream repositories, no individual PR 
 
 An open PR is a proposed change, not an accepted or deployed upstream contribution. The [18 October upstream issue/review/CI audit](OPEN_SOURCE_PR_AUDIT_2026-10-18.md) remains a **historical** diagnostic, not the current PR inventory. Respect each upstream project's contribution and AI-assistance policy; do not automate maintainer conversation where it is prohibited.
 
+## hvPlot #1759 — verified fork work, upstream PR not yet created (27 October 2026)
+
+[holoviz/hvplot issue #1759](https://github.com/holoviz/hvplot/issues/1759) reproduces a categorical `color="cat"` rendering error on line-like plots. The **[fork branch](https://github.com/senanurcetin/hvplot/tree/fix/1759-categorical-color-line-step-area)** is ready, latest [commit `c8da30f`](https://github.com/senanurcetin/hvplot/commit/c8da30fb1a12c18dbb209720f7703e777b714214).
+
+- Fix maps categorical columns, named indexes and boolean color fields to separate groups for `line`, `step` and `area`, matching `by=`. Literal colors and numerical color fields retain their prior handling.
+- The committed regression module contains **33 passing cases**, including Pandas, Polars eager/LazyFrame, index/MultiIndex and boolean groups. **9 baseline categorical cases failed** on unmodified upstream commit `3fc8075`.
+- Fresh checkout of the **exact latest fork commit**: `hvplot/tests/testplotting.py` plus the new regression module: **127 passed, 2 skipped**. The Bokeh-only options selection: **73 passed** with 149 unrelated tests deselected. Ruff lint, format and Git diff checks passed. This is **not** a full multi-backend test suite.
+- A real upstream PR creation request returned **GitHub 403 `Resource not accessible by integration`**. No upstream PR exists for this account as of the last search, and the fork branch **does not** increase the **51 external PR / 13 merged PR** snapshot. To submit, use the [GitHub comparison page](https://github.com/holoviz/hvplot/compare/main...senanurcetin:hvplot:fix/1759-categorical-color-line-step-area?expand=1) with an authorized GitHub session.
+
 ## Owned-project maintenance (separate evidence)
 
 Maintained public repositories include [Ops-Copilot](https://github.com/senanurcetin/Ops-Copilot), [NEXUS DevOps Intelligence](https://github.com/senanurcetin/nexus-devops-intelligence), [Vision2DCS](https://github.com/senanurcetin/Vision2DCS), [PlantLog-MERN](https://github.com/senanurcetin/PlantLog-MERN), and [Fraud Risk Intelligence](https://github.com/senanurcetin/ieee-fraud-detection-analytics).
