@@ -1,17 +1,17 @@
 # Open-source contribution and maintainer activity
 
 **Account:** [@senanurcetin](https://github.com/senanurcetin)  
-**GitHub search snapshot:** 2026-10-26 (UTC)  
+**GitHub search snapshot:** 2026-10-27 (UTC)  
 **Scope:** GitHub pull requests authored by this account in repositories **not owned by** `senanurcetin`. Counts are dated evidence, not live program eligibility or current CI results.
 
 ## Reproducible inventory
 
-GitHub's pull-request search returned **51 third-party PRs**: **13 merged**, **30 open**, and **8 closed without merge** at the time checked. Repository ownership, not the fork's remote origin or an author's own fork, determines whether a PR is external. PRs in `senanurcetin/*` are excluded.
+GitHub's pull-request search returned **51 third-party PRs**: **14 merged**, **29 open**, and **8 closed without merge** at the time checked. Repository ownership, not the fork's remote origin or an author's own fork, determines whether a PR is external. PRs in `senanurcetin/*` are excluded.
 
 - [All 51 third-party PRs — live GitHub query](https://github.com/search?q=author%3Asenanurcetin+is%3Apr+-user%3Asenanurcetin&type=pullrequests)
-- [13 merged third-party PRs — live query](https://github.com/search?q=author%3Asenanurcetin+is%3Apr+is%3Amerged+-user%3Asenanurcetin&type=pullrequests)
-- [30 open third-party PRs — live query](https://github.com/search?q=author%3Asenanurcetin+is%3Apr+is%3Aopen+-user%3Asenanurcetin&type=pullrequests)
-- [Last-12-month merged-PR filter](https://github.com/search?q=author%3Asenanurcetin+is%3Apr+is%3Amerged+merged%3A%3E%3D2025-10-26+-user%3Asenanurcetin&type=pullrequests)
+- [14 merged third-party PRs — live query](https://github.com/search?q=author%3Asenanurcetin+is%3Apr+is%3Amerged+-user%3Asenanurcetin&type=pullrequests)
+- [29 open third-party PRs — live query](https://github.com/search?q=author%3Asenanurcetin+is%3Apr+is%3Aopen+-user%3Asenanurcetin&type=pullrequests)
+- [Last-12-month merged-PR filter](https://github.com/search?q=author%3Asenanurcetin+is%3Apr+is%3Amerged+merged%3A%3E%3D2025-10-27+-user%3Asenanurcetin&type=pullrequests)
 
 GitHub search counts can change after this snapshot. Any support/funding application must check individual merges and rerun the live queries on the submission date; this document is **not** an eligibility certificate.
 
@@ -26,10 +26,13 @@ node scripts/audit-external-prs.mjs --since 2025-10-26
 
 **26 October 2026 refreshed verification:** Windows / Node.js v24.13.0: **6/6 auditor tests passed**. A single live read-only GitHub search produced **51 external PRs: 13 merged, 30 open, 8 closed without merge**; all 13 merges were within the requested date window. No GitHub Actions jobs were triggered and no GitHub access token was needed. The script produces a runtime snapshot and does not verify GitHub program membership, downloads, external adoption or review approvals.
 
+**27 October 2026 refreshed inventory:** GitHub's live public search returned **51 external PRs: 14 merged, 29 open, 8 closed without merge**. [Xarray #11806](https://github.com/pydata/xarray/pull/11806) was independently confirmed merged at **2026-10-27 09:54:42 UTC**, merge commit [`5923b17`](https://github.com/pydata/xarray/commit/5923b1794c2e2b781bcd3d91c9f21aa121c6a65a). Earlier 26 October counts above remain historical evidence, not the current snapshot. A [prepared hvPlot fork branch](https://github.com/senanurcetin/hvplot/tree/fix/1759-categorical-color-line-step-area) is **not** counted as an upstream PR.
+
 ## Verified third-party merged pull requests
 
 | Upstream | Merged PR | Contribution |
 | --- | --- | --- |
+| Xarray | [#11806](https://github.com/pydata/xarray/pull/11806) | Document optional DataTree backend entrypoints; **merged 27 October 2026 at 09:54:42 UTC** |
 | pyjanitor | [#1786](https://github.com/pyjanitor-devs/pyjanitor/pull/1786) | Include missingness in constant-column handling |
 | pyjanitor | [#1820](https://github.com/pyjanitor-devs/pyjanitor/pull/1820) | Prevent `pivot_longer` output from mutating the source via shared buffers |
 | SciPy | [#26391](https://github.com/scipy/scipy/pull/26391) | Illustrate smoothing and scaling for `make_splrep` |
@@ -44,11 +47,11 @@ node scripts/audit-external-prs.mjs --since 2025-10-26
 | Altair | [#4179](https://github.com/vega/altair/pull/4179) | `Chart.show()` documentation |
 | Xarray | [#11714](https://github.com/pydata/xarray/pull/11714) | Expected all-NaN warning behavior |
 
-All 13 are in the 12-month window **2025-10-26 through 2026-10-26**, as returned by GitHub's filtered search. This is **not** 100 merged third-party PRs.
+All 14 are in the 12-month window **2025-10-27 through 2026-10-27**, as returned by GitHub's filtered search. This is **not** 100 merged third-party PRs.
 
 ## Active upstream queue
 
-**30 open third-party PRs** at snapshot time. Examples under independent upstream review include:
+**29 open third-party PRs** at snapshot time. Examples under independent upstream review include:
 
 - [Anthropic Claude Agent SDK Python #1421](https://github.com/anthropics/claude-agent-sdk-python/pull/1421): transcript timestamp handling.
 - [OpenAI Knowledge Retrieval #9](https://github.com/openai/openai-knowledge-retrieval/pull/9): citation-limit enforcement.
@@ -89,7 +92,7 @@ An open PR is a proposed change, not an accepted or deployed upstream contributi
 - Fix maps categorical columns, named indexes and boolean color fields to separate groups for `line`, `step` and `area`, matching `by=`. Literal colors and numerical color fields retain their prior handling.
 - The committed regression module contains **33 passing cases**, including Pandas, Polars eager/LazyFrame, index/MultiIndex and boolean groups. **9 baseline categorical cases failed** on unmodified upstream commit `3fc8075`.
 - Fresh checkout of the **exact latest fork commit**: `hvplot/tests/testplotting.py` plus the new regression module: **127 passed, 2 skipped**. The Bokeh-only options selection: **73 passed** with 149 unrelated tests deselected. Ruff lint, format and Git diff checks passed. This is **not** a full multi-backend test suite.
-- A real upstream PR creation request returned **GitHub 403 `Resource not accessible by integration`**. No upstream PR exists for this account as of the last search, and the fork branch **does not** increase the **51 external PR / 13 merged PR** snapshot. To submit, use the [GitHub comparison page](https://github.com/holoviz/hvplot/compare/main...senanurcetin:hvplot:fix/1759-categorical-color-line-step-area?expand=1) with an authorized GitHub session.
+- A real upstream PR creation request returned **GitHub 403 `Resource not accessible by integration`**. No upstream PR exists for this account as of the last search, and the fork branch **does not** increase the **51 external PR / 14 merged PR** snapshot. To submit, use the [GitHub comparison page](https://github.com/holoviz/hvplot/compare/main...senanurcetin:hvplot:fix/1759-categorical-color-line-step-area?expand=1) with an authorized GitHub session.
 
 ## Owned-project maintenance (separate evidence)
 
