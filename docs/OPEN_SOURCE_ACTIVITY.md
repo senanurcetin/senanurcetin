@@ -64,17 +64,19 @@ An **isolated local worktree**, not an upstream or published integration branch,
 | Upstream PR | Tested fork head | Scope |
 | --- | --- | --- |
 | [#4010](https://github.com/mwaskom/seaborn/pull/4010) | `fe8b2ea` | Binary numeric size mapping |
-| [#4012](https://github.com/mwaskom/seaborn/pull/4012) | `0a353e3` | Weighted KDE and histogram overflow/zero weights |
+| [#4012](https://github.com/mwaskom/seaborn/pull/4012) | [`f819994`](https://github.com/senanurcetin/seaborn/commit/f819994ed5153b15596f9c1c75cc44fb6deb5630) | Weighted KDE overflow/zero-weight protection and restored support for numeric pandas `object` weight columns |
 | [#4013](https://github.com/mwaskom/seaborn/pull/4013) | `62d8d1a` | Mixed numeric/text histogram categories |
 | [#4022](https://github.com/mwaskom/seaborn/pull/4022) | `37c428e` | Nonzero stacked-bar baselines across facets |
 
-All four histories **merged cleanly in the test worktree**. On Windows / Python 3.13 / Matplotlib `Agg`, this integration checkout passed **683 tests (1 skipped)** across `tests/test_distributions.py`, `tests/test_base.py`, `tests/test_relational.py`, `tests/_core/test_moves.py` and `tests/_marks/test_bar.py`:
+All four histories **merged cleanly in the test worktree**. On Windows / Python 3.13 / Matplotlib `Agg`, the original integration checkout passed **683 tests (1 skipped)**. After applying the latest #4012 object-weight regression fix (test-only integration commit `1a489d56`, **not** pushed), the updated integration passed **707 tests (1 skipped)** across `tests/test_distributions.py`, `tests/test_base.py`, `tests/test_relational.py`, `tests/_core/test_moves.py` and `tests/_marks/test_bar.py`:
 
 ```sh
 python -m pytest -q -o addopts= tests/test_distributions.py tests/test_base.py tests/test_relational.py tests/_core/test_moves.py tests/_marks/test_bar.py
 ```
 
 Ruff **lint** on all modified source/test files and `git diff --check` passed. In a separate cross-feature probe on the same integrated worktree, **16 comparisons** passed for `histplot` and `displot(kind="hist")`, with/without hue and with `probability`, `proportion`, `percent` and `density` statistics: finite histogram heights from weights `1e308` matched the `1.0`-weighted output for mixed numeric/text categories. This is an interaction check for #4012 and #4013, **not** an upstream CI result. Runtime warnings from a legacy negative-weight test and a pytest deprecation warning were observed; neither caused failures.
+
+**Regression discovery and fix on #4012 (27 October 2026):** The earlier #4012 head `0a353e3` raised `TypeError` on numeric pandas `object` weight columns because its new `np.isfinite` validation attempted to process object arrays directly; the shared upstream base accepted the same input. Commit [`f819994`](https://github.com/senanurcetin/seaborn/commit/f819994ed5153b15596f9c1c75cc44fb6deb5630) converts only object/nullable weight values for finite checks while retaining native numerical types, and adds **24 committed differential regression cases** comparing numeric-object weights against equivalent float64 weights for KDE and histogram density/probability, with/without hue and ordinary, very large, sparse or missing weights. **24 new focused tests** and the full local distributions module (**314 passed, 1 skipped**) succeeded; lint and whitespace checks passed. The updated four-PR integration also passed **707 tests** (1 skipped), as noted above. The latest upstream fork PR CI is `action_required` (restricted external PR workflows), **not a CI pass**. Upstream acceptance and merge remain pending.
 
 No integration commit was pushed to the upstream repositories, no individual PR was merged as a result, and no fourth-party adoption is claimed. These local results are limited to the specified environment and tests; they do not establish that every downstream usage is compatible.
 
