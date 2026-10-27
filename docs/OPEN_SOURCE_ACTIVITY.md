@@ -57,6 +57,27 @@ All 13 are in the 12-month window **2025-10-26 through 2026-10-26**, as returned
 - [Skrub #2347](https://github.com/skrub-data/skrub/pull/2347): missingness-indicator HOWTO.
 - [Pyjanitor #1822](https://github.com/pyjanitor-devs/pyjanitor/pull/1822): homogeneous NumPy `.value` fast path. Latest head [`d6b135c`](https://github.com/senanurcetin/pyjanitor/commit/d6b135cea30f60c883de99a89c5afaf44620ae66) has **578 local passing tests, 7 expected xfails**, plus 32 committed temporal/complex/float16 regression cases; upstream [Python 3.11–3.13 tests + changelog CI](https://github.com/pyjanitor-devs/pyjanitor/actions/runs/40467308760) and [docs CI](https://github.com/pyjanitor-devs/pyjanitor/actions/runs/40467308776) passed. Earlier [three-shape performance benchmark](benchmarks/pyjanitor-1822-2026-10-26.md) measured commit `f79e47c` (100×20,000: 6.02–18.92×; 1M×20: approximately neutral); only tests changed since that measurement. **Still open; no merge or maintainer approval claimed.**
 
+### Seaborn multi-PR compatibility check (27 October 2026)
+
+An **isolated local worktree**, not an upstream or published integration branch, combined four **open** Seaborn contributions at the shared upstream base `c1cb287835852406691aed60ea0c62710f2c6b18`:
+
+| Upstream PR | Tested fork head | Scope |
+| --- | --- | --- |
+| [#4010](https://github.com/mwaskom/seaborn/pull/4010) | `fe8b2ea` | Binary numeric size mapping |
+| [#4012](https://github.com/mwaskom/seaborn/pull/4012) | `0a353e3` | Weighted KDE and histogram overflow/zero weights |
+| [#4013](https://github.com/mwaskom/seaborn/pull/4013) | `62d8d1a` | Mixed numeric/text histogram categories |
+| [#4022](https://github.com/mwaskom/seaborn/pull/4022) | `37c428e` | Nonzero stacked-bar baselines across facets |
+
+All four histories **merged cleanly in the test worktree**. On Windows / Python 3.13 / Matplotlib `Agg`, this integration checkout passed **683 tests (1 skipped)** across `tests/test_distributions.py`, `tests/test_base.py`, `tests/test_relational.py`, `tests/_core/test_moves.py` and `tests/_marks/test_bar.py`:
+
+```sh
+python -m pytest -q -o addopts= tests/test_distributions.py tests/test_base.py tests/test_relational.py tests/_core/test_moves.py tests/_marks/test_bar.py
+```
+
+Ruff **lint** on all modified source/test files and `git diff --check` passed. In a separate cross-feature probe on the same integrated worktree, **16 comparisons** passed for `histplot` and `displot(kind="hist")`, with/without hue and with `probability`, `proportion`, `percent` and `density` statistics: finite histogram heights from weights `1e308` matched the `1.0`-weighted output for mixed numeric/text categories. This is an interaction check for #4012 and #4013, **not** an upstream CI result. Runtime warnings from a legacy negative-weight test and a pytest deprecation warning were observed; neither caused failures.
+
+No integration commit was pushed to the upstream repositories, no individual PR was merged as a result, and no fourth-party adoption is claimed. These local results are limited to the specified environment and tests; they do not establish that every downstream usage is compatible.
+
 An open PR is a proposed change, not an accepted or deployed upstream contribution. The [18 October upstream issue/review/CI audit](OPEN_SOURCE_PR_AUDIT_2026-10-18.md) remains a **historical** diagnostic, not the current PR inventory. Respect each upstream project's contribution and AI-assistance policy; do not automate maintainer conversation where it is prohibited.
 
 ## Owned-project maintenance (separate evidence)
