@@ -96,7 +96,7 @@ test('merged timestamps must be real canonical UTC seconds, not normalized dates
 });
 
 test('GitHub search completeness must be an explicit false boolean', async () => {
-  for (const incomplete of [null, undefined, 'false', 0, true]) {
+  for (const incomplete of [null, 'false', 0, true]) {
     const f = api([[item(1)]], { incomplete });
     await assert.rejects(
       auditExternalPulls({ since: '2025-10-26', fetchImpl: f.fetchImpl }),
@@ -104,6 +104,18 @@ test('GitHub search completeness must be an explicit false boolean', async () =>
       String(incomplete),
     );
   }
+  // Test a truly absent API field; the mock's default value would turn
+  // { incomplete: undefined } into false and mask the missing-field case.
+  await assert.rejects(
+    auditExternalPulls({
+      since: '2025-10-26',
+      fetchImpl: async () => ({
+        ok: true,
+        json: async () => ({ total_count: 1, items: [item(1)] }),
+      }),
+    }),
+    /incomplete or malformed/,
+  );
 });
 
 test('complete two-page results are counted without overstating the merged window', async () => {
