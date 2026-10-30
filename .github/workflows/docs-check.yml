@@ -6,6 +6,9 @@ on:
       - main
   pull_request:
 
+permissions:
+  contents: read
+
 jobs:
   docs-check:
     runs-on: ubuntu-latest
@@ -13,6 +16,8 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v5
+        with:
+          persist-credentials: false
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -21,3 +26,11 @@ jobs:
 
       - name: Validate docs pack
         run: python scripts/check_docs.py
+
+      - name: Set up Node.js for offline PR audit regressions
+        uses: actions/setup-node@v4
+        with:
+          node-version: "24"
+
+      - name: Validate external PR auditor without GitHub API calls
+        run: node --test tests/audit-external-prs.test.mjs
