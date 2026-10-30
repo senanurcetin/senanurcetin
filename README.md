@@ -120,7 +120,6 @@ Standings are public-leaderboard positions on 2026-10-08; final ranks come from 
 
 - [Greenweez Finance & Campaign Analytics](https://github.com/senanurcetin/greenweez-finance-campaign-analytics): dbt and BigQuery finance/campaign reporting
 - [GTM](https://github.com/senanurcetin/GTM): fork of a Jekyll storefront with a Google Tag Manager container snippet, dataLayer events and a unit-tested GA4 e-commerce event layer (add_to_cart, remove_from_cart, begin_checkout); the GA4 property itself lives in the GTM container, not the repository
-- [Ops-Copilot](https://github.com/senanurcetin/Ops-Copilot): industrial AI assistant for operator troubleshooting and document-grounded answers (archive)
 - [ChemView](https://github.com/senanurcetin/ChemView): industrial HMI and telemetry UX archive
 - [PlantLog-MERN](https://github.com/senanurcetin/PlantLog-MERN): industrial operations-software archive
 
