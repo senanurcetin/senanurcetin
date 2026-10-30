@@ -79,6 +79,33 @@ test('classifier rejects owned, spoofed, duplicate and contradictory PR records'
   for (const records of bad) assert.throws(() => classifyPulls(records, '2025-10-26'));
 });
 
+test('merged timestamps must be real canonical UTC seconds, not normalized dates', () => {
+  const good = classifyPulls([item(1, 'closed', '2024-02-29T03:04:05Z')], '2024-02-29');
+  assert.equal(good.merged_since_date, 1);
+  for (const mergedAt of [
+    '2026-02-30T12:00:00Z', '2026-13-01T00:00:00Z',
+    '2026-10-20T12:00:00.000Z', '2026-10-20T12:00:00+03:00',
+    '2026-10-20T12:00:00Zjunk', '2026-10-20T25:00:00Z',
+  ]) {
+    assert.throws(
+      () => classifyPulls([item(1, 'closed', mergedAt)], '2025-10-26'),
+      /Inconsistent merged PR status/,
+      mergedAt,
+    );
+  }
+});
+
+test('GitHub search completeness must be an explicit false boolean', async () => {
+  for (const incomplete of [null, undefined, 'false', 0, true]) {
+    const f = api([[item(1)]], { incomplete });
+    await assert.rejects(
+      auditExternalPulls({ since: '2025-10-26', fetchImpl: f.fetchImpl }),
+      /incomplete or malformed/,
+      String(incomplete),
+    );
+  }
+});
+
 test('complete two-page results are counted without overstating the merged window', async () => {
   const hundred = Array.from({ length: 100 }, (_, i) => item(i + 1));
   const apiMock = api([hundred, [item(101, 'closed', '2026-10-01T12:00:00Z')]]);
