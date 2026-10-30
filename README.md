@@ -12,7 +12,7 @@
 
 ## GitHub API integration — developer tooling
 
-[**Ops-Copilot GitHub Actions Auditor**](https://github.com/senanurcetin/Ops-Copilot#github-actions-rest-api-integration) is a **read-only GitHub REST API integration in active development**. The standalone Node.js CLI queries workflow runs and job timings, supports date filtering and Markdown/JSON reporting, and distinguishes measured job time from GitHub billing. It has automated tests and requires no GitHub-hosted runner for local use.
+[**Ops-Copilot GitHub Actions Auditor**](https://github.com/senanurcetin/Ops-Copilot#github-actions-rest-api-integration) is a **read-only GitHub REST API integration in active development**. The standalone Node.js CLI queries workflow runs and job timings, supports date filtering and plain-text, Markdown, JSON, and spreadsheet-safe CSV exports, and distinguishes measured job time from GitHub billing. It has automated tests and requires no GitHub-hosted runner for local use.
 
 **Review:** [source code](https://github.com/senanurcetin/Ops-Copilot/blob/main/scripts/github-actions-audit.mjs) · [verified public API demo](https://github.com/senanurcetin/Ops-Copilot/blob/main/docs/github-api-live-demo.md) · [integration guide](https://github.com/senanurcetin/Ops-Copilot/blob/main/docs/github-actions-integration.md).
 
