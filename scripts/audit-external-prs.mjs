@@ -20,6 +20,13 @@ export function validateDate(value) {
   return value;
 }
 
+/** GitHub REST merge times are canonical UTC seconds; reject normalized invalid dates. */
+function isCanonicalMergedAt(value) {
+  if (typeof value !== 'string' || !/^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}Z$/.test(value)) return false;
+  const millis = Date.parse(value);
+  return Number.isFinite(millis) && new Date(millis).toISOString() === value.slice(0, -1) + '.000Z';
+}
+
 export function classifyPulls(items, since) {
   validateDate(since);
   const seen = new Set();
@@ -40,8 +47,7 @@ export function classifyPulls(items, since) {
     if (seen.has(key)) throw new Error('Duplicate PR record.');
     seen.add(key);
     const merged = item.pull_request.merged_at;
-    if (merged != null && (item.state !== 'closed' || typeof merged !== 'string' ||
-        !Number.isFinite(Date.parse(merged)))) {
+    if (merged != null && (item.state !== 'closed' || !isCanonicalMergedAt(merged))) {
       throw new Error('Inconsistent merged PR status.');
     }
     const status = merged ? 'merged' : item.state === 'open' ? 'open' : 'closed_unmerged';
@@ -99,7 +105,7 @@ export async function auditExternalPulls({ since, fetchImpl = fetch } = {}) {
     try { payload = await response.json(); }
     catch { throw new Error('GitHub returned invalid JSON.'); }
     if (!Number.isSafeInteger(payload?.total_count) || payload.total_count < 0 ||
-        !Array.isArray(payload.items) || payload.incomplete_results === true) {
+        !Array.isArray(payload.items) || payload.incomplete_results !== false) {
       throw new Error('GitHub search result is incomplete or malformed.');
     }
     if (payload.total_count > MAX_RESULTS) {
