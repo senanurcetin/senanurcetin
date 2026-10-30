@@ -1,16 +1,16 @@
 # Open-source contribution and maintainer activity
 
 **Account:** [@senanurcetin](https://github.com/senanurcetin)  
-**GitHub search snapshot:** 2026-10-27 (UTC)  
+**Historical GitHub search snapshot:** 2026-10-27 (UTC); **merged-PR metadata recheck:** 2026-10-30 (UTC)  
 **Scope:** GitHub pull requests authored by this account in repositories **not owned by** `senanurcetin`. Counts are dated evidence, not live program eligibility or current CI results.
 
 ## Reproducible inventory
 
-GitHub's pull-request search returned **52 third-party PRs**: **14 merged**, **30 open**, and **8 closed without merge** at the time checked. Repository ownership, not the fork's remote origin or an author's own fork, determines whether a PR is external. PRs in `senanurcetin/*` are excluded.
+On **27 October 2026**, GitHub's pull-request search returned **52 third-party PRs**: **14 merged**, **30 open**, and **8 closed without merge**. These three counts are a **historical snapshot**, not current totals after the additional merge on 28 October. Repository ownership, not the fork's remote origin or an author's own fork, determines whether a PR is external. PRs in `senanurcetin/*` are excluded.
 
 - [All 52 third-party PRs — live GitHub query](https://github.com/search?q=author%3Asenanurcetin+is%3Apr+-user%3Asenanurcetin&type=pullrequests)
-- [14 merged third-party PRs — live query](https://github.com/search?q=author%3Asenanurcetin+is%3Apr+is%3Amerged+-user%3Asenanurcetin&type=pullrequests)
-- [30 open third-party PRs — live query](https://github.com/search?q=author%3Asenanurcetin+is%3Apr+is%3Aopen+-user%3Asenanurcetin&type=pullrequests)
+- [Merged third-party PRs — live query (14 at 27 Oct snapshot)](https://github.com/search?q=author%3Asenanurcetin+is%3Apr+is%3Amerged+-user%3Asenanurcetin&type=pullrequests)
+- [Open third-party PRs — live query (30 at 27 Oct snapshot)](https://github.com/search?q=author%3Asenanurcetin+is%3Apr+is%3Aopen+-user%3Asenanurcetin&type=pullrequests)
 - [Last-12-month merged-PR filter](https://github.com/search?q=author%3Asenanurcetin+is%3Apr+is%3Amerged+merged%3A%3E%3D2025-10-27+-user%3Asenanurcetin&type=pullrequests)
 
 GitHub search counts can change after this snapshot. Any support/funding application must check individual merges and rerun the live queries on the submission date; this document is **not** an eligibility certificate.
@@ -28,10 +28,13 @@ node scripts/audit-external-prs.mjs --since 2025-10-26
 
 **27 October 2026 refreshed inventory:** GitHub's live public search returned **52 external PRs: 14 merged, 30 open, 8 closed without merge**. [Xarray #11806](https://github.com/pydata/xarray/pull/11806) was independently confirmed merged at **2026-10-27 09:54:42 UTC**, merge commit [`5923b17`](https://github.com/pydata/xarray/commit/5923b1794c2e2b781bcd3d91c9f21aa121c6a65a). Earlier 26 October counts above remain historical evidence, not the current snapshot. [hvPlot #1767](https://github.com/holoviz/hvplot/pull/1767) is now an **open external PR**; it does not change the 14 merged count.
 
+**30 October 2026 PR-detail recheck:** Independently fetched the GitHub PR detail endpoints for the **15 specific merged third-party PRs** listed below. All 15 had `merged=true`, author `senanurcetin`, and an exact matching `merged_at` UTC timestamp. They span **six upstream repository owners**. The [dated receipt ledger](https://github.com/senanurcetin/nexus-devops-intelligence/blob/main/docs/OSS_MERGED_UPSTREAM_LEDGER_2026-10-30.json) and its [offline consistency validator](https://github.com/senanurcetin/nexus-devops-intelligence/blob/main/scripts/validate-oss-merge-ledger.mjs) record this evidence; this manual live check is separate from the validator, which performs no GitHub calls. The full current open/closed PR inventory was **not** recounted in this recheck. Neither the count nor a merged status establishes developer-program eligibility or downstream adoption.
+
 ## Verified third-party merged pull requests
 
 | Upstream | Merged PR | Contribution |
 | --- | --- | --- |
+| pyjanitor | [#1822](https://github.com/pyjanitor-devs/pyjanitor/pull/1822) | Homogeneous NumPy `.value` fast path; **merged 28 October 2026 at 02:10:22 UTC** |
 | Xarray | [#11806](https://github.com/pydata/xarray/pull/11806) | Document optional DataTree backend entrypoints; **merged 27 October 2026 at 09:54:42 UTC** |
 | pyjanitor | [#1786](https://github.com/pyjanitor-devs/pyjanitor/pull/1786) | Include missingness in constant-column handling |
 | pyjanitor | [#1820](https://github.com/pyjanitor-devs/pyjanitor/pull/1820) | Prevent `pivot_longer` output from mutating the source via shared buffers |
@@ -47,11 +50,13 @@ node scripts/audit-external-prs.mjs --since 2025-10-26
 | Altair | [#4179](https://github.com/vega/altair/pull/4179) | `Chart.show()` documentation |
 | Xarray | [#11714](https://github.com/pydata/xarray/pull/11714) | Expected all-NaN warning behavior |
 
-All 14 are in the 12-month window **2025-10-27 through 2026-10-27**, as returned by GitHub's filtered search. This is **not** 100 merged third-party PRs.
+All **15 listed** PRs were individually confirmed merged in the 12-month window **2025-10-30 through 2026-10-30** against GitHub PR detail metadata. The earlier 14-count and 27 October search dates above remain historical. This is **not** 100 merged third-party PRs.
+
+**pyjanitor #1822 historical validation:** Before merge, fork commit [`d6b135c`](https://github.com/senanurcetin/pyjanitor/commit/d6b135cea30f60c883de99a89c5afaf44620ae66) reported **578 local passing tests, 7 expected xfails** and 32 temporal/complex/float16 regression cases. Its upstream Python CI and docs CI were reported passing. This is dated pre-merge QA, not evidence of external adoption. [Performance benchmark](benchmarks/pyjanitor-1822-2026-10-26.md) measured an earlier commit and must not be attributed to a newer version without rerunning it.
 
 ## Active upstream queue
 
-**30 open third-party PRs** at snapshot time. Examples under independent upstream review include:
+**30 open third-party PRs at the historical 27 October snapshot.** The live queue has since changed; notably pyjanitor #1822 merged on 28 October. Examples still requiring independent upstream review include:
 
 - [hvPlot #1767](https://github.com/holoviz/hvplot/pull/1767): categorical color grouping in line/step/area, with named index, boolean categories and default `hvplot(...)` line calls. **Open; external CI `action_required`.**
 - [Anthropic Claude Agent SDK Python #1421](https://github.com/anthropics/claude-agent-sdk-python/pull/1421): transcript timestamp handling.
@@ -59,7 +64,7 @@ All 14 are in the 12-month window **2025-10-27 through 2026-10-27**, as returned
 - [Vega Altair #4189](https://github.com/vega/altair/pull/4189): layering charts without local data.
 - [Vega-Lite #9956](https://github.com/vega/vega-lite/pull/9956): CLI parsing/spec locale preservation.
 - [Skrub #2347](https://github.com/skrub-data/skrub/pull/2347): missingness-indicator HOWTO.
-- [Pyjanitor #1822](https://github.com/pyjanitor-devs/pyjanitor/pull/1822): homogeneous NumPy `.value` fast path. Latest head [`d6b135c`](https://github.com/senanurcetin/pyjanitor/commit/d6b135cea30f60c883de99a89c5afaf44620ae66) has **578 local passing tests, 7 expected xfails**, plus 32 committed temporal/complex/float16 regression cases; upstream [Python 3.11–3.13 tests + changelog CI](https://github.com/pyjanitor-devs/pyjanitor/actions/runs/40467308760) and [docs CI](https://github.com/pyjanitor-devs/pyjanitor/actions/runs/40467308776) passed. Earlier [three-shape performance benchmark](benchmarks/pyjanitor-1822-2026-10-26.md) measured commit `f79e47c` (100×20,000: 6.02–18.92×; 1M×20: approximately neutral); only tests changed since that measurement. **Still open; no merge or maintainer approval claimed.**
+
 
 ### Seaborn multi-PR compatibility check (27 October 2026)
 
