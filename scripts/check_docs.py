@@ -4,6 +4,7 @@ import json
 import re
 import sys
 import unittest
+import zlib
 from pathlib import Path
 from urllib.parse import unquote, urlsplit
 
@@ -18,6 +19,10 @@ REQUIRED_FILES = [
     ROOT / "docs" / "site-sync-brief.md",
     ROOT / "docs" / "portfolio-manifest.json",
 ]
+PREVIEW_LINK_PATTERN = re.compile(r"\]\(\.\./assets/social-previews/([A-Za-z0-9_.-]+\.png)\)")
+PNG_SIGNATURE = b"\x89PNG\r\n\x1a\n"
+PREVIEW_WIDTH, PREVIEW_HEIGHT = 1280, 640
+MAX_PREVIEW_BYTES = 8 * 1024 * 1024
 LINK_PATTERN = re.compile(r"\[[^\]]+\]\(([^)]+)\)")
 FENCE_PATTERN = re.compile(r"^ {0,3}(`{3,}|~{3,})")
 HEADING_PATTERN = re.compile(r"^ {0,3}#{1,6}[ \t]+(.+?)[ \t]*#*[ \t]*$", re.M)
@@ -192,6 +197,88 @@ def validate_repository_metadata() -> list[str]:
     return errors
 
 
+def validate_png_card(path: Path) -> str | None:
+    """Inspect PNG structure, CRCs and canvas size without third-party packages."""
+    try:
+        raw = path.read_bytes()
+    except OSError as exc:
+        return f"cannot read PNG: {exc}"
+    if len(raw) > MAX_PREVIEW_BYTES:
+        return "PNG exceeds the 8 MiB safety limit"
+    if not raw.startswith(PNG_SIGNATURE):
+        return "PNG signature is invalid"
+    cursor = len(PNG_SIGNATURE)
+    seen_header = False
+    seen_data = False
+    while cursor < len(raw):
+        if cursor + 12 > len(raw):
+            return "PNG chunk is truncated"
+        length = int.from_bytes(raw[cursor:cursor + 4], "big")
+        chunk_type = raw[cursor + 4:cursor + 8]
+        end = cursor + 12 + length
+        if end > len(raw):
+            return "PNG chunk payload is truncated"
+        payload = raw[cursor + 8:cursor + 8 + length]
+        stored_crc = int.from_bytes(raw[cursor + 8 + length:end], "big")
+        if zlib.crc32(chunk_type + payload) != stored_crc:
+            return "PNG chunk checksum mismatch"
+        if not seen_header:
+            if chunk_type != b"IHDR" or length != 13:
+                return "PNG must start with a 13-byte IHDR"
+            width = int.from_bytes(payload[:4], "big")
+            height = int.from_bytes(payload[4:8], "big")
+            if (width, height) != (PREVIEW_WIDTH, PREVIEW_HEIGHT):
+                return f"PNG has unexpected dimensions {width}x{height}"
+            seen_header = True
+        elif chunk_type == b"IDAT":
+            seen_data = True
+        elif chunk_type == b"IEND":
+            if length != 0 or not seen_data or end != len(raw):
+                return "PNG has invalid IEND, missing IDAT or trailing bytes"
+            return None
+        cursor = end
+    return "PNG has no final IEND chunk"
+
+
+def validate_social_preview_assets() -> list[str]:
+    """Compare committed cards with the evidence manifest and public links."""
+    errors = []
+    directory = ROOT / "assets" / "social-previews"
+    guide = ROOT / "docs" / "REPOSITORY_FINISHING_GUIDE.md"
+    try:
+        manifest = json.loads(REPOSITORY_METADATA_MANIFEST.read_text(encoding="utf-8"))
+        guide_text = guide.read_text(encoding="utf-8")
+        eligible = {
+            entry["name"] + ".png"
+            for entry in manifest["repositories"]
+            if entry.get("social_preview")
+        }
+    except (OSError, KeyError, ValueError, TypeError) as exc:
+        return [f"Preview asset inventory cannot be read: {exc}"]
+    if not directory.is_dir():
+        return ["Missing versioned Social Preview asset directory"]
+    available = {path.name for path in directory.glob("*.png")}
+    linked = set(PREVIEW_LINK_PATTERN.findall(guide_text))
+    for name in sorted(available - eligible):
+        errors.append(f"Social Preview lacks a verified source in metadata: {name}")
+    for name in sorted(linked - available):
+        errors.append(f"Social Preview linked but missing: {name}")
+    for name in sorted(available - linked):
+        errors.append(f"Social Preview not linked from publishing guide: {name}")
+    for name in sorted(available):
+        reason = validate_png_card(directory / name)
+        if reason:
+            errors.append(f"Invalid Social Preview {name}: {reason}")
+    contact = directory / "contact-sheet.jpg"
+    if not contact.is_file():
+        errors.append("Missing Social Preview contact-sheet.jpg")
+    else:
+        raw = contact.read_bytes()
+        if len(raw) < 1000 or not raw.startswith(b"\xff\xd8") or not raw.endswith(b"\xff\xd9"):
+            errors.append("Social Preview contact-sheet.jpg is malformed")
+    return errors
+
+
 def validate_circleci_inventory() -> list[str]:
     """Run offline CI status classifier tests within the existing docs job."""
     errors = []
@@ -227,7 +314,7 @@ def validate_circleci_inventory() -> list[str]:
 
 def validate_docs_regressions() -> list[str]:
     suite = unittest.defaultTestLoader.discover(
-        start_dir=str(ROOT / "tests"), pattern="test_docs_links.py"
+        start_dir=str(ROOT / "tests"), pattern="test_docs_*.py"
     )
     if not unittest.TextTestRunner(verbosity=0).run(suite).wasSuccessful():
         return ["Documentation link regression tests failed."]
@@ -238,6 +325,7 @@ def main() -> int:
     errors = []
     errors.extend(validate_required_files())
     errors.extend(validate_markdown_links())
+    errors.extend(validate_social_preview_assets())
     errors.extend(validate_docs_regressions())
     errors.extend(validate_manifest())
     errors.extend(validate_repository_metadata())
