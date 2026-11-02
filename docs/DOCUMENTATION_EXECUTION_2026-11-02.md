@@ -34,9 +34,9 @@ A GitHub repository search returned **122 results over two pages (100 + 22)** on
 | [NEXUS Commerce Intelligence](https://github.com/senanurcetin/nexus-commerce-intelligence) | Navigate architecture, KPI dictionary, source coverage, independent Olist vs synthetic commerce analysis |
 | [Football Intelligence](https://github.com/senanurcetin/football-player-performance-analysis) | Link source provenance, current PBIP status, evaluation, screenshots and reproduction |
 
-**Protected-branch review and merge outcomes:**
+**Protected-branch changes merged after required checks:**
 
-- [Ops-Copilot reviewer path PR #85](https://github.com/senanurcetin/Ops-Copilot/pull/85) — pending merge; preserves protected-branch checks, with the latest `main` dependency update reconciled into the documentation branch.
+- [Ops-Copilot reviewer path PR #85](https://github.com/senanurcetin/Ops-Copilot/pull/85) — **merged** after the required checks passed; the documentation branch incorporated the latest `main` dependency update without discarding it.
 - [OT-Sentinel reviewer path PR #109](https://github.com/senanurcetin/ot-sentinel/pull/109) — **merged** after required checks; detector evaluation, model card, threat model, synthetic-live boundary.
 
 **Inspected; existing root navigation already sufficiently explicit, no cosmetic change justified:** [Fraud Risk Intelligence](https://github.com/senanurcetin/ieee-fraud-detection-analytics), [MS Capital](https://github.com/senanurcetin/ms-capital-market-forecasting), [APTOS](https://github.com/senanurcetin/APTOS-2019-diabetic-retinopathy), [GS Quant fork](https://github.com/senanurcetin/gs-quant), [Vision2DCS](https://github.com/senanurcetin/Vision2DCS), [Excel/CSV Automation](https://github.com/senanurcetin/excel-csv-reporting-automation), [PlantLog](https://github.com/senanurcetin/PlantLog-MERN), [ChemView](https://github.com/senanurcetin/ChemView). Each listed **public** repository has a task-appropriate root README with a run/verification path or stated engineering boundary; this is **not** a claim that every external link or runtime test passed. Private repositories, commercial-sensitive workspaces and local-only source remain outside this public-documentation publication pass.
@@ -45,7 +45,7 @@ A GitHub repository search returned **122 results over two pages (100 + 22)** on
 
 ## Remaining validation gates and manual controls
 
-- **P0 — protected branches:** Confirm GitHub-required checks and branch freshness for **Ops-Copilot PR #85**, merge only when policy permits, then confirm post-merge README. OT-Sentinel #109 has been merged. A pending check is not a success.
+- **P0 — protected branches:** **Closed for this documentation batch:** Ops-Copilot #85 and OT-Sentinel #109 both merged after required checks passed. Preserve GitHub branch protections and recheck exact-head evidence for future changes.
 - **P1 — content integrity:** Confirm referenced local files exist and avoid claims that CI, a hosted application, a model checkpoint or a Power BI Desktop report were actually run unless verified on the cited revision.
 - **P1 — role-based consistency:** Keep [profile manifest](portfolio-manifest.json) and [website synchronization guidance](site-sync-brief.md) aligned with the project source; private site source should be modified in its own authorized workflow, **not** by this GitHub doc-only pass.
 - **P2 — GitHub settings:** Pinned repositories, social preview image uploads and the account-level About fields are not modified by README commits. They require the account UI or a separately authorized settings-capable integration.
