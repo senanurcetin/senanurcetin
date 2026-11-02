@@ -71,6 +71,22 @@ BRIEFS = {
         "ChemView", "HMI & digital twin simulation",
         ("HMI", "Digital twin", "React"),
     ),
+    "APTOS-2019-diabetic-retinopathy": (
+        "APTOS 2019\nRetinopathy", "Medical imaging research",
+        ("EfficientNet-B0", "QWK", "External evaluation"),
+    ),
+    "enveda-casmi26": (
+        "CASMI26\nMolecular ID", "MS/MS retrieval and ranking research",
+        ("MS/MS", "Ranking", "Family holdout"),
+    ),
+    "Vision2DCS": (
+        "Vision2DCS", "Synthetic P&ID extraction research",
+        ("P&ID", "Synthetic", "Human review"),
+    ),
+    "nexus-commerce-intelligence": (
+        "NEXUS Commerce\nIntelligence", "Historical commerce analytics",
+        ("dbt", "Power BI", "Cohorts"),
+    ),
 }
 
 PAPER = "#f7f8fa"
@@ -124,12 +140,28 @@ def fit_single_line(draw, text, max_width, base=25, min_size=17):
     return load_font(min_size)
 
 
-def title_font(draw, lines):
-    for size in range(56, 37, -1):
-        f = load_font(size, serif=True)
-        if all(text_width(draw, line, f) <= 392 for line in lines):
-            return f
-    return load_font(38, serif=True)
+def title_layout(draw, title, max_width=365, max_lines=3):
+    """Wrap within the left editorial column, never underneath the source image."""
+    for size in range(56, 27, -1):
+        font = load_font(size, serif=True)
+        lines = []
+        for paragraph in title.split("\n"):
+            current = ""
+            for word in paragraph.split():
+                proposed = f"{current} {word}".strip()
+                if current and text_width(draw, proposed, font) > max_width:
+                    lines.append(current)
+                    current = word
+                else:
+                    current = proposed
+            if current:
+                lines.append(current)
+        if (
+            1 <= len(lines) <= max_lines
+            and all(text_width(draw, line, font) <= max_width for line in lines)
+        ):
+            return lines, font
+    raise ValueError(f"Social Preview title does not fit the column: {title!r}")
 
 
 def rounded_crop_mask(size, radius):
@@ -165,8 +197,7 @@ def render(screenshot, entry, variant):
         font=load_font(18, bold=True), fill=accent,
     )
 
-    lines = title.split("\n")
-    font = title_font(d, lines)
+    lines, font = title_layout(d, title)
     y = 142 if len(lines) <= 2 else 119
     for line in lines[:3]:
         d.text((43, y), line, font=font, fill=fg, stroke_width=0)
@@ -194,7 +225,7 @@ def render(screenshot, entry, variant):
     d.line((43, 538, 422, 538), fill=thin, width=2)
     d.text((44, 556), "SENANUR CETIN  /  GITHUB",
            fill=secondary, font=load_font(16, bold=True))
-    d.text((44, 584), "Fork-based analysis" if entry.get("fork") else "Independent project",
+    d.text((44, 584), "Fork-based analysis" if entry.get("fork") else "Portfolio repository",
            fill=accent, font=load_font(16))
 
     # Screenshot takes >60% of the frame. No fake monitor shell or mock figures.
@@ -210,7 +241,7 @@ def render(screenshot, entry, variant):
            fill=LINE if not dark else "#345066", width=2)
     for i, c in enumerate(("#b7c5d3", "#91adbe", "#5e99bc")):
         d.ellipse((x1 + 17 + i * 20, y1 + 16, x1 + 25 + i * 20, y1 + 24), fill=c)
-    d.text((x1 + 110, y1 + 12), "SOURCE SCREENSHOT",
+    d.text((x1 + 110, y1 + 12), "SOURCE IMAGE",
            fill="#718496" if not dark else "#b1c6d3",
            font=load_font(15, bold=True))
 
