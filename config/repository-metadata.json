@@ -89,7 +89,8 @@
     },
     {
       "name": "ieee-fraud-detection-analytics",
-      "social_preview": "docs/assets/web_dashboard_executive_overview.png"
+      "social_preview": "docs/assets/web_dashboard_executive_overview.png",
+      "description": "Historical IEEE-CIS fraud analytics: DuckDB/BigQuery/dbt, LightGBM (ROC-AUC 0.9134) and a read-only dashboard; not live transaction monitoring."
     },
     {
       "name": "smart-factory-app",
@@ -102,7 +103,8 @@
     },
     {
       "name": "APTOS-2019-diabetic-retinopathy",
-      "social_preview": "reports/figures/05_pipeline_stages.png"
+      "social_preview": "reports/figures/05_pipeline_stages.png",
+      "description": "Exploratory APTOS retinal grading: EfficientNet-B0, shortcut and external-cohort audits; reused holdouts, grading limits and no validated clinical use."
     },
     {
       "name": "Ops-Copilot",
