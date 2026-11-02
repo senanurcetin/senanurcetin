@@ -67,3 +67,33 @@ The lack of a security/contributing document in a profile README or closed compe
 - [Kaggle S6E10 historical-status PR #1](https://github.com/senanurcetin/playground-s6e10/pull/1): **merged** to `main`; historical close date and source/reuse boundaries were clarified without new model submissions.
 
 A GitHub merge status is not a guarantee that every external demo, scientific claim or website was independently rerun. Social Preview uploads and profile pin rearrangement remain **manual GitHub UI operations**.
+
+## Deep technical documentation link audit — 2 November 2026
+
+The initial table above covers root READMEs. An independent **second pass** inspected root README plus all checked-out Markdown files under \`docs/\` across the **15 public, non-fork, non-archived project repositories** (excluding the separate profile-only repository). The check used each repository's tracked Git tree as the reference, ignored fenced code, stripped URL query/fragment suffixes, and resolved relative links from the document directory.
+
+| Repository | Relative links reviewed | Initially missing |
+| --- | ---: | ---: |
+| APTOS-2019-diabetic-retinopathy | 88 | 0 |
+| ChemView | 34 | 0 |
+| Ops-Copilot | 30 | **2** |
+| PlantLog-MERN | 127 | 0 |
+| Vision2DCS | 27 | 0 |
+| enveda-casmi26 | 114 | 0 |
+| excel-csv-reporting-automation | 17 | 0 |
+| ieee-fraud-detection-analytics | 176 | 0 |
+| ms-capital-market-forecasting | 124 | 0 |
+| nexus-commerce-intelligence | 150 | 0 |
+| nexus-devops-intelligence | 270 | 0 |
+| ot-sentinel | 82 | 0 |
+| playground-s6e10 | 0 | 0 |
+| smart-factory-app | 60 | **1** |
+| visual-qc-project | 39 | 0 |
+| **Total** | **1,338** | **3** |
+
+**Repairs:**
+
+- [Ops-Copilot PR #89](https://github.com/senanurcetin/Ops-Copilot/pull/89) — **merged after required checks**. Two guides referenced nonexistent \`docs/github-developer-program-application.md\`; both now link to official GitHub Developer Program documentation, without fabricating an application or acceptance record.
+- [Smart Factory PR #49](https://github.com/senanurcetin/smart-factory-app/pull/49) — corrects a case-study link that wrongly climbed two directories: \`../../analysis/audit_ai4i_calibration.py\` → \`../analysis/audit_ai4i_calibration.py\`. The tracked script exists. The repository's required quality checks independently surfaced Ruff/Black formatting debt; PR status and mergeability must be verified on GitHub before treating this fix as released.
+
+**Bounds:** This is a source-path check for Markdown link syntax in README and \`docs/\` at the audited revisions. It does not inspect Markdown stored elsewhere (such as standalone model cards), all HTML/JS links, dynamic application routes, inaccessible licensed data, website health or target-heading anchors. A zero-missing path result is **not** a test of accuracy, safety, scientific validity or deployments. No new CircleCI workflows were added for this audit.
