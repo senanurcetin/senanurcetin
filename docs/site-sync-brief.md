@@ -26,7 +26,7 @@ Canonical public site headline:
 8. `football-player-performance-analysis`
 9. `nexus-commerce-intelligence`
 
-Archive projects (`Ops-Copilot`, `Vision2DCS`, `ChemView`, `PlantLog-MERN`) appear later and visually subordinate.
+Supporting industrial AI/developer-tool projects (`Ops-Copilot`, `Vision2DCS`) can appear after the flagship modeling case studies, with their research and readiness boundaries prominent. Historical industrial demonstrations (`ChemView`, `PlantLog-MERN`) remain in the secondary/archive collection. Do not label an active research project as abandoned merely because it is not a flagship.
 
 ## Required proof per lead project
 
