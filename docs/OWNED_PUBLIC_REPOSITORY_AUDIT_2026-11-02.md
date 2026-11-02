@@ -70,7 +70,7 @@ A GitHub merge status is not a guarantee that every external demo, scientific cl
 
 ## Deep technical documentation link audit — 2 November 2026
 
-The initial table above covers root READMEs. An independent **second pass** inspected root README plus all checked-out Markdown files under \`docs/\` across the **15 public, non-fork, non-archived project repositories** (excluding the separate profile-only repository). The check used each repository's tracked Git tree as the reference, ignored fenced code, stripped URL query/fragment suffixes, and resolved relative links from the document directory.
+The initial table above covers root READMEs. An independent **second pass** inspected root README plus all checked-out Markdown files under `docs/` across the **15 public, non-fork, non-archived project repositories** (excluding the separate profile-only repository). The check used each repository's tracked Git tree as the reference, ignored fenced code, stripped URL query/fragment suffixes, and resolved relative links from the document directory.
 
 | Repository | Relative links reviewed | Initially missing |
 | --- | ---: | ---: |
@@ -93,7 +93,7 @@ The initial table above covers root READMEs. An independent **second pass** insp
 
 **Repairs:**
 
-- [Ops-Copilot PR #89](https://github.com/senanurcetin/Ops-Copilot/pull/89) — **merged after required checks**. Two guides referenced nonexistent \`docs/github-developer-program-application.md\`; both now link to official GitHub Developer Program documentation, without fabricating an application or acceptance record.
-- [Smart Factory PR #49](https://github.com/senanurcetin/smart-factory-app/pull/49) — corrects a case-study link that wrongly climbed two directories: \`../../analysis/audit_ai4i_calibration.py\` → \`../analysis/audit_ai4i_calibration.py\`. The tracked script exists. The repository's required quality checks independently surfaced Ruff/Black formatting debt; PR status and mergeability must be verified on GitHub before treating this fix as released.
+- [Ops-Copilot PR #89](https://github.com/senanurcetin/Ops-Copilot/pull/89) — **merged after required checks**. Two guides referenced nonexistent `docs/github-developer-program-application.md`; both now link to official GitHub Developer Program documentation, without fabricating an application or acceptance record.
+- [Smart Factory PR #49](https://github.com/senanurcetin/smart-factory-app/pull/49) — corrects a case-study link that wrongly climbed two directories: `../../analysis/audit_ai4i_calibration.py` → `../analysis/audit_ai4i_calibration.py`. The tracked script exists. **PR #49 was merged after all required CircleCI checks passed:** python-quality, browser-quality and container-quality. The earlier Ruff I001 import-order issue and Black formatting debt were corrected without changing model calculations, test assertions or expected results.
 
-**Bounds:** This is a source-path check for Markdown link syntax in README and \`docs/\` at the audited revisions. It does not inspect Markdown stored elsewhere (such as standalone model cards), all HTML/JS links, dynamic application routes, inaccessible licensed data, website health or target-heading anchors. A zero-missing path result is **not** a test of accuracy, safety, scientific validity or deployments. No new CircleCI workflows were added for this audit.
+**Bounds:** This is a source-path check for Markdown link syntax in README and `docs/` at the audited revisions. It does not inspect Markdown stored elsewhere (such as standalone model cards), all HTML/JS links, dynamic application routes, inaccessible licensed data, website health or target-heading anchors. A zero-missing path result is **not** a test of accuracy, safety, scientific validity or deployments. No new CircleCI workflows were added for this audit.
