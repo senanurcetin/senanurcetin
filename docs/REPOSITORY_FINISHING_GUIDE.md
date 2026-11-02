@@ -4,7 +4,7 @@ This is a **checked, public-project maintenance guide** for the GitHub account. 
 
 ## 1. Metadata: apply only missing fields first
 
-The [metadata manifest](../config/repository-metadata.json) now tracks 16 selected portfolio repositories plus the GitHub profile (17 entries), suggested Topics for gaps, and authentic screenshot candidates where available. The [synchronization script](../scripts/sync_repository_metadata.py) reads the current GitHub state, compares it to the manifest, and **defaults to dry-run**.
+The [metadata manifest](../config/repository-metadata.json) now tracks 17 selected portfolio repositories plus the GitHub profile (18 entries), suggested Topics for gaps, and authentic screenshot candidates where available. The [synchronization script](../scripts/sync_repository_metadata.py) reads the current GitHub state, compares it to the manifest, and **defaults to dry-run**.
 
 ```bash
 # From a local checkout of this profile repository:
@@ -53,6 +53,7 @@ Upload the referenced **authentic PNG screenshot** through each repository's **S
 
 | Repository | Verified candidate in current repository | Evidence type |
 | --- | --- | --- |
+| CASMI26 | [Internal ranking study](https://github.com/senanurcetin/enveda-casmi26/blob/main/docs/assets/advanced-internal-study.png) | Internal family-holdout figure, not external validation |
 | MS Capital | [Research dashboard](https://github.com/senanurcetin/ms-capital-market-forecasting/blob/main/docs/assets/mscapital-research-dashboard.png) | Research interface |
 | IEEE Fraud | [Executive dashboard](https://github.com/senanurcetin/ieee-fraud-detection-analytics/blob/main/docs/assets/web_dashboard_executive_overview.png) | Application interface |
 | Smart Factory | [Factory dashboard](https://github.com/senanurcetin/smart-factory-app/blob/main/docs/assets/smart-factory-dashboard.png) | Simulated process dashboard |

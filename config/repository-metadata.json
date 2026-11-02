@@ -32,6 +32,19 @@
       "description": "Synthetic CSV/XLSX validation and KPI-reporting demo with audited exceptions, Python tests and offline HTML deliverables."
     },
     {
+      "name": "enveda-casmi26",
+      "description": "Noncommercial MS/MS candidate retrieval and LambdaRank research; sealed internal family holdouts, weak C3 transfer and no lab validation.",
+      "topics": [
+        "cheminformatics",
+        "data-science",
+        "learning-to-rank",
+        "mass-spectrometry",
+        "molecular-identification",
+        "reproducible-research"
+      ],
+      "social_preview": "docs/assets/advanced-internal-study.png"
+    },
+    {
       "name": "football-player-performance-analysis",
       "topics": [
         "bigquery",
@@ -80,7 +93,8 @@
     },
     {
       "name": "smart-factory-app",
-      "social_preview": "docs/assets/smart-factory-dashboard.png"
+      "social_preview": "docs/assets/smart-factory-dashboard.png",
+      "description": "Historical AI4I predictive-maintenance ML and separate NASA C-MAPSS RUL study with a synthetic Flask dashboard; no plant deployment."
     },
     {
       "name": "visual-qc-project",
@@ -107,11 +121,13 @@
     {
       "name": "PlantLog-MERN",
       "social_preview": "docs/screenshots/nexus-demo-overview.png",
-      "homepage": "https://senanur-cetin.vercel.app/projects/plantlog-mern"
+      "homepage": "https://plantlog-nexus-demo.vercel.app/demo",
+      "description": "MERN industrial logbook research: synthetic read-only public demo and isolated local asset/maintenance backend; not live factory operations."
     },
     {
       "name": "ChemView",
-      "social_preview": "docs/assets/chemview-dashboard.png"
+      "social_preview": "docs/assets/chemview-dashboard.png",
+      "description": "Synthetic chemical mixing HMI/digital-twin demonstration with model checks and simulated interlocks; not a connected or safety-rated controller."
     },
     {
       "name": "Vision2DCS",
