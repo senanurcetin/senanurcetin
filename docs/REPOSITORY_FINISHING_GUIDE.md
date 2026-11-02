@@ -13,19 +13,19 @@ python scripts/sync_repository_metadata.py
 python scripts/sync_repository_metadata.py --apply
 
 # After reviewing the difference, optionally improve an existing description:
-python scripts/sync_repository_metadata.py --repo greenweez-finance-campaign-analytics --overwrite
-python scripts/sync_repository_metadata.py --repo greenweez-finance-campaign-analytics --overwrite --apply
+python scripts/sync_repository_metadata.py --repo nexus-commerce-intelligence --overwrite
+python scripts/sync_repository_metadata.py --repo nexus-commerce-intelligence --overwrite --apply
 ```
 
 The first `--apply` run is designed to fill Topics that are currently empty, **not** replace already-present labels or descriptions. `--overwrite` is intentionally explicit and should only be used after examining the proposed changes. Avoid renaming, changing visibility, or setting fictional live demo links. The script makes no CI, Git tag or release changes.
 
-The four initially empty-topic priorities—MS Capital, Excel/CSV Reporting, Football Player Performance (fork), and Olist Database Analysis (fork)—were checked on GitHub after the authenticated CLI run: all four now have Topics. Their present counts are 8, 7, 7, and 5 respectively. Existing nonempty Topics remain intact. Some About descriptions/homepage fields still need a separate human review; the default synchronization does not overwrite them.
+**2 November 2026 actual GitHub settings:** the professional About description was updated for the profile, Ops-Copilot, Vision2DCS, OT-Sentinel, Football Intelligence, NEXUS DevOps Intelligence, NEXUS Commerce Intelligence and Excel/CSV Reporting. Research-demo Topics replaced the misleading archive-proof Topic on Vision2DCS and OT-Sentinel; NEXUS DevOps Topics were populated. Football and Vision2DCS homepage links were corrected. Changes were applied through an authenticated GitHub CLI and checked against the public GitHub repository metadata. The manifest has been synchronized to avoid future overwrite drift.
 
-## Current sequencing — Social Preview on hold
+## Current sequencing — Social Preview files verified, uploads pending
 
-The [12 October README/cover audit](README_COVER_AUDIT_2026-10-12.md) verifies ten existing screenshot candidate paths, documents outstanding artwork and metadata gaps, and adds the previously omitted GTM fork (default branch `master`) to the manifest. Both preview URL builders now honor a manifest `default_branch` override; otherwise they use `main`. No Social Preview setting was updated.
+The [12 October README/cover audit](README_COVER_AUDIT_2026-10-12.md) is retained as historical context, **not** the latest inventory. On **2 November 2026** the metadata manifest was checked against repository trees, the stale E-commerce and Greenweez top-level entries were replaced by the consolidated [NEXUS Commerce Intelligence](https://github.com/senanurcetin/nexus-commerce-intelligence) entry, and broken Football / PlantLog image paths were repaired. Updated research/demo images are identified below. GTM still needs its `master` default-branch override. **Image path validity does not mean the account's actual Social Preview settings have changed.**
 
-**As of 2026-10-12, the repository README artwork is being redesigned. Do not regenerate or upload new GitHub Social Previews yet.** The existing screenshot paths in the metadata manifest are only historical source candidates, not an approved current design. When the final README images are ready, update and verify the manifest, review every image source and caption, and only then generate/approve matching Social Preview cards. CI and repository README artwork are handled separately.
+Create or approve preview artwork only after checking that it accurately represents the specific project (for example: APTOS image is a preprocessing research figure, and Vision2DCS uses synthetic P&ID examples). No screenshot should be labelled as a live customer or industrial deployment.
 
 ## 2. Social Preview: use real application evidence
 
@@ -51,20 +51,22 @@ The generator never fabricates screenshots; it leaves projects without verified 
 
 Upload the referenced **authentic PNG screenshot** through each repository's **Settings → General → Social preview** area. Use a centered visual and preview the resulting crop in GitHub before saving. A 1280 × 640 (2:1) canvas is a useful production target, but do not distort the screenshot or manufacture a dashboard or unverified score.
 
-| Repository | Verified existing image path |
-| --- | --- |
-| MS Capital | [Research dashboard](https://github.com/senanurcetin/ms-capital-market-forecasting/blob/main/docs/assets/mscapital-research-dashboard.png) |
-| IEEE Fraud | [Executive dashboard](https://github.com/senanurcetin/ieee-fraud-detection-analytics/blob/main/docs/assets/web_dashboard_executive_overview.png) |
-| Smart Factory | [Factory dashboard](https://github.com/senanurcetin/smart-factory-app/blob/main/docs/assets/smart-factory-dashboard.png) |
-| Visual QC | [QC dashboard](https://github.com/senanurcetin/visual-qc-project/blob/main/docs/assets/visual-qc-dashboard.png) |
-| OT-Sentinel | [Normal-operation dashboard](https://github.com/senanurcetin/ot-sentinel/blob/main/docs/assets/dashboard-normal.png) |
-| E-commerce | [Power BI dashboard](https://github.com/senanurcetin/E-commerce/blob/main/docs/assets/powerbi-channel-performance.png) |
-| Football | [Player performance dashboard](https://github.com/senanurcetin/football-player-performance-analysis/blob/main/docs/assets/screenshots/01_player_performance.png) |
-| Ops-Copilot | [Case study interface](https://github.com/senanurcetin/Ops-Copilot/blob/main/docs/assets/ops-copilot-case-study.png) |
-| PlantLog | [Logbook dashboard](https://github.com/senanurcetin/PlantLog-MERN/blob/main/docs/dashboard.png) |
-| ChemView | [HMI dashboard](https://github.com/senanurcetin/ChemView/blob/main/docs/assets/chemview-dashboard.png) |
+| Repository | Verified candidate in current repository | Evidence type |
+| --- | --- | --- |
+| MS Capital | [Research dashboard](https://github.com/senanurcetin/ms-capital-market-forecasting/blob/main/docs/assets/mscapital-research-dashboard.png) | Research interface |
+| IEEE Fraud | [Executive dashboard](https://github.com/senanurcetin/ieee-fraud-detection-analytics/blob/main/docs/assets/web_dashboard_executive_overview.png) | Application interface |
+| Smart Factory | [Factory dashboard](https://github.com/senanurcetin/smart-factory-app/blob/main/docs/assets/smart-factory-dashboard.png) | Simulated process dashboard |
+| Visual QC | [QC dashboard](https://github.com/senanurcetin/visual-qc-project/blob/main/docs/assets/visual-qc-dashboard.png) | Simulated line interface |
+| OT-Sentinel | [NEXUS normal-operation dashboard](https://github.com/senanurcetin/ot-sentinel/blob/main/docs/assets/nexus-dashboard-normal.png) | Synthetic OT telemetry |
+| NEXUS Commerce | [Olist cohort analysis](https://github.com/senanurcetin/nexus-commerce-intelligence/blob/main/docs/advanced-analysis/cohort_retention.png) | Historical analytical figure, not UI |
+| Football | [Power BI report gallery](https://github.com/senanurcetin/football-player-performance-analysis/blob/main/docs/assets/screenshots/NEXUS_Football_Page_Gallery.png) | Historical team-project BI screenshots |
+| Ops-Copilot | [SECOM case study](https://github.com/senanurcetin/Ops-Copilot/blob/main/docs/assets/nexus-secom-case-study-desktop.png) | Public case-study screenshot |
+| PlantLog | [Guest overview](https://github.com/senanurcetin/PlantLog-MERN/blob/main/docs/screenshots/nexus-demo-overview.png) | Synthetic guest demo |
+| ChemView | [HMI dashboard](https://github.com/senanurcetin/ChemView/blob/main/docs/assets/chemview-dashboard.png) | Fictional mixing-vessel simulation |
+| Vision2DCS | [P&ID research workspace](https://github.com/senanurcetin/Vision2DCS/blob/main/docs/assets/nexus-workspace-desktop.png) | Synthetic research/demo interface |
+| APTOS | [Preprocessing stages](https://github.com/senanurcetin/APTOS-2019-diabetic-retinopathy/blob/main/reports/figures/05_pipeline_stages.png) | Research figure, not clinical interface |
 
-For APTOS, a genuine interface image is available in the private website development context, but do not substitute a retinal diagnostic output for an evaluated clinical device. No verified direct PNG screenshot source was found in Excel/CSV, Greenweez, Vision2DCS or Olist; those settings need a real screenshot or a clearly marked **conceptual** graphic prepared separately. A verified source image is not itself proof the GitHub Social Preview setting has been updated.
+Excel/CSV Reporting Automation has no verified PNG/JPG screenshot candidate in this manifest. **No Social Preview images were uploaded or approved by this documentation update.** GitHub pin order likewise remains a separate profile UI setting; use [GitHub's documented Customize your pins control](https://docs.github.com/en/account-and-profile/how-tos/profile-customization/pinning-items-to-your-profile). Pinning cannot be changed through the GitHub GraphQL API described here.
 
 ## 3. Releases and versioning
 
@@ -76,7 +78,7 @@ For APTOS, a genuine interface image is available in the private website develop
 - OT-Sentinel: `v0.3.0`.
 - Smart Factory, Visual QC, Ops-Copilot: `portfolio-snapshot-2026-06` (historical snapshot tags; not semantic product versions).
 
-**Candidates requiring review:** E-commerce Analytics and Excel/CSV Reporting Automation currently have no published GitHub Releases. Do not advertise `v1.0.0` until the code and output evidence at the proposed commit have been reviewed. Keep other prototype projects at `0.x` if breaking changes remain expected.
+**Candidates requiring review:** NEXUS Commerce Intelligence and Excel/CSV Reporting Automation require independent release review before any new public version claim. Do not advertise `v1.0.0` until the code and output evidence at the proposed commit have been reviewed. Keep other prototype projects at `0.x` if breaking changes remain expected.
 
 A release must include the tested revision, a short summary of what actually works, reproducibility instructions, known limitations, data rights, and the exact commit/tag. Use `gh release create` only after the tag's target commit and release notes have been reviewed.
 
@@ -94,4 +96,4 @@ Review [the measured large-file inventory](REPOSITORY_STORAGE_AUDIT.md) before r
 
 ## Completion boundary
 
-The manifest, script, and these guides are **committed**. GitHub repository settings, Social Preview uploads and new Releases still require either an authorized repository administration tool or execution through an authenticated GitHub account. They are not marked complete until GitHub confirms the changes.
+The manifest and these guides are **committed**. The eight updated GitHub About descriptions, selected Topics, and two homepage fields were applied and verified separately through an authenticated CLI. **Social Preview uploads, pin rearrangement and any new Releases remain unperformed**; do not imply otherwise. None of these documentation changes proves a hosted release.
