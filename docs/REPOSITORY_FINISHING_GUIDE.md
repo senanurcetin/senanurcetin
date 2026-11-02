@@ -80,6 +80,8 @@ python scripts/audit_public_links.py --json
 
 **2 November 2026 manual spot-check:** 57 distinct URLs were extracted from six public Markdown entry points; 54 answered HEAD `200`, LinkedIn and the Fraud demo refused HEAD (Fraud answered GET `200`), and the Kaggle profile `https://www.kaggle.com/senanuretin` returned GET `404` from the checker's network even though an older indexed page exists. The Kaggle result is **unresolved**, not proof of a deleted account: check it interactively before altering the identity link. A second scan of 32 unique manifest demo/repository URLs found 29 HEAD `200`, a Streamlit redirect (`303`), an APTOS Render timeout (not a confirmed outage), and a **confirmed `404`** for the old NEXUS Commerce homepage `/projects/e-commerce`. That homepage has been replaced in live GitHub metadata and the canonical manifest with the currently reachable `/projects/e-commerce-marketing-web-performance` target.
 
+**Fresh tool verification (same day, after the homepage fix):** `python scripts/audit_public_links.py --timeout 5 --workers 6` checked **74 unique HTTPS URLs**, reporting **72 reachable**, one Streamlit `303` requiring redirect review, and one LinkedIn `999` access restriction. Kaggle and APTOS were reachable on this later pass. This demonstrates why a single failure, timeout or bot response should not automatically remove a portfolio link.
+
 Network status is **not** operational acceptance. Login walls, rate limits, bot protection and sleeping Free-tier deployments may be inconclusive; do not automatically remove links or make CI fail on them. Any future result should be checked again in a normal browser or with an authenticated owner account before updating public documentation.
 
 ## 3. Releases and versioning
