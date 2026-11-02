@@ -1,5 +1,7 @@
 # Technical portfolio — reviewer index
 
+**Start with the [role-based reviewer guide](REVIEWER_GUIDE.md)** for a 2-minute, 10-minute, or in-depth review. The [GitHub profile](../README.md) is the concise cover; the [2026-11-02 profile evidence snapshot](PROFILE_EVIDENCE_SNAPSHOT_2026-11-02.md) is archival only.
+
 An evidence-first map of selected **public** repositories. Start with the primary repository, then inspect datasets, model/data contracts, test evidence and limitations. This is a curated selection, **not** a claim that every repository is a standalone original project. Scores belong to the dated experiment and split stated in each repository.
 
 ## Data Science and model evaluation
