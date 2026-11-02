@@ -28,6 +28,8 @@ Each result below belongs to a **particular experiment and evaluation design**. 
 
 ## A closer look at the interfaces
 
+**[Browse the 13-project visual gallery](docs/PROJECT_VISUAL_GALLERY.md)** — source-linked, portfolio-ready cover cards for analytics, ML and industrial research. Cards combine existing screenshots or research figures with editorial layout; they are **not** proof of a current deployment or completed GitHub Social Preview settings uploads.
+
 These images are linked to the source repositories. The first two show application interfaces; the third is an **APTOS preprocessing research figure**, not a deployed clinical UI.
 
 | Fraud risk dashboard | Smart factory dashboard | APTOS preprocessing research |
