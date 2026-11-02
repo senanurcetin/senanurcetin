@@ -90,6 +90,8 @@ python scripts/audit_public_links.py --json
 
 **Fresh tool verification (same day, after the homepage fix):** `python scripts/audit_public_links.py --timeout 5 --workers 6` checked **74 unique HTTPS URLs**, reporting **72 reachable**, one Streamlit `303` requiring redirect review, and one LinkedIn `999` access restriction. Kaggle and APTOS were reachable on this later pass. This demonstrates why a single failure, timeout or bot response should not automatically remove a portfolio link.
 
+**Authenticated control-link classification (2 November 2026):** the latest audit includes 13 `github.com/{owner}/{repo}/settings` links intentionally provided for the repository owner to upload Social Preview images. GitHub returns `404` to unauthenticated visitors for these Settings pages. The public link auditor now categorizes those exact GitHub repository controls as `auth-required` **without probing them**; they are not counted as confirmed broken public links. This narrow rule does not exempt public README, code, repository or project pages from ordinary HTTP checks. The same audit observed HTTP `503` from the APTOS and Smart Factory Render demos, HTTP `303` from the MS Capital Streamlit demo and HTTP `999` from LinkedIn; none establishes a permanent outage without authenticated/browser review.
+
 Network status is **not** operational acceptance. Login walls, rate limits, bot protection and sleeping Free-tier deployments may be inconclusive; do not automatically remove links or make CI fail on them. Any future result should be checked again in a normal browser or with an authenticated owner account before updating public documentation.
 
 ## 3. Releases and versioning
