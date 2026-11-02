@@ -162,6 +162,13 @@
   ],
   "supporting_evidence": [
     {
+      "repo": "enveda-casmi26",
+      "role": "independent molecular-identification research; source-attributed competition methods",
+      "repo_url": "https://github.com/senanurcetin/enveda-casmi26",
+      "demo_url": "https://github.com/senanurcetin/enveda-casmi26/tree/main/site",
+      "proof_area": "Fresh internal family-holdout MS/MS ranking, C2 MRR@25 0.8388 vs C3 0.0373, candidate-coverage limits and no novel independent lab replication"
+    },
+    {
       "repo": "Ops-Copilot",
       "role": "supporting industrial AI application and developer-tool evidence",
       "repo_url": "https://github.com/senanurcetin/Ops-Copilot",
@@ -200,7 +207,8 @@
         "gs-quant",
         "visual-qc-project",
         "smart-factory-app",
-        "APTOS-2019-diabetic-retinopathy"
+        "APTOS-2019-diabetic-retinopathy",
+        "enveda-casmi26"
       ]
     },
     {
