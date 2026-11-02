@@ -4,7 +4,7 @@ This matrix maps the main portfolio claims to specific public evidence. Each cap
 
 | Capability | Strongest evidence | Supporting evidence | Why it matters |
 | --- | --- | --- | --- |
-| Validation design | `ms-capital-market-forecasting` | `APTOS-2019-diabetic-retinopathy`, `ieee-fraud-detection-analytics` | Walk-forward with embargo, pre-registered external validation, and holdout risk-band reporting. |
+| Validation design | `ms-capital-market-forecasting` | `APTOS-2019-diabetic-retinopathy`, `ieee-fraud-detection-analytics` | Walk-forward with embargo and time-aware fraud evaluation; APTOS reports [external-cohort comparisons and examination-level caveats](https://github.com/senanurcetin/APTOS-2019-diabetic-retinopathy/blob/main/docs/SCIENTIFIC_REVIEW.md), **not preregistered confirmation**. |
 | Analytics engineering | `ieee-fraud-detection-analytics` | `nexus-commerce-intelligence`, `nexus-commerce-intelligence/integrations/greenweez` | Tested dbt/BigQuery layers under the models. |
 | Ranking and decision support | `ieee-fraud-detection-analytics` | `smart-factory-app`, `visual-qc-project` | Review-budget capture and threshold simulation instead of raw accuracy. |
 | Scientific retrieval and candidate ranking | `enveda-casmi26` | `ieee-fraud-detection-analytics` | MS/MS retrieval plus LambdaRank; candidate-coverage oracle, sealed query-family evaluation and poor unseen-candidate C3 performance are reported together. |
@@ -12,7 +12,7 @@ This matrix maps the main portfolio claims to specific public evidence. Each cap
 | LLM and RAG engineering | `visual-qc-project` | `Ops-Copilot`, `Vision2DCS` | Retrieval and faithfulness measured against baselines. |
 | Predictive maintenance | `smart-factory-app` | `PlantLog-MERN` | Failure ranking and RUL regression tied to maintenance decisions. |
 | BI delivery | `nexus-commerce-intelligence` | `ieee-fraud-detection-analytics` | Power BI, DAX, and statistical testing on governed marts. |
-| Model serving | `APTOS-2019-diabetic-retinopathy` | `ms-capital-market-forecasting` | ONNX/FastAPI on a small host, Docker builds, CI on every push. |
+| Model serving | `APTOS-2019-diabetic-retinopathy` | `ms-capital-market-forecasting` | Historical [ONNX export and optional FastAPI inference illustration](https://github.com/senanurcetin/APTOS-2019-diabetic-retinopathy/blob/main/serving/MODEL_CARD.md) are distinct from its static research explorer. Source, Docker and tests are documented; live availability and clinical readiness are **not established**. |
 | Industrial context | `ot-sentinel` | `ChemView`, `Vision2DCS` | Operator-facing and OT workflow breadth from prior automation work. |
 
 ## Lead case study roles
@@ -21,7 +21,7 @@ This matrix maps the main portfolio claims to specific public evidence. Each cap
 - `ms-capital-market-forecasting`: validation discipline and honest reporting
 - `visual-qc-project`: computer vision plus measured RAG
 - `smart-factory-app`: predictive maintenance and ranked queues
-- `APTOS-2019-diabetic-retinopathy`: external validation and stated limitations
+- `APTOS-2019-diabetic-retinopathy`: exploratory external-cohort evaluation, examination-disjoint follow-up and repeated-holdout limitations
 - `nexus-commerce-intelligence`: analytics engineering and BI
 
 ## Supporting research and industrial demos
