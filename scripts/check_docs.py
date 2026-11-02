@@ -20,6 +20,8 @@ REQUIRED_FILES = [
 ]
 LINK_PATTERN = re.compile(r"\[[^\]]+\]\(([^)]+)\)")
 FENCE_PATTERN = re.compile(r"^ {0,3}(`{3,}|~{3,})")
+HEADING_PATTERN = re.compile(r"^ {0,3}#{1,6}[ \t]+(.+?)[ \t]*#*[ \t]*$", re.M)
+EXPLICIT_ANCHOR_PATTERN = re.compile(r'<a\s+(?:id|name)=["\x27]([^"\x27]+)["\x27]', re.I)
 
 
 def discover_markdown_files() -> list[Path]:
@@ -47,7 +49,26 @@ def outside_fenced_code(content: str) -> str:
 
 def should_skip_link(target: str) -> bool:
     # External schemes and application routes cannot be validated as local files.
-    return target.startswith(("#", "/")) or bool(urlsplit(target).scheme)
+    # A local #section fragment must be checked against Markdown headings.
+    return target.startswith("/") or bool(urlsplit(target).scheme)
+
+
+def markdown_anchors(path: Path) -> set[str]:
+    """Collect GitHub-style heading IDs and explicit HTML anchors, offline."""
+    contents = outside_fenced_code(path.read_text(encoding="utf-8"))
+    anchors = set(EXPLICIT_ANCHOR_PATTERN.findall(contents))
+    counts: dict[str, int] = {}
+    for match in HEADING_PATTERN.finditer(contents):
+        heading = re.sub(r"<[^>]*>", "", match.group(1))
+        heading = re.sub(r"\[([^\]]+)\]\([^)]+\)", r"\1", heading)
+        heading = re.sub(r"\x60([^\x60]+)\x60", r"\1", heading)
+        heading = re.sub(r"[*_~]", "", heading)
+        slug = re.sub(r"\s", "-", re.sub(r"[^\w\- ]", "", heading.lower()).strip())
+        if slug:
+            count = counts.get(slug, 0)
+            anchors.add(f"{slug}-{count}" if count else slug)
+            counts[slug] = count + 1
+    return anchors
 
 
 def validate_required_files() -> list[str]:
@@ -66,8 +87,9 @@ def validate_markdown_links() -> list[str]:
             target = raw_target.strip()
             if should_skip_link(target):
                 continue
-            url_path = unquote(urlsplit(target).path)
-            resolved = (markdown_file.parent / url_path).resolve()
+            parsed = urlsplit(target)
+            url_path = unquote(parsed.path)
+            resolved = (markdown_file.parent / url_path).resolve() if url_path else markdown_file.resolve()
             rel_file = markdown_file.relative_to(ROOT).as_posix()
             try:
                 resolved.relative_to(ROOT.resolve())
@@ -76,6 +98,10 @@ def validate_markdown_links() -> list[str]:
                 continue
             if not resolved.exists():
                 errors.append(f"Broken relative link in {rel_file}: {target}")
+            elif parsed.fragment and resolved.suffix.lower() in {".md", ".markdown"}:
+                fragment = unquote(parsed.fragment)
+                if fragment not in markdown_anchors(resolved):
+                    errors.append(f"Broken Markdown anchor in {rel_file}: {target}")
     return errors
 
 

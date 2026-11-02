@@ -90,3 +90,12 @@ The existing documentation CI workflow was left unchanged; this opt-in checker i
 The existing offline `scripts/check_docs.py` link check covered the profile README and only top-level `docs/*.md`, silently excluding nested material such as `docs/benchmarks/`. The new check discovers **all nested `docs/**/*.md`**, ignores fenced code examples, decodes percent-encoded local paths, strips URL query/fragment suffixes, and rejects links whose resolved destination escapes the checkout. It does **not** request external URLs, validate anchor existence, install dependencies or trigger CI independently.
 
 Five isolated regression tests cover nested discovery, an actually missing nested asset, code-fence examples, encoded/query-string paths and an existing file outside the repository. Before the fix, three tests exposed missing functionality or defects (two FAIL, one ERROR); after the fix, **5/5 passed**. The existing **7/7 CircleCI classifier tests** and main documentation check also passed locally on the same independent clone. No mainline code, automated workflow, website, Jarvis files or manual release process was changed. Publication to the default branch is subject to the normal PR/merge checks.
+
+
+## Markdown heading-fragment regression — 2 November 2026
+
+The profile's root README uses relative links to specific sections in docs/PROJECT_REVIEW_INDEX.md. The prior offline checker confirmed the destination Markdown file existed but did **not** verify whether its heading fragment resolved; it skipped bare hash-only links altogether.
+
+The improved offline checker validates local Markdown heading IDs and explicit HTML id/name anchors, including in-page and cross-page fragments, duplicate heading suffixes, and GitHub-style punctuation handling. External URLs, application routes, non-Markdown file fragments, and fenced-code samples remain outside heading resolution. Five isolated tests cover missing in-page and cross-page anchors, punctuation, duplicates / explicit IDs, and intentionally skipped external/image fragments.
+
+**Verification boundary:** This check is a small dependency-free approximation of GitHub's heading ID rules; it is not a full CommonMark renderer and does not query live GitHub URLs. Automatic Docs Check and reviewed PR merge must still pass for publication. No private JARVIS files, other notebook worktrees, GitHub account settings, release or deployment were modified.
