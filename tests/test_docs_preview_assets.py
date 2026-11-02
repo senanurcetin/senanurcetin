@@ -70,6 +70,28 @@ class PreviewAssetTests(unittest.TestCase):
     def test_valid_png_and_manifest_link_are_accepted(self) -> None:
         self.assertEqual([], check_docs.validate_social_preview_assets())
 
+    def test_manifest_card_cannot_disappear_with_guide_reference(self) -> None:
+        """Deleting the card AND its Markdown link must still fail the gate."""
+        (self.cards / "demo.png").unlink()
+        self.guide.write_text("# Guide with no preview rows", encoding="utf-8")
+        self.assertIn(
+            "Social Preview expected by metadata but missing: demo.png",
+            check_docs.validate_social_preview_assets(),
+        )
+
+    def test_one_of_two_expected_cards_missing_without_link_is_rejected(self) -> None:
+        self.manifest.write_text(
+            json.dumps({"repositories": [
+                {"name": "demo", "social_preview": "docs/demo.png"},
+                {"name": "second", "social_preview": "docs/second.png"},
+            ]}),
+            encoding="utf-8",
+        )
+        self.assertIn(
+            "Social Preview expected by metadata but missing: second.png",
+            check_docs.validate_social_preview_assets(),
+        )
+
     def test_missing_linked_card_is_rejected(self) -> None:
         (self.cards / "demo.png").unlink()
         self.assertIn(
