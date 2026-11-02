@@ -34,10 +34,10 @@ A GitHub repository search returned **122 results over two pages (100 + 22)** on
 | [NEXUS Commerce Intelligence](https://github.com/senanurcetin/nexus-commerce-intelligence) | Navigate architecture, KPI dictionary, source coverage, independent Olist vs synthetic commerce analysis |
 | [Football Intelligence](https://github.com/senanurcetin/football-player-performance-analysis) | Link source provenance, current PBIP status, evaluation, screenshots and reproduction |
 
-**Protected-branch pull requests (do not describe as merged unless GitHub confirms):**
+**Protected-branch review and merge outcomes:**
 
-- [Ops-Copilot reviewer path PR #85](https://github.com/senanurcetin/Ops-Copilot/pull/85) — separate industrial AI/SECOM evidence from read-only GitHub API tooling.
-- [OT-Sentinel reviewer path PR #109](https://github.com/senanurcetin/ot-sentinel/pull/109) — detector evaluation, model card, threat model, synthetic-live boundary.
+- [Ops-Copilot reviewer path PR #85](https://github.com/senanurcetin/Ops-Copilot/pull/85) — pending merge; preserves protected-branch checks, with the latest `main` dependency update reconciled into the documentation branch.
+- [OT-Sentinel reviewer path PR #109](https://github.com/senanurcetin/ot-sentinel/pull/109) — **merged** after required checks; detector evaluation, model card, threat model, synthetic-live boundary.
 
 **Inspected; existing root navigation already sufficiently explicit, no cosmetic change justified:** [Fraud Risk Intelligence](https://github.com/senanurcetin/ieee-fraud-detection-analytics), [MS Capital](https://github.com/senanurcetin/ms-capital-market-forecasting), [APTOS](https://github.com/senanurcetin/APTOS-2019-diabetic-retinopathy), [GS Quant fork](https://github.com/senanurcetin/gs-quant), [Vision2DCS](https://github.com/senanurcetin/Vision2DCS), [Excel/CSV Automation](https://github.com/senanurcetin/excel-csv-reporting-automation), [PlantLog](https://github.com/senanurcetin/PlantLog-MERN), [ChemView](https://github.com/senanurcetin/ChemView), [Datneta site](https://github.com/senanurcetin/datneta-web), [NEXUS Atlas](https://github.com/senanurcetin/nexus-atlas). Each has a task-appropriate root README with a run/verification path or stated engineering boundary; this is **not** a claim that every external link or runtime test passed.
 
@@ -45,7 +45,7 @@ A GitHub repository search returned **122 results over two pages (100 + 22)** on
 
 ## Remaining validation gates and manual controls
 
-- **P0 — protected branches:** Wait for GitHub-required checks on PRs #85 and #109, review failures without disabling protections, merge only if the policy permits, and confirm post-merge README contents. Pending checks are not successes.
+- **P0 — protected branches:** Confirm GitHub-required checks and branch freshness for **Ops-Copilot PR #85**, merge only when policy permits, then confirm post-merge README. OT-Sentinel #109 has been merged. A pending check is not a success.
 - **P1 — content integrity:** Confirm referenced local files exist and avoid claims that CI, a hosted application, a model checkpoint or a Power BI Desktop report were actually run unless verified on the cited revision.
 - **P1 — role-based consistency:** Keep [profile manifest](portfolio-manifest.json) and [website synchronization guidance](site-sync-brief.md) aligned with the project source; private site source should be modified in its own authorized workflow, **not** by this GitHub doc-only pass.
 - **P2 — GitHub settings:** Pinned repositories, social preview image uploads and the account-level About fields are not modified by README commits. They require the account UI or a separately authorized settings-capable integration.
