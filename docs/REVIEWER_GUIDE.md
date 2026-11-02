@@ -47,3 +47,5 @@ For implementation-level feedback, open an issue in the relevant repository with
 5. Update [portfolio manifest](portfolio-manifest.json) when projects or core claims change, and use the [site sync brief](site-sync-brief.md) before editing the portfolio website.
 
 The [previous long-form profile](PROFILE_EVIDENCE_SNAPSHOT_2026-11-02.md) is preserved for historical reference only; do not treat it as a live status page.
+
+For the **2026-11-02 portfolio-wide documentation inventory, executed changes, protected-branch PRs and verification gates**, see the [documentation execution record](DOCUMENTATION_EXECUTION_2026-11-02.md).
