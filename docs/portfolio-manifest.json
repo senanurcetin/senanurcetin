@@ -163,17 +163,17 @@
   "supporting_evidence": [
     {
       "repo": "Ops-Copilot",
-      "role": "archive proof",
+      "role": "supporting industrial AI application and developer-tool evidence",
       "repo_url": "https://github.com/senanurcetin/Ops-Copilot",
       "demo_url": "https://senanur-cetin.vercel.app/projects/ops-copilot",
-      "proof_area": "Industrial AI assistant with document-grounded answers"
+      "proof_area": "Document-grounded industrial guidance plus a separate read-only GitHub Actions REST auditor; public demo is not a certified operator system"
     },
     {
       "repo": "Vision2DCS",
-      "role": "archive proof",
+      "role": "supporting industrial AI research demo",
       "repo_url": "https://github.com/senanurcetin/Vision2DCS",
       "demo_url": "https://senanur-cetin.vercel.app/projects/vision2dcs",
-      "proof_area": "Multimodal engineering-tool thinking"
+      "proof_area": "Offline human-reviewed P&ID tag and topology research with a measured synthetic Tesseract baseline; not a certified DCS import"
     },
     {
       "repo": "ChemView",
