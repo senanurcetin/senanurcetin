@@ -2,6 +2,8 @@
 
 This catalog distinguishes **independent portfolio repositories** from **fork-based applied exercises**. It is a reading guide, not a claim that all projects are production deployments or that forked upstream code was authored here.
 
+For a quick evaluation path tailored to the role, use the [reviewer guide](REVIEWER_GUIDE.md) and the [technical index](PROJECT_REVIEW_INDEX.md).
+
 For evaluation details, follow each repository's README and linked methodology, validation or engineering evidence. Where a demo uses synthetic or public benchmark data, the corresponding case study should disclose that scope.
 
 | Area | Repository | Provenance | Suggested review focus |
