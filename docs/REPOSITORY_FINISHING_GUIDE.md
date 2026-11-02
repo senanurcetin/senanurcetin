@@ -69,6 +69,19 @@ Upload the referenced **authentic PNG screenshot** through each repository's **S
 
 Excel/CSV Reporting Automation has no verified PNG/JPG screenshot candidate in this manifest. **No Social Preview images were uploaded or approved by this documentation update.** GitHub pin order likewise remains a separate profile UI setting; use [GitHub's documented Customize your pins control](https://docs.github.com/en/account-and-profile/how-tos/profile-customization/pinning-items-to-your-profile). Pinning cannot be changed through the GitHub GraphQL API described here.
 
+## 2a. Public link reachability — opt-in, not CI
+
+The [bounded external-link audit](../scripts/audit_public_links.py) inspects external HTTPS links in the public profile and selected review documents, plus `repo_url`, `demo_url`, `release_url` and `homepage` fields in the portfolio/metadata manifests. It sends read-only HEAD requests with a bounded GET fallback, without account tokens or new workflows.
+
+```bash
+python scripts/audit_public_links.py
+python scripts/audit_public_links.py --json
+```
+
+**2 November 2026 manual spot-check:** 57 distinct URLs were extracted from six public Markdown entry points; 54 answered HEAD `200`, LinkedIn and the Fraud demo refused HEAD (Fraud answered GET `200`), and the Kaggle profile `https://www.kaggle.com/senanuretin` returned GET `404` from the checker's network even though an older indexed page exists. The Kaggle result is **unresolved**, not proof of a deleted account: check it interactively before altering the identity link. A second scan of 32 unique manifest demo/repository URLs found 29 HEAD `200`, a Streamlit redirect (`303`), an APTOS Render timeout (not a confirmed outage), and a **confirmed `404`** for the old NEXUS Commerce homepage `/projects/e-commerce`. That homepage has been replaced in live GitHub metadata and the canonical manifest with the currently reachable `/projects/e-commerce-marketing-web-performance` target.
+
+Network status is **not** operational acceptance. Login walls, rate limits, bot protection and sleeping Free-tier deployments may be inconclusive; do not automatically remove links or make CI fail on them. Any future result should be checked again in a normal browser or with an authenticated owner account before updating public documentation.
+
 ## 3. Releases and versioning
 
 **Already released (preserve):**
