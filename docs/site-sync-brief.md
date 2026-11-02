@@ -32,6 +32,8 @@ Supporting industrial AI/developer-tool projects (`Ops-Copilot`, `Vision2DCS`) c
 
 See `lead_projects` in the manifest. Metrics must match the site case-study pages and the repository READMEs exactly.
 
+**Verified source nuances for any future site refresh (2 November 2026):** MS Capital has **292 feature columns but only 264 distinct features**, per its redundancy audit; its default served prediction model is **LightGBM v3**, whereas the **+0.129 leaderboard score belongs to the separately submitted v4 ensemble**. Football Intelligence is a **Workintech team-project fork** with a 13-page PBIP comprising **9 presentation pages, 2 drillthrough pages and 2 tooltip pages**; historical screenshots cover presentation pages, and post-cutover Desktop refresh remains unverified. Preserve these qualifiers if rebuilding website cards or summaries. This brief does not modify the website source.
+
 ## Reading path defaults
 
 The default path is `Data Scientist`. Other paths: `AI Engineer` and `Analytics Engineering and BI`.
