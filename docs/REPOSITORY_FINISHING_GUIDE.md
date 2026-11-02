@@ -45,9 +45,11 @@ python scripts/generate_social_previews.py --write --replace --contact-sheet
 python scripts/generate_social_previews.py --variant dark --write --replace --contact-sheet
 ```
 
-The redesigned generator uses the actual website palette (paper `#f7f8fa`, ink `#091625`, navy `#061524`, blue `#0572a8`), readable project-specific titles, and a **large uncropped source screenshot**. The earlier tiny screenshot + generic laptop placeholder style has been retired. It uses a light editorial design by default, and `--variant dark` offers a matching dark treatment. Neither style invents charts, metrics, or app interfaces. `--replace` is required to regenerate existing local images, and `--contact-sheet` writes a review grid for all previews.
+The redesigned generator uses the actual website palette (paper `#f7f8fa`, ink `#091625`, navy `#061524`, blue `#0572a8`), readable project-specific titles, and a **large uncropped source image (screenshot or research figure)**. The earlier tiny screenshot + generic laptop placeholder style has been retired. It uses a light editorial design by default, and `--variant dark` offers a matching dark treatment. Neither style invents charts, metrics, or app interfaces. `--replace` is required to regenerate existing local images, and `--contact-sheet` writes a review grid for all previews.
 
-The generator never fabricates screenshots; it leaves projects without verified images untouched. Verify each card visually, especially labels and cropped text, before using it publicly.
+The generator never fabricates screenshots or research figures; it leaves projects without verified images untouched. Its project titles wrap within the text column and fail rather than allowing text to overlap source imagery; `Portfolio repository` avoids implying sole authorship from a non-fork flag. Verify each card visually, especially labels and image legibility, before using it publicly.
+
+**2 November 2026 local preparation:** 13 real-source 1280 × 640 light PNG candidates and a contact sheet were generated in a local, untracked output folder and visually inspected. Two previously overflowing titles (APTOS and NEXUS Commerce) were corrected; research imagery now uses `SOURCE IMAGE` rather than claiming every graphic is a UI screenshot. Four entries without verified artwork were intentionally skipped. **These are local candidates only; no GitHub Social Preview settings were changed.**
 
 Upload the referenced **authentic PNG screenshot** through each repository's **Settings → General → Social preview** area. Use a centered visual and preview the resulting crop in GitHub before saving. A 1280 × 640 (2:1) canvas is a useful production target, but do not distort the screenshot or manufacture a dashboard or unverified score.
 
