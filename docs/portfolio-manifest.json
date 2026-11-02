@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-26",
+  "updated_at": "2026-11-02",
   "positioning": {
     "headline": "Data Scientist | AI Engineer | Applied Machine Learning",
     "short_tagline": "Evaluated machine-learning systems on tested data, published with their validation design and stated limitations.",
@@ -50,11 +50,11 @@
       "thesis": "Short-horizon return forecasting over 804.5M rows, where the main result is an investigation into why the leaderboard disagreed with the hold-out. Research only, not investment advice.",
       "metrics": [
         "292 BigQuery features",
-        "+0.14088 walk-forward cosine, +0.15171 untouched hold-out",
-        "Graded score 0.128, below the field median"
+        "Historical fitted-blend walk-forward cosine +0.14088 (optimistic); historical hold-out +0.15171",
+        "Shipped ensemble leaderboard score +0.12900 (first LightGBM +0.12800), below the field median"
       ],
       "what_it_proves": [
-        "Leak-free validation with embargo",
+        "Walk-forward embargo validation and explicit accounting for historical blend fitting on scored folds",
         "Reporting results that contradict the hope"
       ]
     },
