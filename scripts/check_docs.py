@@ -5,9 +5,9 @@ import re
 import sys
 import unittest
 from pathlib import Path
+from urllib.parse import unquote, urlsplit
 
 ROOT = Path(__file__).resolve().parents[1]
-MARKDOWN_FILES = [ROOT / "README.md", *sorted((ROOT / "docs").glob("*.md"))]
 PORTFOLIO_MANIFEST = ROOT / "docs" / "portfolio-manifest.json"
 REPOSITORY_METADATA_MANIFEST = ROOT / "config" / "repository-metadata.json"
 REPO_NAME_PATTERN = re.compile(r"^[A-Za-z0-9_.-]+$")
@@ -19,13 +19,35 @@ REQUIRED_FILES = [
     ROOT / "docs" / "portfolio-manifest.json",
 ]
 LINK_PATTERN = re.compile(r"\[[^\]]+\]\(([^)]+)\)")
+FENCE_PATTERN = re.compile(r"^ {0,3}(`{3,}|~{3,})")
+
+
+def discover_markdown_files() -> list[Path]:
+    """Include nested docs (for example docs/benchmarks), not just top-level pages."""
+    return [ROOT / "README.md", *sorted((ROOT / "docs").rglob("*.md"))]
+
+
+def outside_fenced_code(content: str) -> str:
+    lines = []
+    fence: tuple[str, int] | None = None
+    for line in content.splitlines(keepends=True):
+        match = FENCE_PATTERN.match(line)
+        if match:
+            marker = match.group(1)
+            if fence is None:
+                fence = (marker[0], len(marker))
+                continue
+            if marker[0] == fence[0] and len(marker) >= fence[1]:
+                fence = None
+                continue
+        if fence is None:
+            lines.append(line)
+    return "".join(lines)
 
 
 def should_skip_link(target: str) -> bool:
-    return (
-        target.startswith(("http://", "https://", "mailto:", "#"))
-        or target.startswith("javascript:")
-    )
+    # External schemes and application routes cannot be validated as local files.
+    return target.startswith(("#", "/")) or bool(urlsplit(target).scheme)
 
 
 def validate_required_files() -> list[str]:
@@ -38,16 +60,21 @@ def validate_required_files() -> list[str]:
 
 def validate_markdown_links() -> list[str]:
     errors = []
-    for markdown_file in MARKDOWN_FILES:
-        content = markdown_file.read_text(encoding="utf-8")
+    for markdown_file in discover_markdown_files():
+        content = outside_fenced_code(markdown_file.read_text(encoding="utf-8"))
         for raw_target in LINK_PATTERN.findall(content):
             target = raw_target.strip()
             if should_skip_link(target):
                 continue
-            clean_target = target.split("#", 1)[0]
-            resolved = (markdown_file.parent / clean_target).resolve()
+            url_path = unquote(urlsplit(target).path)
+            resolved = (markdown_file.parent / url_path).resolve()
+            rel_file = markdown_file.relative_to(ROOT).as_posix()
+            try:
+                resolved.relative_to(ROOT.resolve())
+            except ValueError:
+                errors.append(f"Relative link escapes repository in {rel_file}: {target}")
+                continue
             if not resolved.exists():
-                rel_file = markdown_file.relative_to(ROOT)
                 errors.append(f"Broken relative link in {rel_file}: {target}")
     return errors
 
@@ -172,10 +199,20 @@ def validate_circleci_inventory() -> list[str]:
     return errors
 
 
+def validate_docs_regressions() -> list[str]:
+    suite = unittest.defaultTestLoader.discover(
+        start_dir=str(ROOT / "tests"), pattern="test_docs_links.py"
+    )
+    if not unittest.TextTestRunner(verbosity=0).run(suite).wasSuccessful():
+        return ["Documentation link regression tests failed."]
+    return []
+
+
 def main() -> int:
     errors = []
     errors.extend(validate_required_files())
     errors.extend(validate_markdown_links())
+    errors.extend(validate_docs_regressions())
     errors.extend(validate_manifest())
     errors.extend(validate_repository_metadata())
     errors.extend(validate_circleci_inventory())
