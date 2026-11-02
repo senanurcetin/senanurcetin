@@ -14,7 +14,7 @@ An evidence-first map of selected **public** repositories. Start with the primar
 | [CASMI26 Molecular Identification](https://github.com/senanurcetin/enveda-casmi26) | [Fresh-family evaluation](https://github.com/senanurcetin/enveda-casmi26/blob/main/reports/advanced_review.md) | Sealed internal family-holdout C2 MRR@25 0.8388, but candidate-limited C3 0.0373; public examples overlap training, and no independent laboratory replication is established |
 | [Smart Factory](https://github.com/senanurcetin/smart-factory-app) | [Engineering sources](https://github.com/senanurcetin/smart-factory-app) | Simulated AI4I risk evaluation plus a separate NASA RUL study; neither is plant-deployed |
 | [Visual QC](https://github.com/senanurcetin/visual-qc-project) | [Engineering sources](https://github.com/senanurcetin/visual-qc-project) | NEU surface-defect classifier plus retrieval quality measurements; operator review remains necessary |
-| [Football Player Analytics](https://github.com/senanurcetin/football-player-performance-analysis) | [Engineering sources](https://github.com/senanurcetin/football-player-performance-analysis) | Collaborative-project fork with attribution; high value-level R² compared against persistence baseline |
+| [Football Player Analytics](https://github.com/senanurcetin/football-player-performance-analysis) | [Engineering sources](https://github.com/senanurcetin/football-player-performance-analysis) | Collaborative-project fork with attribution; 13-page PBIP comprises 9 presentation, 2 drillthrough and 2 tooltip pages; post-cutover Desktop refresh is not independently verified. High value-level R² is compared against a persistence baseline |
 
 ## Analytics engineering, reporting and data products
 
