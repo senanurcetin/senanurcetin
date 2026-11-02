@@ -49,7 +49,7 @@
       "release_url": "https://github.com/senanurcetin/ms-capital-market-forecasting",
       "thesis": "Short-horizon return forecasting over 804.5M rows, where the main result is an investigation into why the leaderboard disagreed with the hold-out. Research only, not investment advice.",
       "metrics": [
-        "292 BigQuery features",
+        "292 engineered feature columns (264 distinct; near-duplicates retained after measured pruning audit)",
         "Historical fitted-blend walk-forward cosine +0.14088 (optimistic); historical hold-out +0.15171",
         "Shipped ensemble leaderboard score +0.12900 (first LightGBM +0.12800), below the field median"
       ],
