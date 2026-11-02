@@ -32,6 +32,20 @@
       "description": "Synthetic CSV/XLSX validation and KPI-reporting demo with audited exceptions, Python tests and offline HTML deliverables."
     },
     {
+      "name": "enveda-casmi26",
+      "description": "Noncommercial MS/MS molecular ranking research: sealed family holdouts, candidate coverage, LambdaRank and honest C3 failure analysis.",
+      "topics": [
+        "mass-spectrometry",
+        "molecular-identification",
+        "machine-learning",
+        "learning-to-rank",
+        "metabolomics",
+        "research",
+        "reproducibility"
+      ],
+      "social_preview": "docs/assets/advanced-internal-study.png"
+    },
+    {
       "name": "football-player-performance-analysis",
       "topics": [
         "bigquery",
