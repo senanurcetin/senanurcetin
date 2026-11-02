@@ -20,30 +20,31 @@
     {
       "name": "excel-csv-reporting-automation",
       "topics": [
-        "reporting-automation",
+        "business-intelligence",
+        "csv",
         "data-quality",
         "excel",
-        "csv",
         "pandas",
-        "business-intelligence",
-        "python"
+        "python",
+        "reporting-automation"
       ],
-      "social_preview": null
+      "social_preview": null,
+      "description": "Synthetic CSV/XLSX validation and KPI-reporting demo with audited exceptions, Python tests and offline HTML deliverables."
     },
     {
       "name": "football-player-performance-analysis",
       "topics": [
-        "football-analytics",
-        "power-bi",
-        "dbt",
         "bigquery",
+        "dbt",
+        "football-analytics",
         "machine-learning",
-        "transfermarkt",
-        "sports-analytics"
+        "power-bi",
+        "sports-analytics",
+        "transfermarkt"
       ],
-      "social_preview": "docs/assets/screenshots/01_player_performance.png",
+      "social_preview": "docs/assets/screenshots/NEXUS_Football_Page_Gallery.png",
       "fork": true,
-      "description": "Transfermarkt football analytics with BigQuery, dbt, Power BI and time-split market-value modeling; fork-based contributions documented in README.",
+      "description": "Workintech collaborative football analytics fork: BigQuery, dbt, Power BI and time-aware valuation ML with upstream attribution.",
       "homepage": "https://senanur-cetin.vercel.app/projects/football-player-performance-analysis"
     },
     {
@@ -60,29 +61,18 @@
       "fork": true
     },
     {
-      "name": "greenweez-finance-campaign-analytics",
-      "description": "Finance and marketing analytics with dbt, BigQuery, and reproducible DuckDB demos using synthetic data.",
-      "topics": [
-        "analytics-engineering",
-        "finance-analytics",
-        "marketing-analytics",
-        "dbt",
-        "bigquery",
-        "duckdb"
-      ],
-      "social_preview": null
-    },
-    {
       "name": "ot-sentinel",
       "topics": [
-        "ot-security",
-        "industrial-cybersecurity",
         "anomaly-detection",
-        "nextjs",
         "genkit",
-        "security-analytics"
+        "industrial-ai",
+        "industrial-cybersecurity",
+        "nextjs",
+        "ot-security",
+        "research-demo"
       ],
-      "social_preview": "docs/assets/dashboard-normal.png"
+      "social_preview": "docs/assets/nexus-dashboard-normal.png",
+      "description": "BATADAL-benchmarked OT anomaly detection research with synthetic telemetry and optional LLM explanation; no live plant control."
     },
     {
       "name": "ieee-fraud-detection-analytics",
@@ -98,19 +88,25 @@
     },
     {
       "name": "APTOS-2019-diabetic-retinopathy",
-      "social_preview": null
-    },
-    {
-      "name": "E-commerce",
-      "social_preview": "docs/assets/powerbi-channel-performance.png"
+      "social_preview": "reports/figures/05_pipeline_stages.png"
     },
     {
       "name": "Ops-Copilot",
-      "social_preview": "docs/assets/ops-copilot-case-study.png"
+      "social_preview": "docs/assets/nexus-secom-case-study-desktop.png",
+      "description": "Industrial RAG and SECOM research plus a separate read-only GitHub Actions REST API auditor; evidence-led demos, not safety control.",
+      "topics": [
+        "factory-operations",
+        "firebase",
+        "flagship-case-study",
+        "genkit",
+        "industrial-ai",
+        "nextjs",
+        "rag"
+      ]
     },
     {
       "name": "PlantLog-MERN",
-      "social_preview": "docs/dashboard.png",
+      "social_preview": "docs/screenshots/nexus-demo-overview.png",
       "homepage": "https://senanur-cetin.vercel.app/projects/plantlog-mern"
     },
     {
@@ -119,7 +115,18 @@
     },
     {
       "name": "Vision2DCS",
-      "social_preview": null
+      "social_preview": "docs/assets/nexus-workspace-desktop.png",
+      "description": "Offline human-reviewed P&ID/HMI research demo with synthetic tag baselines; conceptual exports, not certified DCS integration.",
+      "topics": [
+        "automation-engineering",
+        "dcs",
+        "industrial-ai",
+        "process-control",
+        "react",
+        "research-demo",
+        "vite"
+      ],
+      "homepage": "https://vision2dcs-nexus-demo.vercel.app/"
     },
     {
       "name": "GTM",
@@ -137,7 +144,40 @@
     },
     {
       "name": "senanurcetin",
-      "social_preview": null
+      "social_preview": null,
+      "description": "Evidence-first Data Science, AI Engineering and Analytics portfolio: validated ML, data products and industrial automation.",
+      "topics": [
+        "github-profile",
+        "industrial-ai",
+        "portfolio"
+      ]
+    },
+    {
+      "name": "nexus-devops-intelligence",
+      "description": "Read-only GitHub Actions and PR evidence explorer; self-hosted Community candidate with explicit release and production gates.",
+      "topics": [
+        "developer-tools",
+        "devops",
+        "github-actions",
+        "github-api",
+        "read-only-dashboard",
+        "typescript"
+      ]
+    },
+    {
+      "name": "nexus-commerce-intelligence",
+      "description": "Commerce analytics research: governed source contracts, dbt/BigQuery models, KPI definitions, Power BI and separate Olist study.",
+      "topics": [
+        "analytics-engineering",
+        "bigquery",
+        "dbt",
+        "dbt-cloud",
+        "ecommerce-analytics",
+        "power-bi",
+        "sql"
+      ],
+      "social_preview": "docs/advanced-analysis/cohort_retention.png",
+      "homepage": "https://senanur-cetin.vercel.app/projects/e-commerce"
     }
   ]
 }
