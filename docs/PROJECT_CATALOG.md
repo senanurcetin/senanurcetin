@@ -10,6 +10,7 @@ For evaluation details, follow each repository's README and linked methodology, 
 | --- | --- | --- | --- |
 | Financial ML | [MS Capital Market Forecasting](https://github.com/senanurcetin/ms-capital-market-forecasting) | Independent | Walk-forward/embargo validation; hold-out vs. leaderboard results; research-only disclaimer |
 | Fraud ML and analytics | [IEEE Fraud Detection Analytics](https://github.com/senanurcetin/ieee-fraud-detection-analytics) | Independent | Model validation, leakage protection, feature/warehouse lineage |
+| Molecular identification / ranking | [CASMI26](https://github.com/senanurcetin/enveda-casmi26) | Independent research with external method attribution | Predeclared internal family holdout, MS/MS candidate coverage and MRR; poor C3 results, no fresh laboratory replication |
 | Predictive maintenance | [Smart Factory](https://github.com/senanurcetin/smart-factory-app) | Independent | AI4I and C-MAPSS experiments, dashboard, model limitations |
 | Computer vision / RAG | [Visual QC](https://github.com/senanurcetin/visual-qc-project) | Independent | Image classification evidence, review queue, RAG retrieval benchmarking |
 | OT security | [OT-Sentinel](https://github.com/senanurcetin/ot-sentinel) | Independent | Rule/detector evidence, threat model, synthetic/demo vs benchmark conditions |
