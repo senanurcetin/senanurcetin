@@ -259,6 +259,8 @@ def validate_social_preview_assets() -> list[str]:
         return ["Missing versioned Social Preview asset directory"]
     available = {path.name for path in directory.glob("*.png")}
     linked = set(PREVIEW_LINK_PATTERN.findall(guide_text))
+    for name in sorted(eligible - available):
+        errors.append(f"Social Preview expected by metadata but missing: {name}")
     for name in sorted(available - eligible):
         errors.append(f"Social Preview lacks a verified source in metadata: {name}")
     for name in sorted(linked - available):
