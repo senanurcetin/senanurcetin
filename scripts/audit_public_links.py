@@ -76,8 +76,28 @@ def request_status(url: str, method: str, timeout: float) -> tuple[int | None, s
         return None, type(exc).__name__
 
 
+def is_authenticated_github_control(url: str) -> bool:
+    """Repository Settings are owner-only and intentionally 404 when signed out."""
+    parsed = urllib.parse.urlsplit(url)
+    segments = parsed.path.strip("/").split("/")
+    return (
+        parsed.scheme == "https"
+        and parsed.hostname == "github.com"
+        and len(segments) >= 3
+        and segments[2] == "settings"
+    )
+
+
 def audit(item: tuple[str, list[str]], timeout: float) -> dict[str, object]:
     url, locations = item
+    if is_authenticated_github_control(url):
+        return {
+            "url": url,
+            "status": None,
+            "verdict": "auth-required",
+            "destination": url,
+            "sources": locations,
+        }
     status, destination = request_status(url, "HEAD", timeout)
     if status in RETRY_GET or status is None:
         status, destination = request_status(url, "GET", timeout)
