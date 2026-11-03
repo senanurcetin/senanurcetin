@@ -5,7 +5,7 @@
 
 I build analytics and machine-learning systems that can be **inspected, evaluated and reproduced within their stated constraints**: data contracts → modeling → validation → an interface for actual decisions. My industrial automation experience informs how I approach system boundaries, reliability and the gap between a research demo and an operational tool.
 
-[**Portfolio & case studies**](https://senanur-cetin.vercel.app/) · [**Projects**](https://senanur-cetin.vercel.app/projects) · [**Technical review guide**](docs/REVIEWER_GUIDE.md) · [**Project evidence index**](docs/PROJECT_REVIEW_INDEX.md)
+[**Portfolio & case studies**](https://senanur-cetin.vercel.app/) · [**Merged OSS case studies**](docs/OPEN_SOURCE_ENGINEERING_CASE_STUDIES.md) · [**Projects**](https://senanur-cetin.vercel.app/projects) · [**Technical review guide**](docs/REVIEWER_GUIDE.md) · [**Project evidence index**](docs/PROJECT_REVIEW_INDEX.md)
 
 [LinkedIn](https://www.linkedin.com/in/senanur-cetin/) · [Kaggle](https://www.kaggle.com/senanuretin) · [Hugging Face](https://huggingface.co/senanurcetin) · [GitHub open-source activity](docs/OPEN_SOURCE_ACTIVITY.md) · [Email](mailto:senanur.cetin.work@gmail.com)
 
