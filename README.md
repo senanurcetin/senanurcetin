@@ -27,6 +27,8 @@ I build machine-learning and analytics systems end to end: data pipelines and SQ
 
 **15 merged pull requests** in xarray, Vega-Altair, DuckDB docs, pyjanitor, plotly.py and SciPy. [Contribution record →](docs/OPEN_SOURCE_ACTIVITY.md)
 
+**Claude Code:** [claude-code-workflows](https://github.com/senanurcetin/claude-code-workflows) — a reusable skill and agent templates for evidence-based upstream PRs, plus PRs to the [Claude Agent SDK](https://github.com/anthropics/claude-agent-sdk-python/pulls?q=author%3Asenanurcetin) (under review).
+
 ## Tech stack
 
 - **ML:** Python, scikit-learn, LightGBM, XGBoost, PyTorch, SHAP, time-aware validation
