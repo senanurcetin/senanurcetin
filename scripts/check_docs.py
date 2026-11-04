@@ -66,8 +66,15 @@ def markdown_anchors(path: Path) -> set[str]:
     for match in HEADING_PATTERN.finditer(contents):
         heading = re.sub(r"<[^>]*>", "", match.group(1))
         heading = re.sub(r"\[([^\]]+)\]\([^)]+\)", r"\1", heading)
-        heading = re.sub(r"\x60([^\x60]+)\x60", r"\1", heading)
-        heading = re.sub(r"[*_~]", "", heading)
+        # Emphasis markers vanish from the rendered heading, but underscores
+        # inside code spans and words (e.g. `pivot_longer`) survive in
+        # GitHub's heading IDs.
+        heading = "".join(
+            part[1:-1]
+            if len(part) > 1 and part[0] == part[-1] == "\x60"
+            else re.sub(r"[*~]|(?<!\w)_+|_+(?!\w)", "", part)
+            for part in re.split(r"(\x60[^\x60]+\x60)", heading)
+        )
         slug = re.sub(r"\s", "-", re.sub(r"[^\w\- ]", "", heading.lower()).strip())
         if slug:
             count = counts.get(slug, 0)

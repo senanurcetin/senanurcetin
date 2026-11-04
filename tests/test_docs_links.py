@@ -110,6 +110,19 @@ class DocumentationLinksTests(unittest.TestCase):
             with patch.object(check_docs, "ROOT", root):
                 self.assertEqual([], check_docs.validate_markdown_links())
 
+    def test_anchor_keeps_code_and_word_underscores(self) -> None:
+        with tempfile.TemporaryDirectory() as temporary:
+            root = Path(temporary)
+            (root / "README.md").write_text(
+                "## 2. pyjanitor — \x60pivot_longer\x60 output/input\n"
+                "## snake_case and _emphasis_ text\n"
+                "[A](#2-pyjanitor--pivot_longer-outputinput) "
+                "[B](#snake_case-and-emphasis-text)\n",
+                encoding="utf-8",
+            )
+            with patch.object(check_docs, "ROOT", root):
+                self.assertEqual([], check_docs.validate_markdown_links())
+
     def test_duplicate_headings_and_explicit_ids(self) -> None:
         with tempfile.TemporaryDirectory() as temporary:
             root = Path(temporary)
