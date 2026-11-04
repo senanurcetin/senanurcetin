@@ -64,7 +64,7 @@ I distinguish **my work**, **third-party upstream code**, **team contributions**
 
 - [Open-source contribution record](docs/OPEN_SOURCE_ACTIVITY.md) · [Contribution standards](docs/OPEN_SOURCE_CONTRIBUTION_GUIDE.md)
 
-**Selected merged engineering case studies:** [xarray — scoped quantile warnings](docs/OPEN_SOURCE_ENGINEERING_CASE_STUDIES.md#1-xarray--all-nan-quantile-warning-isolation) · [pyjanitor — DataFrame memory isolation](docs/OPEN_SOURCE_ENGINEERING_CASE_STUDIES.md#2-pyjanitor--pivotlonger-outputinput-memory-isolation) · [pyjanitor — NumPy `.value` group optimization](docs/OPEN_SOURCE_ENGINEERING_CASE_STUDIES.md#3-pyjanitor--faster-homogeneous-numpy-value-groups). The linked work is merged upstream; test and performance limitations are documented.
+**Selected merged engineering case studies:** [xarray — scoped quantile warnings](docs/OPEN_SOURCE_ENGINEERING_CASE_STUDIES.md#1-xarray--all-nan-quantile-warning-isolation) · [pyjanitor — DataFrame memory isolation](docs/OPEN_SOURCE_ENGINEERING_CASE_STUDIES.md#2-pyjanitor--pivot_longer-outputinput-memory-isolation) · [pyjanitor — NumPy `.value` group optimization](docs/OPEN_SOURCE_ENGINEERING_CASE_STUDIES.md#3-pyjanitor--faster-homogeneous-numpy-value-groups). The linked work is merged upstream; test and performance limitations are documented.
 
 - [Curated project catalog & ownership](docs/PROJECT_CATALOG.md) · [Reviewer guide](docs/REVIEWER_GUIDE.md)
 - [Historical long-form profile with additional metrics, Kaggle snapshots and references](docs/PROFILE_EVIDENCE_SNAPSHOT_2026-11-02.md) — **dated archive, not a current status dashboard**
