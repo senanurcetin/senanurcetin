@@ -24,7 +24,6 @@ For evaluation details, follow each repository's README and linked methodology, 
 | Industrial simulation | [ChemView](https://github.com/senanurcetin/ChemView) | Independent | Interlock simulation, HMI behaviors, no PLC/safety-rated deployment |
 | Football analytics | [Football Player Performance](https://github.com/senanurcetin/football-player-performance-analysis) | Workintech training-team project; documented fork | Identify own analysis versus upstream contributions; inspect 13-page PBIP (9 presentation + 2 drillthrough + 2 tooltip) with independently unverified post-cutover Desktop refresh and time-aware valuation validation |
 | Web instrumentation | [GTM](https://github.com/senanurcetin/GTM) | Fork-based work | GA4 dataLayer test coverage and Jekyll storefront structure |
-| SQL analysis | [Olist Database Analysis](https://github.com/senanurcetin/olist_database_analysis) | Fork-based work | PostgreSQL analysis, import portability and upstream attribution |
 
 ## Evaluation checklist for every featured project
 
