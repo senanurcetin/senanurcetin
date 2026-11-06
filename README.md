@@ -10,8 +10,8 @@ I build machine-learning and analytics systems end to end: data pipelines and SQ
 
 | Project | What I built | Key result |
 | --- | --- | --- |
-| **[Fraud Risk Intelligence](https://github.com/senanurcetin/ieee-fraud-detection-analytics)** | DuckDB → BigQuery/dbt → LightGBM → FastAPI dashboard | **ROC-AUC 0.913** on 590K transactions, time-aware split · [Demo](https://fraud-project-web.vercel.app) |
-| **[Visual QC](https://github.com/senanurcetin/visual-qc-project)** | Steel-defect classification, uncertainty-based review queue, grounded RAG | **Macro F1 0.939**; reviewing the top 20% catches **82%** of errors |
+| **[Fraud Risk Intelligence](https://github.com/senanurcetin/ieee-fraud-detection-analytics)** | DuckDB → BigQuery/dbt → LightGBM → FastAPI dashboard | **ROC-AUC 0.913** on 590K transactions, time-aware split · [Demo](https://fraud-project-web.vercel.app) · RAPIDS cuDF + XGBoost CUDA: training [4.6–9× faster on GPU](https://github.com/senanurcetin/ieee-fraud-detection-analytics#gpu-acceleration-with-rapids-november-2026) |
+| **[Visual QC](https://github.com/senanurcetin/visual-qc-project)** | Steel-defect classification, uncertainty-based review queue, grounded RAG | **Macro F1 0.939**; reviewing the top 20% catches **82%** of errors · TensorRT FP16: [3.3 ms per image](https://github.com/senanurcetin/visual-qc-project#inference-acceleration-with-tensorrt-november-2026), ~14× faster than CPU |
 | **[Smart Factory Analytics](https://github.com/senanurcetin/smart-factory-app)** | Predictive maintenance and remaining-useful-life models with SHAP and drift checks | **PR-AUC 0.902** on AI4I |
 | **[MS Capital Market Forecasting](https://github.com/senanurcetin/ms-capital-market-forecasting)** | Feature pipeline over 804M rows, walk-forward validation with embargo, LightGBM/XGBoost ensemble | 292 engineered features · FastAPI + Streamlit |
 | **[APTOS Retinopathy](https://github.com/senanurcetin/APTOS-2019-diabetic-retinopathy)** | EfficientNet-B0 grading with shortcut-learning and external-cohort audits | **QWK 0.910** on internal hold-out |
@@ -27,6 +27,8 @@ I build machine-learning and analytics systems end to end: data pipelines and SQ
 
 **15 merged pull requests** in xarray, Vega-Altair, DuckDB docs, pyjanitor, plotly.py and SciPy. [Contribution record →](docs/OPEN_SOURCE_ACTIVITY.md)
 
+**PyPI:** [jsonl-utf8-guard](https://pypi.org/project/jsonl-utf8-guard/), a dependency-free, privacy-safe UTF-8 JSONL validator. Published with Trusted Publishing; source: [offline-jsonl-workshop](https://github.com/senanurcetin/offline-jsonl-workshop).
+
 **Merged case studies:** [xarray — scoped quantile warnings](docs/OPEN_SOURCE_ENGINEERING_CASE_STUDIES.md#1-xarray--all-nan-quantile-warning-isolation) · [pyjanitor — DataFrame memory isolation](docs/OPEN_SOURCE_ENGINEERING_CASE_STUDIES.md#2-pyjanitor--pivot_longer-outputinput-memory-isolation) · [pyjanitor — NumPy `.value` group optimization](docs/OPEN_SOURCE_ENGINEERING_CASE_STUDIES.md#3-pyjanitor--faster-homogeneous-numpy-value-groups)
 
 **Claude Code:** [claude-code-workflows](https://github.com/senanurcetin/claude-code-workflows) — a reusable skill and agent templates for evidence-based upstream PRs, plus PRs to the [Claude Agent SDK](https://github.com/anthropics/claude-agent-sdk-python/pulls?q=author%3Asenanurcetin) (under review).
@@ -36,6 +38,7 @@ I build machine-learning and analytics systems end to end: data pipelines and SQ
 - **ML:** Python, scikit-learn, LightGBM, XGBoost, PyTorch, SHAP, time-aware validation
 - **Data & BI:** SQL, BigQuery, dbt, DuckDB, Pandas, Power BI / DAX
 - **AI applications:** RAG, LangChain, Gemini, computer vision
+- **GPU:** CUDA, TensorRT, ONNX Runtime, RAPIDS cuDF, XGBoost (CUDA)
 - **Delivery:** FastAPI, Streamlit, React, Docker, GitHub Actions
 
 ## More
