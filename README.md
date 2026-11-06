@@ -29,6 +29,8 @@ I build machine-learning and analytics systems end to end: data pipelines and SQ
 
 **PyPI:** [jsonl-utf8-guard](https://pypi.org/project/jsonl-utf8-guard/), a dependency-free, privacy-safe UTF-8 JSONL validator. Published with Trusted Publishing; source: [offline-jsonl-workshop](https://github.com/senanurcetin/offline-jsonl-workshop).
 
+**Merged case studies:** [xarray — scoped quantile warnings](docs/OPEN_SOURCE_ENGINEERING_CASE_STUDIES.md#1-xarray--all-nan-quantile-warning-isolation) · [pyjanitor — DataFrame memory isolation](docs/OPEN_SOURCE_ENGINEERING_CASE_STUDIES.md#2-pyjanitor--pivot_longer-outputinput-memory-isolation) · [pyjanitor — NumPy `.value` group optimization](docs/OPEN_SOURCE_ENGINEERING_CASE_STUDIES.md#3-pyjanitor--faster-homogeneous-numpy-value-groups)
+
 **Claude Code:** [claude-code-workflows](https://github.com/senanurcetin/claude-code-workflows) — a reusable skill and agent templates for evidence-based upstream PRs, plus PRs to the [Claude Agent SDK](https://github.com/anthropics/claude-agent-sdk-python/pulls?q=author%3Asenanurcetin) (under review).
 
 ## Tech stack
