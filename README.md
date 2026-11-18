@@ -4,7 +4,7 @@
 
 I build machine-learning and analytics systems end to end: data pipelines and SQL models, validated ML, and the dashboards and APIs people use to make decisions. Before data science I worked in industrial automation (DCS/SCADA, Siemens PCS 7, ABB 800xA), which shapes how I think about reliability and the gap between a demo and a working tool.
 
-[Portfolio](https://senanur-cetin.vercel.app/) · [LinkedIn](https://www.linkedin.com/in/senanur-cetin/) · [Kaggle](https://www.kaggle.com/senanuretin) · [Hugging Face](https://huggingface.co/senanurcetin) · [Email](mailto:senanur.cetin.work@gmail.com)
+[Portfolio](https://senanur-cetin.vercel.app/) · [LinkedIn](https://www.linkedin.com/in/senanur-cetin/) · [Kaggle](https://www.kaggle.com/senanuretin) · [Hugging Face](https://huggingface.co/senanurcetin) · [DEV](https://dev.to/senanurcetin) · [Email](mailto:senanur.cetin.work@gmail.com)
 
 ## Featured projects
 
