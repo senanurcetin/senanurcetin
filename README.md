@@ -33,6 +33,16 @@ I build machine-learning and analytics systems end to end: data pipelines and SQ
 
 **Claude Code:** [claude-code-workflows](https://github.com/senanurcetin/claude-code-workflows) — a reusable skill and agent templates for evidence-based upstream PRs, plus PRs to the [Claude Agent SDK](https://github.com/anthropics/claude-agent-sdk-python/pulls?q=author%3Asenanurcetin) (under review).
 
+## Get involved
+
+New to open source, or looking for a small, well-scoped task? These repositories have issues labelled for first contributions, each with a reproduction and a clear definition of done:
+
+- [offline-jsonl-workshop](https://github.com/senanurcetin/offline-jsonl-workshop/issues?q=is%3Aopen+label%3A%22good+first+issue%22%2C%22help+wanted%22) — a dependency-free Python JSONL validator. Questions are welcome in [Discussions](https://github.com/senanurcetin/offline-jsonl-workshop/discussions).
+- [nexus-devops-intelligence](https://github.com/senanurcetin/nexus-devops-intelligence/issues?q=is%3Aopen+label%3A%22good+first+issue%22) — TypeScript tooling for reading GitHub Actions evidence.
+- [claude-code-workflows](https://github.com/senanurcetin/claude-code-workflows/blob/main/CONTRIBUTING.md) — share a Claude Code skill or workflow you have used on real work.
+
+I review every pull request. Please comment on an issue before starting so work isn't duplicated.
+
 ## Tech stack
 
 - **ML:** Python, scikit-learn, LightGBM, XGBoost, PyTorch, SHAP, time-aware validation
