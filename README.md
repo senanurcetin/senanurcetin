@@ -27,7 +27,7 @@ I build machine-learning and analytics systems end to end: data pipelines and SQ
 
 **15 merged pull requests** in xarray, Vega-Altair, DuckDB docs, pyjanitor, plotly.py and SciPy. [Contribution record →](docs/OPEN_SOURCE_ACTIVITY.md)
 
-**PyPI:** [jsonl-utf8-guard](https://pypi.org/project/jsonl-utf8-guard/), a dependency-free, privacy-safe UTF-8 JSONL validator. Published with Trusted Publishing; source: [offline-jsonl-workshop](https://github.com/senanurcetin/offline-jsonl-workshop).
+**PyPI:** [jsonl-utf8-guard](https://pypi.org/project/jsonl-utf8-guard/), a dependency-free, privacy-safe UTF-8 JSONL validator, published with Trusted Publishing from [offline-jsonl-workshop](https://github.com/senanurcetin/offline-jsonl-workshop). It has [three outside contributors](https://github.com/senanurcetin/offline-jsonl-workshop#contributors) so far; [v0.3.0](https://github.com/senanurcetin/offline-jsonl-workshop/releases/tag/v0.3.0) shipped work from two of them.
 
 **Merged case studies:** [xarray — scoped quantile warnings](docs/OPEN_SOURCE_ENGINEERING_CASE_STUDIES.md#1-xarray--all-nan-quantile-warning-isolation) · [pyjanitor — DataFrame memory isolation](docs/OPEN_SOURCE_ENGINEERING_CASE_STUDIES.md#2-pyjanitor--pivot_longer-outputinput-memory-isolation) · [pyjanitor — NumPy `.value` group optimization](docs/OPEN_SOURCE_ENGINEERING_CASE_STUDIES.md#3-pyjanitor--faster-homogeneous-numpy-value-groups)
 
